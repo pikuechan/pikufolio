@@ -1,0 +1,32 @@
+/*Style Sheet*/
+
+section {
+	width: 100%;
+	/*height: 600px;*/
+	margin-bottom:50px;
+	padding: 10px;
+	color: #000;
+	font-weight: bold;
+	font-size: 16px;
+	/*background-color: #2f2886;*/
+}
+
+.orange{
+	background-color: #ffccaa;
+}
+
+.heart{
+	height: 100px;
+	width: 100px;
+	background-image: url(../images/svg/heart.svg);
+	background-size: 100%;
+}
+
+
+.heart-test{
+	height: 60px;
+	width: 200px;
+	background-image: url(../images/svg/heart-test.svg);
+	background-size: 100%;
+}
+
