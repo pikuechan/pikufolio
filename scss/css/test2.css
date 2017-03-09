@@ -1,0 +1,14 @@
+main {
+  width: 600px;
+}
+main p {
+  margin: 0 0 10px;
+}
+main p em {
+  color: #f00;
+}
+main small {
+  font-size: small;
+}
+
+/*# sourceMappingURL=test2.css.map */
