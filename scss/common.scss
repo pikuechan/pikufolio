@@ -1,5 +1,6 @@
 @charset 'utf-8';
-@import 'marx/marx',
-'variables',
-'mixin',
-'main';
+@import 'marx/marx', //リセットCSS
+'variables', //変数用パーシャル
+'mixin', //mixin用パーシャル
+'fonts', //mixin用パーシャル
+'main'; //pikufoliメインスタイル
