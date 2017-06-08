@@ -1,0 +1,27 @@
+//test反映用のパーシャル
+main {
+    &#test {
+        section {
+            font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
+        }
+        #test01 {
+            font-weight: bold;
+        }
+        #test02 {
+            font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
+        }
+        #test03 {
+            font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
+            color: #fafa99;
+            font-size: 2.0em;
+            font-weight: 900;
+        }
+        #test04 {
+            //フォントの横幅を150%にするテストをしてみる
+            font-family: 'Palanquin Dark', sans-serif;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            font-stretch: ultra-expanded;
+        }
+    }
+}
