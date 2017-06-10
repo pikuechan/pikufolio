@@ -3,6 +3,7 @@
 /*
  * Normalization
  */
+@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark");
 abbr[title] {
   text-decoration: underline;
   text-decoration: underline dotted;
@@ -758,3 +759,91 @@ tfoot td {
 ****************************************************************/
 /*宇宙背景ver. カラーリング*/
 /*地球背景ver. カラーリング*/
+div#font section {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
+}
+
+div#font #test01 {
+  font-weight: bold;
+}
+
+div#font #test02 {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
+}
+
+div#font #test03 {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
+  color: #fafa99;
+  font-size: 2.0em;
+  font-weight: 900;
+}
+
+div#font #test04 {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-stretch: ultra-expanded;
+}
+
+div#headertest {
+  background-color: #dadada;
+}
+
+div#headertest h1 {
+  margin: auto;
+}
+
+/***********************************************************
+                            BODY
+***********************************************************/
+body {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  border-bottom: none;
+}
+
+/***********************************************************
+                           HEADER
+***********************************************************/
+header {
+  background-color: #dadada;
+}
+
+header h1 {
+  margin: auto;
+}
+
+/*
+サイトタイトル：Palanquin Dark / Bold ※横幅100に広げてる
+サブタイトル：Palanquin Dark / Medium
+その他本文（英）：Palanquin Dark / Medium (Sans Serif)
+その他本文（和）：M+ Type-1 / Medium (Sans Serif)
+※M+ Type-2 ってのもあるんだけど、２の方は少し曲線と歪みが強くて癖があるうえに、
+欧文の方とあわないから、タイプ１をつかう。
+
+
+Palanquin Dark ( Bold & Medium)
+https://fonts.google.com/specimen/Palanquin+Dark?selection.family=Palanquin+Dark:500,700
+font-family: 'Palanquin Dark', sans-serif;
+<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:500,700" rel="stylesheet">
+
+
+
+M+ Type-1 
+http://mplus-fonts.osdn.jp/design.html#mplus_1
+http://mplus-fonts.osdn.jp/about.html#font_files
+https://fonts.google.com/earlyaccess
+Link
+
+<link rel="stylesheet" type="text/css"
+ href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
+</head>
+
+
+*/

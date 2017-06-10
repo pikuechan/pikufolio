@@ -1,25 +1,51 @@
-main#test section {
+div#font section {
   font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
 }
 
-main#test #test01 {
+div#font #test01 {
   font-weight: bold;
 }
 
-main#test #test02 {
+div#font #test02 {
   font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
 }
 
-main#test #test03 {
+div#font #test03 {
   font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
   color: #fafa99;
   font-size: 2.0em;
   font-weight: 900;
 }
 
-main#test #test04 {
+div#font #test04 {
   font-family: 'Palanquin Dark', sans-serif;
   font-weight: bold;
   letter-spacing: 0.1em;
   font-stretch: ultra-expanded;
+}
+
+div#headertest {
+  height: 90vh;
+  width: 100%;
+  background-image: url("/images/svg/star1300-900.svg");
+  background-size: cover;
+}
+
+div#headertest h1 {
+  text-align: center;
+  line-height: 90vh;
+}
+
+.space-bottom {
+  width: 100vw;
+  height: 20vh;
+  background-image: url("/images/svg/wave-earth.svg");
+  background-size: 100% auto;
+}
+
+.space-bottom2 {
+  width: 100%;
+  height: 20vh;
+  background-image: url("/images/svg/wave-earth2.svg");
+  background-size: 100% auto;
 }

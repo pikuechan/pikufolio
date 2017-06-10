@@ -1,12 +1,10 @@
-// @mixin作成用のパーシャルファイル
-
+@charset "UTF-8";
 /***********************************************************
                             BODY
 ***********************************************************/
-
 @import url("https://fonts.googleapis.com/css?family=Palanquin+Dark");
 body {
-    font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
 }
 
 h1,
@@ -14,27 +12,25 @@ h2,
 h3,
 h4,
 h5 {
-    //marxのリセットCSSの打ち消し
-    border-bottom: none;
+  border-bottom: none;
 }
-
 
 /***********************************************************
                            HEADER
 ***********************************************************/
-
 header {
-    height: 90vh; //viewportの高さの90パーセントの高さ
-    background-image: url("/images/svg/star1300-900.svg");
-    h1 {
-        text-align: center;
-        line-height: 90vh; //headerと同じ高さにして垂直センタリング
-    }
-    &:after {
-        content: url("/images/svg/star1300-900.svg");
-    }
+  height: 90vh;
+  background-image: url("/images/svg/star1300-900.svg");
 }
 
+header h1 {
+  text-align: center;
+  line-height: 90vh;
+}
+
+header:after {
+  content: url("/images/svg/star1300-900.svg");
+}
 
 /*
 サイトタイトル：Palanquin Dark / Bold ※横幅100に広げてる
