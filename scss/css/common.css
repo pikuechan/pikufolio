@@ -3,7 +3,7 @@
 /*
  * Normalization
  */
-@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark");
+@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:400,700");
 abbr[title] {
   text-decoration: underline;
   text-decoration: underline dotted;
@@ -759,6 +759,11 @@ tfoot td {
 ****************************************************************/
 /*宇宙背景ver. カラーリング*/
 /*地球背景ver. カラーリング*/
+/***************************************************************
+                          Color Settings
+****************************************************************/
+/*宇宙背景ver. カラーリング*/
+/*地球背景ver. カラーリング*/
 div#font section {
   font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
 }
@@ -786,18 +791,30 @@ div#font #test04 {
 }
 
 div#headertest {
-  background-color: #dadada;
+  height: 85vh;
+  width: 100%;
+  background-color: #212E45;
+  background-image: url("/images/svg/star1300-900.svg");
+  background-size: cover;
 }
 
 div#headertest h1 {
-  margin: auto;
+  text-align: center;
+  line-height: 90vh;
 }
 
+/***************************************************************
+                          Color Settings
+****************************************************************/
+/*宇宙背景ver. カラーリング*/
+/*地球背景ver. カラーリング*/
 /***********************************************************
                             BODY
 ***********************************************************/
 body {
   font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 h1,
@@ -808,15 +825,128 @@ h5 {
   border-bottom: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/***********************************************************
+                         common parts
+***********************************************************/
+.earth-top {
+  vertical-align: top;
+  background-color: #ACCC1E;
+  margin: 0;
+  padding: 0;
+}
+
+.earth-top img {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+.space-top {
+  vertical-align: top;
+  background-color: #212E45;
+  margin: 0;
+  padding: 0;
+}
+
+.space-top img {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
 /***********************************************************
                            HEADER
 ***********************************************************/
 header {
-  background-color: #dadada;
+  height: 85vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #212E45;
+  background-image: url("/images/svg/star1300-900.svg");
+  background-size: cover;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
+  padding: 10px 50px 10px 0;
+  background-color: #212E45;
+  color: white;
+  font-size: 0.8em;
+  font-weight: normal;
+  opacity: 0.75;
+}
+
+header nav ol {
+  text-align: center;
+}
+
+header nav ol li {
+  display: inline-block;
+  padding: 0px;
+}
+
+header nav ol li a {
+  padding: 1px 30px;
+  border-radius: 15px;
+  background-color: #212E45;
+}
+
+header nav ol li a:hover {
+  color: #CFED47;
+  background-color: #0f141d;
 }
 
 header h1 {
-  margin: auto;
+  text-align: center;
+  line-height: 90vh;
+  margin: 0;
+  font-size: 2.0em;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #CFED47;
+}
+
+/***********************************************************
+                           main section
+***********************************************************/
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+}
+
+main section.aboutme {
+  width: 100%;
+  background-color: #ACCC1E;
+}
+
+main section.aboutme h2 {
+  padding: 50px 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2;
+}
+
+main section.aboutme h2:first-letter {
+  font-size: 1.8rem;
 }
 
 /*
