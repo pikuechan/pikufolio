@@ -809,12 +809,26 @@ div#headertest h1 {
 /*宇宙背景ver. カラーリング*/
 /*地球背景ver. カラーリング*/
 /***********************************************************
-                            BODY
+                            BODY / main
 ***********************************************************/
+:root {
+  font-size: 14px;
+}
+
 body {
   font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+}
+
+main section {
+  margin: 0;
 }
 
 h1,
@@ -863,6 +877,20 @@ a:hover {
   vertical-align: top;
 }
 
+.aboutme h2, .works h2, .skills h2 {
+  padding: 50px 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.0rem;
+  letter-spacing: 0.2rem;
+}
+
+.aboutme h2:first-letter, .works h2:first-letter, .skills h2:first-letter {
+  font-size: 3.0rem;
+}
+
 /***********************************************************
                            HEADER
 ***********************************************************/
@@ -886,7 +914,7 @@ header nav {
   padding: 10px 50px 10px 0;
   background-color: #212E45;
   color: white;
-  font-size: 0.8em;
+  font-size: 1.0rem;
   font-weight: normal;
   opacity: 0.75;
 }
@@ -915,38 +943,34 @@ header h1 {
   text-align: center;
   line-height: 90vh;
   margin: 0;
-  font-size: 2.0em;
+  font-size: 3.0rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.6rem;
   color: #CFED47;
 }
 
 /***********************************************************
-                           main section
+                           ABOUT ME
 ***********************************************************/
-main {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  max-width: none;
-}
-
-main section.aboutme {
+.aboutme {
   width: 100%;
   background-color: #ACCC1E;
 }
 
-main section.aboutme h2 {
-  padding: 50px 0;
-  margin: 0;
-  color: white;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.2;
+/***********************************************************
+                           WORKS
+***********************************************************/
+.works {
+  width: 100%;
+  background-color: #212E45;
 }
 
-main section.aboutme h2:first-letter {
-  font-size: 1.8rem;
+/***********************************************************
+                           WORKS
+***********************************************************/
+.skills {
+  width: 100%;
+  background-color: #ACCC1E;
 }
 
 /*
