@@ -966,38 +966,44 @@ header h1 {
 }
 
 /***********************************************************
-                           WORKS
+                           SKILLS
 ***********************************************************/
 .skills {
   width: 100%;
   background-color: #ACCC1E;
 }
 
-/*
-サイトタイトル：Palanquin Dark / Bold ※横幅100に広げてる
-サブタイトル：Palanquin Dark / Medium
-その他本文（英）：Palanquin Dark / Medium (Sans Serif)
-その他本文（和）：M+ Type-1 / Medium (Sans Serif)
-※M+ Type-2 ってのもあるんだけど、２の方は少し曲線と歪みが強くて癖があるうえに、
-欧文の方とあわないから、タイプ１をつかう。
+/***********************************************************
+                           FOOTER
+***********************************************************/
+footer {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  vertical-align: top;
+  background-color: #212E45;
+  background-image: url("/images/svg/star1300-900.svg");
+  background-size: cover;
+}
 
+footer .snsicons ul {
+  text-align: center;
+}
 
-Palanquin Dark ( Bold & Medium)
-https://fonts.google.com/specimen/Palanquin+Dark?selection.family=Palanquin+Dark:500,700
-font-family: 'Palanquin Dark', sans-serif;
-<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:500,700" rel="stylesheet">
+footer .snsicons ul li {
+  display: inline-block;
+  padding: 0px;
+  list-style: none;
+}
 
-
-
-M+ Type-1 
-http://mplus-fonts.osdn.jp/design.html#mplus_1
-http://mplus-fonts.osdn.jp/about.html#font_files
-https://fonts.google.com/earlyaccess
-Link
-
-<link rel="stylesheet" type="text/css"
- href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
-</head>
-
-
-*/
+footer span {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}

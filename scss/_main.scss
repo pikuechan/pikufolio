@@ -172,3 +172,34 @@ header {
 /***********************************************************
                            FOOTER
 ***********************************************************/
+
+footer {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    vertical-align: top;
+    background-color: $space-background;
+    background-image: url("/images/svg/star1300-900.svg");
+    background-size: cover;
+    .snsicons {
+        ul {
+            text-align: center;
+            li {
+                display: inline-block;
+                padding: 0px;
+                list-style: none;
+            }
+        }
+    }
+    span {
+        position: absolute;
+        bottom: 5vh;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+}

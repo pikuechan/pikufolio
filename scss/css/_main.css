@@ -173,3 +173,34 @@ header h1 {
 /***********************************************************
                            FOOTER
 ***********************************************************/
+footer {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  vertical-align: top;
+  background-color: #212E45;
+  background-image: url("/images/svg/star1300-900.svg");
+  background-size: cover;
+}
+
+footer .snsicons ul {
+  text-align: center;
+}
+
+footer .snsicons ul li {
+  display: inline-block;
+  padding: 0px;
+  list-style: none;
+}
+
+footer span {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
