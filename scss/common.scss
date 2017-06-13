@@ -3,4 +3,9 @@
 'variables', //変数用パーシャル
 'mixin', //mixin用パーシャル
 'test', //test反映用パーシャル
+'font-test', //iconfont-test反映用パーシャル
 'main'; //pikufoliメインスタイル
+.icon {
+    font-size: 20px;
+    color: white;
+}
