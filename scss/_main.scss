@@ -65,42 +65,57 @@ header {
     background-color: $space-background;
     background-image: url("/images/svg/star1300-900.svg");
     background-size: cover;
-    nav {
-        box-sizing: border-box;
-        height: 40px;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        padding: 13px 50px 10px 0;
-        background-color: $space-background;
-        opacity: 0.75;
-        vertical-align: center;
-        color: white;
-        font-size: 1.0rem;
-        ol {
-            text-align: center;
-            li {
-                display: inline-block;
-                padding: 0px;
-                a {
-                    padding: 1px 30px;
-                    border-radius: 15px;
-                    background-color: $space-background;
-                    &:hover {
-                        color: $space-green;
-                        background-color: #0f141d;
+    //961px以上の場合の指定（PC）
+    @media (min-width: 961px) {
+        nav {
+            box-sizing: border-box;
+            height: 40px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            padding: 13px 50px 10px 0;
+            background-color: $space-background;
+            opacity: 0.75;
+            vertical-align: center;
+            color: white;
+            font-size: 1.0rem;
+            ol {
+                text-align: center;
+                li {
+                    display: inline-block;
+                    padding: 0px;
+                    a {
+                        padding: 1px 30px;
+                        border-radius: 15px;
+                        background-color: $space-background;
+                        &:hover {
+                            color: $space-green;
+                            background-color: #0f141d;
+                        }
                     }
                 }
             }
         }
+        h1 {
+            text-align: center;
+            line-height: 90vh;
+            font-size: 3.0rem;
+            font-weight: 700;
+            letter-spacing: 0.6rem;
+            color: $space-green;
+        }
     }
-    h1 {
-        text-align: center;
-        line-height: 90vh;
-        font-size: 3.0rem;
-        font-weight: 700;
-        letter-spacing: 0.6rem;
-        color: $space-green;
+    //960px以下の場合の指定（タブレット）
+    @media (max-width: 960px) {
+        nav {
+            opacity: 0.2;
+        }
+    }
+    //600px以下の場合の指定（モバイル）
+    @media (max-width: 600px) {
+        nav {
+            opacity: 1.0;
+        }
     }
 }
 

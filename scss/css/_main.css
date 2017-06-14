@@ -67,48 +67,57 @@ header {
   background-size: cover;
 }
 
-header nav {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 40px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  padding: 13px 50px 10px 0;
-  background-color: #212E45;
-  opacity: 0.75;
-  vertical-align: center;
-  color: white;
-  font-size: 1.0rem;
+@media (min-width: 961px) {
+  header nav {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 13px 50px 10px 0;
+    background-color: #212E45;
+    opacity: 0.75;
+    vertical-align: center;
+    color: white;
+    font-size: 1.0rem;
+  }
+  header nav ol {
+    text-align: center;
+  }
+  header nav ol li {
+    display: inline-block;
+    padding: 0px;
+  }
+  header nav ol li a {
+    padding: 1px 30px;
+    border-radius: 15px;
+    background-color: #212E45;
+  }
+  header nav ol li a:hover {
+    color: #CFED47;
+    background-color: #0f141d;
+  }
+  header h1 {
+    text-align: center;
+    line-height: 90vh;
+    font-size: 3.0rem;
+    font-weight: 700;
+    letter-spacing: 0.6rem;
+    color: #CFED47;
+  }
 }
 
-header nav ol {
-  text-align: center;
+@media (max-width: 960px) {
+  header nav {
+    opacity: 0.2;
+  }
 }
 
-header nav ol li {
-  display: inline-block;
-  padding: 0px;
-}
-
-header nav ol li a {
-  padding: 1px 30px;
-  border-radius: 15px;
-  background-color: #212E45;
-}
-
-header nav ol li a:hover {
-  color: #CFED47;
-  background-color: #0f141d;
-}
-
-header h1 {
-  text-align: center;
-  line-height: 90vh;
-  font-size: 3.0rem;
-  font-weight: 700;
-  letter-spacing: 0.6rem;
-  color: #CFED47;
+@media (max-width: 600px) {
+  header nav {
+    opacity: 1.0;
+  }
 }
 
 /***********************************************************
