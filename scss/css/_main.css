@@ -41,7 +41,7 @@ a {
   color: inherit;
 }
 
-a:hover {
+a:hover, a:active {
   text-decoration: none;
 }
 
@@ -174,8 +174,6 @@ header h1 {
                            FOOTER
 ***********************************************************/
 footer {
-  position: relative;
-  height: 20vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -186,21 +184,39 @@ footer {
   background-size: cover;
 }
 
+footer .snsicons {
+  height: 4rem;
+  color: white;
+  font-size: 3.5rem;
+  margin-top: 15px;
+}
+
 footer .snsicons ul {
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 footer .snsicons ul li {
   display: inline-block;
-  padding: 0px;
+  padding: 0 5px;
+  font-size: 3.0rem;
   list-style: none;
 }
 
-footer span {
-  position: absolute;
-  bottom: 5vh;
-  left: 0;
+footer .snsicons ul li a:hover {
+  color: #C7D7F2;
+}
+
+footer aside {
   width: 100%;
-  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 30px;
   color: white;
+  letter-spacing: 0.1rem;
+  font-size: 1.0rem;
+  text-align: center;
+  vertical-align: bottom;
 }

@@ -37,7 +37,9 @@ h5 {
 a {
     text-decoration: none;
     color: inherit;
-    &:hover {
+    &:hover,
+    &:active,
+    {
         text-decoration: none;
     }
 }
@@ -174,8 +176,8 @@ header {
 ***********************************************************/
 
 footer {
-    position: relative;
-    height: 20vh;
+    // height: 30vh;
+    // min-height: 100px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -185,21 +187,34 @@ footer {
     background-image: url("/images/svg/star1300-900.svg");
     background-size: cover;
     .snsicons {
+        height: 4rem;
+        color: white;
+        font-size: 3.5rem;
+        margin-top: 15px;
         ul {
             text-align: center;
+            padding: 0;
+            margin: 0;
             li {
                 display: inline-block;
-                padding: 0px;
+                padding: 0 5px;
+                font-size: 3.0rem;
                 list-style: none;
+                a:hover {
+                    color: $space-link;
+                }
             }
         }
     }
-    span {
-        position: absolute;
-        bottom: 5vh;
-        left: 0;
+    aside {
         width: 100%;
-        text-align: center;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 30px;
         color: white;
+        letter-spacing: 0.1rem;
+        font-size: 1.0rem;
+        text-align: center;
+        vertical-align: bottom;
     }
 }

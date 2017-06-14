@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?4ordcm");
-  src: url("fonts/icomoon.eot?4ordcm#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?4ordcm") format("truetype"), url("fonts/icomoon.woff?4ordcm") format("woff"), url("fonts/icomoon.svg?4ordcm#icomoon") format("svg");
+  src: url("../../fonts/icomoon.eot?4ordcm");
+  src: url("../../fonts/icomoon.eot?4ordcm#iefix") format("embedded-opentype"), url("../../fonts/icomoon.ttf?4ordcm") format("truetype"), url("../../fonts/icomoon.woff?4ordcm") format("woff"), url("../../fonts/icomoon.svg?4ordcm#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +23,6 @@
 
 .icon-cookpad:before {
   content: "\e900";
-  color: #f1931a;
 }
 
 .icon-book:before {
@@ -40,7 +39,6 @@
 
 .icon-heart:before {
   content: "\e904";
-  color: #b64b67;
 }
 
 .icon-instagram-with-circle:before {

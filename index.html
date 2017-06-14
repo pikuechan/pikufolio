@@ -9,20 +9,21 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
+    <link rel="stylesheet" href="scss/css/reset.css">
     <link rel="stylesheet" href="scss/css/common.css">
-    <link rel="stylesheet" href="scss/css/font-test.css">
-    <link rel="stylesheet" href="scss/css/_test.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/scroll.js"></script>
     <!-- <link rel="shortcut icon" href="ファビコンのパス"> -->
 </head>
 
 <body>
-    <header>
+    <header id="position_top">
         <nav>
             <ol>
-                <li><a>TOP</a></li>
-                <li><a>ABOUT ME</a></li>
-                <li><a>WORKS</a></li>
-                <li><a>SKILLS</a></li>
+                <li><a href="#position_top">TOP</a></li>
+                <li><a href="#position_aboutme">ABOUT ME</a></li>
+                <li><a href="#position_works">WORKS</a></li>
+                <li><a href="#position_skills">SKILLS</a></li>
             </ol>
 
         </nav>
@@ -32,23 +33,32 @@
         <img src="/images/svg/wave-earth.svg" width="100%" height="auto">
     </div>
     <main>
-        <section class="aboutme">
+        <section class="aboutme" id="position_aboutme">
             <h2>ABOUT ME</h2>
             hogehoge
         </section>
         <div class="space-top">
             <img src="/images/svg/wave-space.svg" width="100%" height="auto">
         </div>
-        <section class="works">
+        <section class="works" id="position_works">
             <h2>WORK & JOBS </h2>
             hogehoge
         </section>
         <div class="earth-top">
             <img src="/images/svg/wave-earth.svg" width="100%" height="auto">
         </div>
-        <section class="skills">
+        <section class="skills" id="position_skills">
             <h2>SKILLS </h2>
             hogehoge
+            <div id="font">
+                あいうえおアイウエオABCDEFG
+                <section>
+                    <div id="test01">あいうえおアイウエオABCDEFG</div>
+                    <div id="test02">あいうえおアイウエオABCDEFG</div>
+                    <div id="test03">あいうえおアイウエオABCDEFG</div>
+                    <div id="test04">ABCDEFG PIKUFOLIO</div>
+                </section>
+            </div>
         </section>
         <div class="space-top">
             <img src="/images/svg/wave-space.svg" width="100%" height="auto">
@@ -58,28 +68,27 @@
         <div class="snsicons">
             <ul>
                 <li>
+                    <a><span class="icon icon-twitter-with-circle"></span></a>
+                </li>
+                <li>
+                    <a><span class="icon icon-facebook-with-circle"></span></a>
+                </li>
+                <li>
+                    <a><span class="icon icon-instagram-with-circle"></span></a>
+                </li>
+                <li>
+                    <a><span class="icon icon-pinterest-with-circle"></span></a>
+                </li>
+                <li>
                     <a><span class="icon icon-cookpad"></span></a>
                 </li>
-                <li><span class="icon icon-cookpad"></span></li>
-                <li><span class="icon icon-cross"></span></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <a><span class="icon icon-book"></span></a>
+                </li>
             </ul>
         </div>
-        <span>Copyright ©️ 2017 pikuechan All Right Reserved</span>
+        <aside>Copyright ©️ 2017 pikuechan All Right Reserved</aside>
     </footer>
-
-    <div id="font">
-        あいうえおアイウエオABCDEFG
-        <section>
-            <div id="test01">あいうえおアイウエオABCDEFG</div>
-            <div id="test02">あいうえおアイウエオABCDEFG</div>
-            <div id="test03">あいうえおアイウエオABCDEFG</div>
-            <div id="test04">ABCDEFG PIKUFOLIO</div>
-        </section>
-    </div>
-
-    <!-- content area -->
 </body>
 
 </html>
