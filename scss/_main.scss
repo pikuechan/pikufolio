@@ -66,17 +66,17 @@ header {
     background-image: url("/images/svg/star1300-900.svg");
     background-size: cover;
     nav {
-        position: fixed;
-        top: 0;
         box-sizing: border-box;
         height: 40px;
         width: 100%;
-        padding: 10px 50px 10px 0;
+        position: fixed;
+        top: 0;
+        padding: 13px 50px 10px 0;
         background-color: $space-background;
+        opacity: 0.75;
+        vertical-align: center;
         color: white;
         font-size: 1.0rem;
-        font-weight: normal;
-        opacity: 0.75;
         ol {
             text-align: center;
             li {
@@ -143,12 +143,7 @@ header {
 ***********************************************************/
 
 footer {
-    // height: 30vh;
-    // min-height: 100px;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    border: none;
     vertical-align: top;
     background-color: $space-background;
     background-image: url("/images/svg/star1300-900.svg");
@@ -157,16 +152,13 @@ footer {
         height: 4rem;
         color: white;
         font-size: 3.5rem;
-        margin-top: 15px;
+        padding-top: 15px;
         ul {
             text-align: center;
-            padding: 0;
-            margin: 0;
             li {
                 display: inline-block;
                 padding: 0 5px;
                 font-size: 3.0rem;
-                list-style: none;
                 a:hover {
                     color: $space-link;
                 }
@@ -176,7 +168,6 @@ footer {
     aside {
         width: 100%;
         box-sizing: border-box;
-        margin: 0;
         padding: 30px;
         color: white;
         letter-spacing: 0.1rem;
