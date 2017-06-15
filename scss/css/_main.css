@@ -132,21 +132,20 @@ header h1 {
   }
   header nav .navmenu_list {
     display: none;
-    text-align: center;
   }
   header nav .navmenu_list li {
     display: block;
-    width: 100%;
-    padding: 0px;
+    line-height: 3rem;
   }
   header nav .navmenu_list li a {
-    padding: 1px 30px;
-    border-radius: 15px;
-    background-color: #212E45;
+    background-color: #151e2d;
   }
   header nav .navmenu_list li a:hover {
     color: #CFED47;
     background-color: #0f141d;
+  }
+  header nav .navmenu_list li a:first-child {
+    margin-left: 40px;
   }
   header h1 {
     font-size: 2.5rem;

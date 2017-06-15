@@ -122,18 +122,17 @@ header {
             }
             .navmenu_list {
                 display: none;
-                text-align: center;
                 li {
                     display: block;
-                    width: 100%;
-                    padding: 0px;
+                    line-height: 3rem;
                     a {
-                        padding: 1px 30px;
-                        border-radius: 15px;
-                        background-color: $space-background;
+                        background-color: darken($space-background, 7%);
                         &:hover {
                             color: $space-green;
                             background-color: #0f141d;
+                        }
+                        &:first-child {
+                            margin-left: 40px;
                         }
                     }
                 }
