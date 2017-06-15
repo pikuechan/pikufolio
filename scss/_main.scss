@@ -88,7 +88,7 @@ header {
                     background-color: $space-background;
                     &:hover {
                         color: $space-green;
-                        background-color: #0f141d;
+                        background-color: darken($space-background, 30%);
                     }
                 }
             }
@@ -109,28 +109,34 @@ header {
     @media (max-width: 960px) {
         nav {
             padding: 0;
+            height: auto;
+            &.nav-open {
+                opacity: 0.8;
+                background-color: darken($space-background, 7%);
+            }
             .navmenu {
                 display: inline-block;
                 font-size: 2.5rem;
                 float: right;
                 padding: 2px 10px 0 0;
             }
-            ol {
+            .navmenu_list {
                 display: none;
-                // text-align: center;
-                // li {
-                //     display: inline-block;
-                //     padding: 0px;
-                //     a {
-                //         padding: 1px 30px;
-                //         border-radius: 15px;
-                //         background-color: $space-background;
-                //         &:hover {
-                //             color: $space-green;
-                //             background-color: #0f141d;
-                //         }
-                //     }
-                // }
+                text-align: center;
+                li {
+                    display: block;
+                    width: 100%;
+                    padding: 0px;
+                    a {
+                        padding: 1px 30px;
+                        border-radius: 15px;
+                        background-color: $space-background;
+                        &:hover {
+                            color: $space-green;
+                            background-color: #0f141d;
+                        }
+                    }
+                }
             }
         }
         h1 {
@@ -139,7 +145,7 @@ header {
     }
     //600px以下の場合の指定（モバイル）
     @media (max-width: 600px) {
-        nav {
+        .nav-basic {
             opacity: 1.0;
         }
         h1 {
