@@ -1,14 +1,17 @@
 /* ###################################################
               ハンバーガーメニューの切り替え処理
 #####################################################*/
+
 $(function() {
     $(".navmenu").click(function() {
+        $("nav").toggleClass("nav-open");
         $(".navmenu").toggleClass("icon-menu");
         $(".navmenu").toggleClass("icon-cross");
-        $("nav").toggleClass("nav-open");
-        $(".navmenu_list").slideToggle("fast");
     });
 });
+
+
+//memo  クラスを一つにして処理をまとめないと、どうしても段階ができてカクカクしちゃうっぽい。
 
 /* ###################################################
               メニューのscroll処理
