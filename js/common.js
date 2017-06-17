@@ -8,6 +8,11 @@ $(function() {
         $(".navmenu").toggleClass("icon-menu");
         $(".navmenu").toggleClass("icon-cross");
     });
+    $(".navlink").click(function() {
+        $("nav").toggleClass("nav-open");
+        $(".navmenu").toggleClass("icon-menu");
+        $(".navmenu").toggleClass("icon-cross");
+    });
 });
 
 
