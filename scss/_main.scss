@@ -1,4 +1,5 @@
-@import "variables";
+@import "variable";
+@import "mixin";
 
 /***********************************************************
                             BODY / main
@@ -24,34 +25,12 @@ a {
                          COMMON PARTS
 ***********************************************************/
 
-@mixin border-waves($color) {
-    vertical-align: top;
-    background-color: $color;
-    img {
-        vertical-align: top;
-    }
-}
-
 .earth-top {
     @include border-waves($earth-background);
 }
 
 .space-top {
     @include border-waves($space-background);
-}
-
-%section-title {
-    h2 {
-        padding: 50px 0;
-        color: white;
-        text-align: center;
-        font-weight: 700;
-        font-size: 2.0rem;
-        letter-spacing: 0.2rem;
-        &:first-letter {
-            font-size: 3.0rem;
-        }
-    }
 }
 
 
@@ -125,7 +104,7 @@ header {
                 .navmenu_list {
                     display: block;
                     text-align: left;
-                    padding: 6px 0;
+                    padding: 5px 0 15px 0;
                     li {
                         display: block;
                         line-height: 3rem;
@@ -153,7 +132,11 @@ header {
         }
     }
     //600px以下の場合の指定（モバイル）
-    @media (max-width: 600px) {}
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 2.0rem;
+        }
+    }
 }
 
 
@@ -164,9 +147,20 @@ header {
 .aboutme {
     width: 100%;
     background-color: $earth-background;
-    @extend %section-title;
+    @include section-title;
+    @media (max-width: 960px) {
+        @include section-title(1.8rem, 0.18rem, 2.7rem);
+    }
+    @media (max-width: 480px) {
+        @include section-title(1.6rem,
+        0.16rem,
+        2.4rem);
+    }
 }
 
+//サイズ計算メモ
+//2:3=1.8:x  x=(3*1.8)/2= 2.7
+//2:3=1.6:x  x=(3*1.6)/2= 2.4
 
 /***********************************************************
                            WORKS
@@ -175,7 +169,15 @@ header {
 .works {
     width: 100%;
     background-color: $space-background;
-    @extend %section-title;
+    @include section-title;
+    @media (max-width: 960px) {
+        @include section-title(1.8rem, 0.18rem, 2.7rem);
+    }
+    @media (max-width: 480px) {
+        @include section-title(1.6rem,
+        0.16rem,
+        2.4rem);
+    }
 }
 
 
@@ -186,7 +188,15 @@ header {
 .skills {
     width: 100%;
     background-color: $earth-background;
-    @extend %section-title;
+    @include section-title;
+    @media (max-width: 960px) {
+        @include section-title(1.8rem, 0.18rem, 2.7rem);
+    }
+    @media (max-width: 480px) {
+        @include section-title(1.6rem,
+        0.16rem,
+        2.4rem);
+    }
 }
 
 
@@ -201,30 +211,85 @@ footer {
     background-image: url("/images/svg/star1300-900.svg");
     background-size: cover;
     .snsicons {
-        height: 4rem;
         color: white;
-        font-size: 3.5rem;
-        padding-top: 15px;
-        ul {
-            text-align: center;
-            li {
-                display: inline-block;
-                padding: 0 5px;
-                font-size: 3.0rem;
-                a:hover {
-                    color: $space-link;
-                }
+        font-size: 3rem;
+        padding-top: 20px;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 0 5px;
+            a:hover {
+                color: $space-green;
             }
         }
     }
     aside {
         width: 100%;
         box-sizing: border-box;
-        padding: 30px;
-        color: white;
-        letter-spacing: 0.1rem;
-        font-size: 1.0rem;
+        padding: 30px 0;
         text-align: center;
         vertical-align: bottom;
+        color: rgba(#fff, 0.7);
+        letter-spacing: 0.15rem;
+        font-size: 0.8rem;
+    }
+    //タブレット版
+    @media (max-width:960px) {
+        .snsicons {
+            font-size: 2.6rem;
+        }
+    }
+    @media (max-width: 480px) {
+        .snsicons {
+            font-size: 2.4rem;
+        }
+        aside {
+            font-size: 0.6rem;
+            padding: 25px 0;
+        }
+    }
+}
+
+
+/***********************************************************
+                           TEXT
+***********************************************************/
+
+//test反映用のパーシャル
+div {
+    &#font {
+        section {
+            font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
+        }
+        #test01 {
+            font-weight: bold;
+        }
+        #test02 {
+            font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
+        }
+        #test03 {
+            font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
+            color: #fafa99;
+            font-size: 2.0em;
+            font-weight: 900;
+        }
+        #test04 {
+            //フォントの横幅を150%にするテストをしてみる
+            font-family: 'Palanquin Dark', sans-serif;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            font-stretch: ultra-expanded;
+        }
+    }
+    &#headertest {
+        height: 85vh;
+        width: 100%;
+        background-color: $space-background;
+        background-image: url("/images/svg/star1300-900.svg");
+        background-size: cover;
+        h1 {
+            text-align: center;
+            line-height: 90vh;
+        }
     }
 }

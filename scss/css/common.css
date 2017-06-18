@@ -4,51 +4,13 @@
 ****************************************************************/
 /*宇宙背景ver. カラーリング*/
 /*地球背景ver. カラーリング*/
-@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:400,700");
-div#font section {
-  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
-}
-
-div#font #test01 {
-  font-weight: bold;
-}
-
-div#font #test02 {
-  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
-}
-
-div#font #test03 {
-  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
-  color: #fafa99;
-  font-size: 2.0em;
-  font-weight: 900;
-}
-
-div#font #test04 {
-  font-family: 'Palanquin Dark', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  font-stretch: ultra-expanded;
-}
-
-div#headertest {
-  height: 85vh;
-  width: 100%;
-  background-color: #212E45;
-  background-image: url("/images/svg/star1300-900.svg");
-  background-size: cover;
-}
-
-div#headertest h1 {
-  text-align: center;
-  line-height: 90vh;
-}
-
 /***************************************************************
-                          Color Settings
+                          Size Settings
 ****************************************************************/
-/*宇宙背景ver. カラーリング*/
-/*地球背景ver. カラーリング*/
+/***********************************************************
+                         MIXIN
+***********************************************************/
+@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:400,700");
 @font-face {
   font-family: 'icomoon';
   src: url("/fonts/icomoon.eot?nvtilu");
@@ -134,6 +96,12 @@ div#headertest h1 {
 ****************************************************************/
 /*宇宙背景ver. カラーリング*/
 /*地球背景ver. カラーリング*/
+/***************************************************************
+                          Size Settings
+****************************************************************/
+/***********************************************************
+                         MIXIN
+***********************************************************/
 /***********************************************************
                             BODY / main
 ***********************************************************/
@@ -170,19 +138,6 @@ a {
 
 .space-top img {
   vertical-align: top;
-}
-
-.aboutme h2, .works h2, .skills h2 {
-  padding: 50px 0;
-  color: white;
-  text-align: center;
-  font-weight: 700;
-  font-size: 2.0rem;
-  letter-spacing: 0.2rem;
-}
-
-.aboutme h2:first-letter, .works h2:first-letter, .skills h2:first-letter {
-  font-size: 3.0rem;
 }
 
 /***********************************************************
@@ -264,7 +219,7 @@ header h1 {
   header nav.nav-open .navmenu_list {
     display: block;
     text-align: left;
-    padding: 6px 0;
+    padding: 5px 0 15px 0;
   }
   header nav.nav-open .navmenu_list li {
     display: block;
@@ -290,12 +245,59 @@ header h1 {
   }
 }
 
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.0rem;
+  }
+}
+
 /***********************************************************
                            ABOUT ME
 ***********************************************************/
 .aboutme {
   width: 100%;
   background-color: #ACCC1E;
+}
+
+.aboutme h2 {
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.aboutme h2:first-letter {
+  font-size: 3rem;
+}
+
+@media (max-width: 960px) {
+  .aboutme h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+  .aboutme h2:first-letter {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutme h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  .aboutme h2:first-letter {
+    font-size: 2.4rem;
+  }
 }
 
 /***********************************************************
@@ -306,12 +308,94 @@ header h1 {
   background-color: #212E45;
 }
 
+.works h2 {
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.works h2:first-letter {
+  font-size: 3rem;
+}
+
+@media (max-width: 960px) {
+  .works h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+  .works h2:first-letter {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .works h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  .works h2:first-letter {
+    font-size: 2.4rem;
+  }
+}
+
 /***********************************************************
                            SKILLS
 ***********************************************************/
 .skills {
   width: 100%;
   background-color: #ACCC1E;
+}
+
+.skills h2 {
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.skills h2:first-letter {
+  font-size: 3rem;
+}
+
+@media (max-width: 960px) {
+  .skills h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+  .skills h2:first-letter {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  .skills h2:first-letter {
+    font-size: 2.4rem;
+  }
 }
 
 /***********************************************************
@@ -326,34 +410,87 @@ footer {
 }
 
 footer .snsicons {
-  height: 4rem;
   color: white;
-  font-size: 3.5rem;
-  padding-top: 15px;
-}
-
-footer .snsicons ul {
+  font-size: 3rem;
+  padding-top: 20px;
   text-align: center;
 }
 
-footer .snsicons ul li {
+footer .snsicons li {
   display: inline-block;
   padding: 0 5px;
-  font-size: 3.0rem;
 }
 
-footer .snsicons ul li a:hover {
-  color: #C7D7F2;
+footer .snsicons li a:hover {
+  color: #CFED47;
 }
 
 footer aside {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 30px;
-  color: white;
-  letter-spacing: 0.1rem;
-  font-size: 1.0rem;
+  padding: 30px 0;
   text-align: center;
   vertical-align: bottom;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.15rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 960px) {
+  footer .snsicons {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  footer .snsicons {
+    font-size: 2.4rem;
+  }
+  footer aside {
+    font-size: 0.6rem;
+    padding: 25px 0;
+  }
+}
+
+/***********************************************************
+                           TEXT
+***********************************************************/
+div#font section {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
+}
+
+div#font #test01 {
+  font-weight: bold;
+}
+
+div#font #test02 {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
+}
+
+div#font #test03 {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
+  color: #fafa99;
+  font-size: 2.0em;
+  font-weight: 900;
+}
+
+div#font #test04 {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-stretch: ultra-expanded;
+}
+
+div#headertest {
+  height: 85vh;
+  width: 100%;
+  background-color: #212E45;
+  background-image: url("/images/svg/star1300-900.svg");
+  background-size: cover;
+}
+
+div#headertest h1 {
+  text-align: center;
+  line-height: 90vh;
 }

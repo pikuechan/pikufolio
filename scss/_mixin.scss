@@ -1,1 +1,27 @@
 // @mixin作成用のパーシャルファイル
+
+/***********************************************************
+                         MIXIN
+***********************************************************/
+
+@mixin border-waves($color) {
+    vertical-align: top;
+    background-color: $color;
+    img {
+        vertical-align: top;
+    }
+}
+
+@mixin section-title($title-size:2.0rem, $title-scpace:0.2rem, $first-letter:3.0rem) {
+    h2 {
+        padding: 50px 0;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+        font-size: $title-size;
+        letter-spacing: 0.2rem;
+        &:first-letter {
+            font-size: $first-letter;
+        }
+    }
+}

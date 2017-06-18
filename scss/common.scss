@@ -1,6 +1,5 @@
 @charset 'utf-8';
-@import 'test', //TEST用
-'variables', //変数
-'mixin', //mixin
-'pikufont', //iconfont
-'main'; //pikufoliメインスタイル
+@import 'variable',
+'mixin',
+'pikufont',
+'main';

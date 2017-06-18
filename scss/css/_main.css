@@ -4,6 +4,12 @@
 ****************************************************************/
 /*宇宙背景ver. カラーリング*/
 /*地球背景ver. カラーリング*/
+/***************************************************************
+                          Size Settings
+****************************************************************/
+/***********************************************************
+                         MIXIN
+***********************************************************/
 /***********************************************************
                             BODY / main
 ***********************************************************/
@@ -41,19 +47,6 @@ a {
 
 .space-top img {
   vertical-align: top;
-}
-
-.aboutme h2, .works h2, .skills h2 {
-  padding: 50px 0;
-  color: white;
-  text-align: center;
-  font-weight: 700;
-  font-size: 2.0rem;
-  letter-spacing: 0.2rem;
-}
-
-.aboutme h2:first-letter, .works h2:first-letter, .skills h2:first-letter {
-  font-size: 3.0rem;
 }
 
 /***********************************************************
@@ -135,7 +128,7 @@ header h1 {
   header nav.nav-open .navmenu_list {
     display: block;
     text-align: left;
-    padding: 6px 0;
+    padding: 5px 0 15px 0;
   }
   header nav.nav-open .navmenu_list li {
     display: block;
@@ -161,12 +154,59 @@ header h1 {
   }
 }
 
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.0rem;
+  }
+}
+
 /***********************************************************
                            ABOUT ME
 ***********************************************************/
 .aboutme {
   width: 100%;
   background-color: #ACCC1E;
+}
+
+.aboutme h2 {
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.aboutme h2:first-letter {
+  font-size: 3rem;
+}
+
+@media (max-width: 960px) {
+  .aboutme h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+  .aboutme h2:first-letter {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutme h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  .aboutme h2:first-letter {
+    font-size: 2.4rem;
+  }
 }
 
 /***********************************************************
@@ -177,12 +217,94 @@ header h1 {
   background-color: #212E45;
 }
 
+.works h2 {
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.works h2:first-letter {
+  font-size: 3rem;
+}
+
+@media (max-width: 960px) {
+  .works h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+  .works h2:first-letter {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .works h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  .works h2:first-letter {
+    font-size: 2.4rem;
+  }
+}
+
 /***********************************************************
                            SKILLS
 ***********************************************************/
 .skills {
   width: 100%;
   background-color: #ACCC1E;
+}
+
+.skills h2 {
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.skills h2:first-letter {
+  font-size: 3rem;
+}
+
+@media (max-width: 960px) {
+  .skills h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+  .skills h2:first-letter {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills h2 {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  .skills h2:first-letter {
+    font-size: 2.4rem;
+  }
 }
 
 /***********************************************************
@@ -227,4 +349,46 @@ footer aside {
   font-size: 1.0rem;
   text-align: center;
   vertical-align: bottom;
+}
+
+/***********************************************************
+                           TEXT
+***********************************************************/
+div#font section {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
+}
+
+div#font #test01 {
+  font-weight: bold;
+}
+
+div#font #test02 {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
+}
+
+div#font #test03 {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
+  color: #fafa99;
+  font-size: 2.0em;
+  font-weight: 900;
+}
+
+div#font #test04 {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-stretch: ultra-expanded;
+}
+
+div#headertest {
+  height: 85vh;
+  width: 100%;
+  background-color: #212E45;
+  background-image: url("/images/svg/star1300-900.svg");
+  background-size: cover;
+}
+
+div#headertest h1 {
+  text-align: center;
+  line-height: 90vh;
 }
