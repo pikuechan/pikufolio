@@ -1352,6 +1352,128 @@
                          MIXIN
 ***********************************************************/
 /***********************************************************
+                           HEADER
+***********************************************************/
+header {
+  height: 85vh;
+  width: 100%;
+  background-color: #212E45;
+  background-image: url("/images/svg/star1300-900.svg");
+  background-size: cover;
+}
+
+header nav {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 13px 50px 10px 0;
+  background-color: #212E45;
+  opacity: 0.75;
+  vertical-align: center;
+  color: white;
+  font-size: 1.0rem;
+}
+
+header nav ol {
+  text-align: center;
+}
+
+header nav ol li {
+  display: inline-block;
+  padding: 0px;
+}
+
+header nav ol li a {
+  padding: 1px 30px;
+}
+
+header nav ol li a:hover {
+  color: #CFED47;
+  background-color: black;
+  border-radius: 15px;
+}
+
+header nav .navmenu {
+  display: none;
+}
+
+header h1 {
+  text-align: center;
+  line-height: 90vh;
+  font-size: 3.0rem;
+  font-weight: 700;
+  letter-spacing: 0.6rem;
+  color: #CFED47;
+}
+
+@media (max-width: 960px) {
+  header nav {
+    padding: 0;
+    height: auto;
+  }
+  header nav .navmenu {
+    display: block;
+    font-size: 2.5rem;
+    float: right;
+    padding: 2px 5px 0 0;
+  }
+  header nav .navmenu_list {
+    display: none;
+  }
+  header nav.nav-open {
+    opacity: 0.9;
+    background-color: #151e2d;
+  }
+  header nav.nav-open .navmenu_list {
+    display: block;
+    text-align: left;
+    padding: 15px 0;
+  }
+  header nav.nav-open .navmenu_list li {
+    display: block;
+    line-height: 3rem;
+    text-align: center;
+    margin: 0 10vw;
+    border-bottom: 2px solid;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  header nav.nav-open .navmenu_list li:last-child {
+    border-bottom: none;
+  }
+  header nav.nav-open .navmenu_list li:hover {
+    color: #CFED47;
+    border-radius: 0px;
+    background-color: #080c11;
+  }
+  header nav.nav-open .navmenu_list li a:hover {
+    background-color: #080c11;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2.0rem;
+  }
+}
+
+/***************************************************************
+                          Color Settings
+****************************************************************/
+/*宇宙背景ver. カラーリング*/
+/*地球背景ver. カラーリング*/
+/***************************************************************
+                          Size Settings
+****************************************************************/
+/***********************************************************
+                         MIXIN
+***********************************************************/
+/***********************************************************
                             BODY / main
 ***********************************************************/
 :root {
