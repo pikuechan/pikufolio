@@ -13,11 +13,10 @@ header {
     background-size: cover;
     nav {
         box-sizing: border-box;
-        height: 40px;
         width: 100%;
         position: fixed;
         top: 0;
-        padding: 13px 50px 10px 0;
+        padding: 8px 50px 8px 0;
         background-color: $space-background;
         opacity: 0.75;
         vertical-align: center;
@@ -27,9 +26,9 @@ header {
             text-align: center;
             li {
                 display: inline-block;
-                padding: 0px;
                 a {
-                    padding: 1px 30px;
+                    display: inline-block;
+                    padding: 6px 30px;
                     &:hover {
                         color: $space-green;
                         background-color: darken($space-background, 30%);
@@ -60,6 +59,7 @@ header {
                 font-size: 2.5rem;
                 float: right;
                 padding: 2px 5px 0 0;
+                cursor: pointer;
             }
             .navmenu_list {
                 display: none;
@@ -74,7 +74,7 @@ header {
                     padding: 15px 0;
                     li {
                         display: block;
-                        line-height: 3rem;
+                        line-height: 2.5rem;
                         text-align: center;
                         margin: 0 10vw;
                         border-bottom: 2px solid;
@@ -88,6 +88,7 @@ header {
                             background-color: darken($space-background, 15%);
                         }
                         a {
+                            display: block;
                             &:hover {
                                 background-color: darken($space-background, 15%);
                             }
