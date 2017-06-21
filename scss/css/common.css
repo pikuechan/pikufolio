@@ -1468,7 +1468,7 @@ header h1 {
   header nav.nav-open .navmenu_list {
     display: block;
     text-align: left;
-    padding: 5px 0 15px 0;
+    padding: 15px 0;
   }
   header nav.nav-open .navmenu_list li {
     display: block;
@@ -1481,13 +1481,13 @@ header h1 {
   header nav.nav-open .navmenu_list li:last-child {
     border-bottom: none;
   }
-  header nav.nav-open .navmenu_list li a {
-    padding: 0;
-    width: 100%;
+  header nav.nav-open .navmenu_list li:hover {
+    color: #CFED47;
+    border-radius: 0px;
+    background-color: #080c11;
   }
   header nav.nav-open .navmenu_list li a:hover {
-    color: #CFED47;
-    border: none;
+    background-color: #080c11;
   }
   header h1 {
     font-size: 2.5rem;

@@ -104,7 +104,7 @@ header {
                 .navmenu_list {
                     display: block;
                     text-align: left;
-                    padding: 5px 0 15px 0;
+                    padding: 15px 0;
                     li {
                         display: block;
                         line-height: 3rem;
@@ -115,12 +115,14 @@ header {
                         &:last-child {
                             border-bottom: none;
                         }
+                        &:hover {
+                            color: $space-green;
+                            border-radius: 0px;
+                            background-color: darken($space-background, 15%);
+                        }
                         a {
-                            padding: 0;
-                            width: 100%;
                             &:hover {
-                                color: $space-green;
-                                border: none;
+                                background-color: darken($space-background, 15%);
                             }
                         }
                     }
