@@ -14,7 +14,9 @@
 
 @mixin section-title($title-size:2.0rem, $title-scpace:0.2rem, $first-letter:3.0rem) {
     h2 {
-        padding: 50px 0;
+        padding: 0;
+        padding-top: 100px;
+        padding-bottom: 80px;
         color: white;
         text-align: center;
         font-weight: 700;
@@ -23,5 +25,18 @@
         &:first-letter {
             font-size: $first-letter;
         }
+    }
+}
+
+@mixin base-area-pc($color, $display:flex, $flex-flow:column) {
+    width: 100%;
+    background-color: $color;
+    &__content {
+        display: $display;
+        flex-flow: $flex-flow;
+        width: 76vw;
+        max-width: 1280px;
+        margin: auto;
+        padding-bottom: 150px;
     }
 }
