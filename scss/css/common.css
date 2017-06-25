@@ -1348,6 +1348,192 @@
 /***************************************************************
                           Size Settings
 ****************************************************************/
+/* PCver */
+.cbp_tmtimeline {
+  margin: 120px 0 0 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  /* The line */
+  /* The icons */
+  /* The date/time */
+  /* Right content */
+}
+
+.cbp_tmtimeline li {
+  position: relative;
+}
+
+.cbp_tmtimeline:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  bottom: 0;
+  width: 8px;
+  background: #ddeaa3;
+  left: 24%;
+  margin-left: -10px;
+}
+
+.cbp_tmtimeline > li .cbp_tmicon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.4em;
+  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  color: #ddeaa3;
+  background: #ACCC1E;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 6px #ddeaa3;
+  box-shadow: 0 0 0 6px #ddeaa3;
+  text-align: center;
+  left: 24%;
+  top: 12px;
+  margin: 0 0 0 -25px;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime {
+  display: block;
+  width: 18%;
+  padding-right: 80px;
+  margin-top: 15px;
+  text-align: right;
+  position: absolute;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span {
+  display: inline-block;
+  text-align: right;
+  color: #ddeaa3;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span.num {
+  font-size: 1.8rem;
+}
+
+.cbp_tmtimeline > li .cbp_tmtime span.char {
+  font-size: 1.0rem;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel {
+  margin: 0 10% 40px 30%;
+  background: #ddeaa3;
+  color: #3D4E3D;
+  padding: 16px 24px;
+  font-size: 1.0rem;
+  line-height: 1.8rem;
+  position: relative;
+  border-radius: 5px;
+  /* The triangle */
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel p {
+  padding: 10px 0;
+  font-size: 0.8rem;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel h3 {
+  margin-top: 0px;
+  padding: 0 0 10px 0;
+  border-bottom: 2px dotted #859f85;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #ddeaa3;
+  border-width: 10px;
+  top: 20px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+  background: #3D4E3D;
+  color: #dbe2db;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+  border-right-color: #3D4E3D;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) h3 {
+  margin-top: 0px;
+  padding: 0 0 10px 0;
+  border-bottom: 2px dotted #859f85;
+  font-weight: 100;
+}
+
+/* Mobile & Tablet */
+@media screen and (max-width: 960px) {
+  .cbp_tmtimeline {
+    margin-top: 50px;
+  }
+  .cbp_tmtimeline:before {
+    display: none;
+  }
+  .cbp_tmtimeline > li .cbp_tmtime {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 60px;
+    text-align: left;
+  }
+  .cbp_tmtimeline > li .cbp_tmtime span {
+    display: inline-block;
+    text-align: left;
+    color: #ddeaa3;
+  }
+  .cbp_tmtimeline > li .cbp_tmtime span.num {
+    font-size: 1.5rem;
+  }
+  .cbp_tmtimeline > li .cbp_tmtime span.char {
+    font-size: 0.8rem;
+  }
+  .cbp_tmtimeline > li .cbp_tmlabel {
+    margin: 10px 0 30px 0;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 95%;
+  }
+  .cbp_tmtimeline > li .cbp_tmlabel:after {
+    right: auto;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: #ddeaa3;
+    top: -20px;
+  }
+  .cbp_tmtimeline > li .cbp_tmicon {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    -webkit-box-shadow: 0 0 0 4px #ddeaa3;
+    box-shadow: 0 0 0 4px #ddeaa3;
+    position: relative;
+    float: left;
+    left: auto;
+    margin: -55px 5px 0 15px;
+  }
+  .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+    border-right-color: transparent;
+    border-bottom-color: #3D4E3D;
+  }
+}
+
+/***************************************************************
+                          Color Settings
+****************************************************************/
+/*宇宙背景ver. カラーリング*/
+/*地球背景ver. カラーリング*/
+/***************************************************************
+                          Size Settings
+****************************************************************/
 /***********************************************************
                          MIXIN
 ***********************************************************/
@@ -1363,6 +1549,7 @@ header {
 }
 
 header nav {
+  z-index: 100;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
@@ -1538,6 +1725,29 @@ a {
 }
 
 .aboutme__content {
+  width: 76vw;
+  max-width: 1280px;
+  margin: auto;
+  padding-bottom: 150px;
+}
+
+.aboutme__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  width: 76vw;
+  max-width: 1280px;
+  margin: auto;
+  padding-bottom: 150px;
+}
+
+.aboutme__profile {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1547,33 +1757,27 @@ a {
   -webkit-flex-flow: row;
   -ms-flex-flow: row;
   flex-flow: row;
-  width: 76vw;
-  max-width: 1280px;
-  margin: auto;
-  padding-bottom: 150px;
-}
-
-.aboutme__photo {
-  width: 300px;
-  height: 300px;
-  border-radius: 300px;
-  margin-left: 5vw;
-}
-
-.aboutme__profile {
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   line-height: 2.2rem;
 }
 
 .aboutme__profile article {
-  text-shadow: 0px 0px 2rem #617311;
-  color: white;
+  text-shadow: 0px 0px 1rem #617311;
+  color: #EAF2C9;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 
-.aboutme__profile table {
-  color: white;
+.aboutme__profile img {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  margin-left: 5vw;
+}
+
+.aboutme__chronology {
+  z-index: 1;
 }
 
 @media (max-width: 960px) {
@@ -1589,6 +1793,17 @@ a {
   }
   .aboutme h2:first-letter {
     font-size: 2.7rem;
+  }
+  .aboutme__profile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-flow: column-reverse;
+    -ms-flex-flow: column-reverse;
+    flex-flow: column-reverse;
   }
 }
 

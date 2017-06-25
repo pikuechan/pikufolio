@@ -40,47 +40,52 @@ a {
 
 .aboutme {
     @include section-title;
-    @include base-area-pc($earth-background,
-    flex,
-    row);
-    // width: 100%;
-    // background-color: $earth-background;
-    // &__content {
-    //     display: flex;
-    //     flex-flow: row;
-    //     width: 76vw;
-    //     max-width: 1280px;
-    //     margin: auto;
-    //     padding-bottom: 150px;
-    // }
-    &__photo {
-        width: 300px;
-        height: 300px;
-        border-radius: 300px;
-        margin-left: 5vw;
+    @include base-area-pc($earth-background);
+    &__content {
+        display: flex;
+        flex-flow: column;
+        width: 76vw;
+        max-width: 1280px;
+        margin: auto;
+        padding-bottom: 150px;
     }
     &__profile {
+        display: flex;
+        flex-flow: row;
         font-size: 1.2rem;
         letter-spacing: 0.1rem;
         line-height: 2.2rem;
         article {
-            text-shadow: 0px 0px 2rem $earth-text-shadow;
-            color: white;
+            text-shadow: 0px 0px 1rem $earth-text-shadow;
+            color: $earth-text;
             margin-bottom: 50px;
+            margin-top: 20px;
         }
-        table {
-            color: white;
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            margin-left: 5vw;
         }
+    }
+    &__chronology {
+        z-index: 1;
     }
     //タブレット
     @media (max-width: 960px) {
-        @include section-title(1.8rem,
+        @include section-title(white,
+        1.8rem,
         0.18rem,
         2.7rem);
+        &__profile {
+            display: flex;
+            flex-flow: column-reverse;
+        }
     }
     //モバイル
     @media (max-width: 480px) {
-        @include section-title(1.6rem,
+        @include section-title(white,
+        1.6rem,
         0.16rem,
         2.4rem);
     }
@@ -99,10 +104,11 @@ a {
     background-color: $space-background;
     @include section-title;
     @media (max-width: 960px) {
-        @include section-title(1.8rem, 0.18rem, 2.7rem);
+        @include section-title(white, 1.8rem, 0.18rem, 2.7rem);
     }
     @media (max-width: 480px) {
-        @include section-title(1.6rem,
+        @include section-title(white,
+        1.6rem,
         0.16rem,
         2.4rem);
     }
@@ -118,10 +124,11 @@ a {
     background-color: $earth-background;
     @include section-title;
     @media (max-width: 960px) {
-        @include section-title(1.8rem, 0.18rem, 2.7rem);
+        @include section-title(white, 1.8rem, 0.18rem, 2.7rem);
     }
     @media (max-width: 480px) {
-        @include section-title(1.6rem,
+        @include section-title(white,
+        1.6rem,
         0.16rem,
         2.4rem);
     }

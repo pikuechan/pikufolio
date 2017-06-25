@@ -12,6 +12,7 @@ header {
     background-image: url("/images/svg/star1300-900.svg");
     background-size: cover;
     nav {
+        z-index: 100;
         box-sizing: border-box;
         width: 100%;
         position: fixed;
