@@ -1,0 +1,91 @@
+@import "variable";
+@import "mixin";
+
+/***********************************************************
+                           ABOUT ME
+***********************************************************/
+
+.aboutme {
+    @include section-title-pc;
+    @include base-area-pc($earth-background);
+    &__content {
+        display: flex;
+        flex-flow: column;
+        width: 76vw;
+        max-width: 1280px;
+        margin: auto;
+        padding-bottom: 150px;
+    }
+    &__profile {
+        display: flex;
+        flex-flow: row;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        line-height: 2.4rem;
+        article {
+            text-shadow: 0px 0px 1rem $earth-text-shadow;
+            color: $earth-text;
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            margin-left: 5vw;
+        }
+    }
+    &__chronology {
+        z-index: 1;
+    }
+    //タブレット
+    @media (max-width: 960px) {
+        @include section-title-tablet;
+        &__profile {
+            display: flex;
+            flex-flow: column-reverse;
+            font-size: 1.1rem;
+            article {
+                margin: 80px 0;
+            }
+            img {
+                width: 50vw;
+                height: auto;
+                min-width: 240px;
+                min-height: 240px;
+                max-width: 340px;
+                max-height: 340px;
+                border-radius: 300px;
+                margin-left: 0vw;
+                margin: auto;
+            }
+        }
+    }
+    //モバイル
+    @media (max-width: 480px) {
+        @include base-area-mobile($earth-background);
+        @include section-title-mobile;
+        &__profile {
+            font-size: 1.0rem;
+            line-height: 2.0rem;
+            article {
+                margin: 60px 0;
+            }
+            img {
+                width: 50vw;
+                height: auto;
+                min-width: 240px;
+                min-height: 240px;
+                max-width: 340px;
+                max-height: 340px;
+                border-radius: 300px;
+                margin-left: 0vw;
+                margin: auto;
+            }
+        }
+    }
+}
+
+//サイズ計算メモ
+//2:3=1.8:x  x=(3*1.8)/2= 2.7
+//2:3=1.6:x  x=(3*1.6)/2= 2.4

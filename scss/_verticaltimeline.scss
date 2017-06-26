@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 960px) {
     .cbp_tmtimeline {
-        margin-top: 50px;
+        margin-top: 0px;
         &:before {
             display: none;
         }
@@ -150,6 +150,9 @@
                     border-right-color: transparent;
                     border-bottom-color: $earth-light1;
                     top: -20px;
+                }
+                h3 {
+                    letter-spacing: 0.2rem;
                 }
             }
             .cbp_tmicon {
