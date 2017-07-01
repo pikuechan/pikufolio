@@ -2,6 +2,18 @@
 @import "mixin";
 
 /***********************************************************
+※mixin/extend/class name命名ルール
+
+-(シングルハイフン) 文字の接続
+__（アンダーバー）　パーツ 
+--（ダブルハイフン）　パターン
+
+*EXAMPLE
+section-border--earth：section borderのearthパターン
+***********************************************************/
+
+
+/***********************************************************
                             BODY / main
 ***********************************************************/
 
@@ -12,7 +24,15 @@
 
 body {
     font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
-    font-weight: 400;
+    .bold-text {
+        //和英どちらもboldになる
+        font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
+        font-weight: bold;
+    }
+    .thin-text {
+        //和文のみ細字になるが、英文はfont-weightを指定しても細くならない
+        font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
+    }
 }
 
 a {
@@ -22,142 +42,14 @@ a {
 
 
 /***********************************************************
-                         COMMON PARTS
+                      SECTION BORDER
 ***********************************************************/
 
-.earth-top {
-    @include border-waves($earth-background);
-}
-
-.space-top {
-    @include border-waves($space-background);
-}
-
-
-/***********************************************************
-                           WORKS
-***********************************************************/
-
-.works {
-    width: 100%;
-    background-color: $space-background;
-    @include section-title-pc;
-    @media (max-width: 960px) {
-        @include section-title-tablet;
+.section-border {
+    &--earth {
+        @include border-waves($earth-background);
     }
-    @media (max-width: 480px) {
-        @include section-title-mobile;
-    }
-}
-
-
-/***********************************************************
-                           SKILLS
-***********************************************************/
-
-.skills {
-    width: 100%;
-    background-color: $earth-background;
-    @include section-title-pc;
-    @media (max-width: 960px) {
-        @include section-title-tablet;
-    }
-    @media (max-width: 480px) {
-        @include section-title-mobile;
-    }
-}
-
-
-/***********************************************************
-                           FOOTER
-***********************************************************/
-
-footer {
-    width: 100%;
-    vertical-align: top;
-    background-color: $space-background;
-    background-image: url("/images/svg/star1300-900.svg");
-    background-size: cover;
-    .snsicons {
-        color: white;
-        font-size: 3rem;
-        padding-top: 20px;
-        text-align: center;
-        li {
-            display: inline-block;
-            padding: 0 5px;
-            a:hover {
-                color: $space-green;
-            }
-        }
-    }
-    aside {
-        width: 100%;
-        box-sizing: border-box;
-        padding: 30px 0;
-        text-align: center;
-        vertical-align: bottom;
-        color: rgba(#fff, 0.7);
-        letter-spacing: 0.15rem;
-        font-size: 0.8rem;
-    }
-    //タブレット版
-    @media (max-width:960px) {
-        .snsicons {
-            font-size: 2.6rem;
-        }
-    }
-    @media (max-width: 480px) {
-        .snsicons {
-            font-size: 2.4rem;
-        }
-        aside {
-            font-size: 0.6rem;
-            padding: 25px 0;
-        }
-    }
-}
-
-
-/***********************************************************
-                           TEXT
-***********************************************************/
-
-//test反映用のパーシャル
-div {
-    &#font {
-        section {
-            font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
-        }
-        #test01 {
-            font-weight: bold;
-        }
-        #test02 {
-            font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
-        }
-        #test03 {
-            font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
-            color: #fafa99;
-            font-size: 2.0em;
-            font-weight: 900;
-        }
-        #test04 {
-            //フォントの横幅を150%にするテストをしてみる
-            font-family: 'Palanquin Dark', sans-serif;
-            font-weight: bold;
-            letter-spacing: 0.1em;
-            font-stretch: ultra-expanded;
-        }
-    }
-    &#headertest {
-        height: 85vh;
-        width: 100%;
-        background-color: $space-background;
-        background-image: url("/images/svg/star1300-900.svg");
-        background-size: cover;
-        h1 {
-            text-align: center;
-            line-height: 90vh;
-        }
+    &--space {
+        @include border-waves($space-background);
     }
 }

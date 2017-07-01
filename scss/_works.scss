@@ -1,0 +1,27 @@
+@import "variable";
+@import "mixin";
+
+/***********************************************************
+                           WORKS
+***********************************************************/
+
+.works {
+    @include base-area--pc($space-background);
+    &__title {
+        @include section-title--pc;
+    }
+    &__description {
+        @include sentence--pc--basic($space-text);
+    }
+    @media (max-width: 960px) {
+        &__title {
+            @include section-title--tablet;
+        }
+    }
+    @media (max-width: 480px) {
+        @include base-area--mobile($space-background);
+        &__title {
+            @include section-title--mobile;
+        }
+    }
+}

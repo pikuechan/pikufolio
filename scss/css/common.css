@@ -14,7 +14,25 @@
                        SECTION BASE AREA
 ***********************************************************/
 /***********************************************************
-                       SECTION TITLE
+                       SECTION TITLE　
+***********************************************************/
+/***********************************************************
+                       SENTENCE STYLE　
+***********************************************************/
+/* large */
+/* basic */
+/* small */
+/***************************************************************
+                          Color Settings
+****************************************************************/
+/*宇宙背景ver. カラーリング*/
+/*地球背景ver. カラーリング*/
+/***************************************************************
+                          Size Settings
+****************************************************************/
+/***********************************************************
+                         EXTEMD
+@media内で使えないから使い回しのサイズ指定には使えなそう.....
 ***********************************************************/
 @import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:400,700");
 @font-face {
@@ -1354,185 +1372,75 @@
 /***************************************************************
                           Size Settings
 ****************************************************************/
-/* PCver */
-.cbp_tmtimeline {
-  margin: 120px 0 0 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  /* The line */
-  /* The icons */
-  /* The date/time */
-  /* Right content */
+/***********************************************************
+                         MIXIN
+***********************************************************/
+/***********************************************************
+                       SECTION BASE AREA
+***********************************************************/
+/***********************************************************
+                       SECTION TITLE　
+***********************************************************/
+/***********************************************************
+                       SENTENCE STYLE　
+***********************************************************/
+/* large */
+/* basic */
+/* small */
+/***********************************************************
+※mixin/extend/class name命名ルール
+
+-(シングルハイフン) 文字の接続
+__（アンダーバー）　パーツ 
+--（ダブルハイフン）　パターン
+
+*EXAMPLE
+section-border--earth：section borderのearthパターン
+***********************************************************/
+/***********************************************************
+                            BODY / main
+***********************************************************/
+:root {
+  font-size: 14px;
 }
 
-.cbp_tmtimeline li {
-  position: relative;
+body {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
 }
 
-.cbp_tmtimeline:before {
-  content: '';
-  position: absolute;
-  top: 12px;
-  bottom: 0;
-  width: 8px;
-  background: #ddeaa3;
-  left: 24%;
-  margin-left: -10px;
+body .bold-text {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
+  font-weight: bold;
 }
 
-.cbp_tmtimeline > li .cbp_tmicon {
-  width: 40px;
-  height: 40px;
-  font-size: 1.4em;
-  line-height: 40px;
-  -webkit-font-smoothing: antialiased;
-  position: absolute;
-  color: #ddeaa3;
-  background: #ACCC1E;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 6px #ddeaa3;
-  box-shadow: 0 0 0 6px #ddeaa3;
-  text-align: center;
-  left: 24%;
-  top: 12px;
-  margin: 0 0 0 -25px;
+body .thin-text {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
 }
 
-.cbp_tmtimeline > li .cbp_tmtime {
-  display: block;
-  width: 18%;
-  padding-right: 80px;
-  margin-top: 15px;
-  text-align: right;
-  position: absolute;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.cbp_tmtimeline > li .cbp_tmtime span {
-  display: inline-block;
-  text-align: right;
-  color: #ddeaa3;
+/***********************************************************
+                      SECTION BORDER
+***********************************************************/
+.section-border--earth {
+  vertical-align: top;
+  background-color: #ACCC1E;
 }
 
-.cbp_tmtimeline > li .cbp_tmtime span.num {
-  font-size: 1.8rem;
+.section-border--earth img {
+  vertical-align: top;
 }
 
-.cbp_tmtimeline > li .cbp_tmtime span.char {
-  font-size: 1.0rem;
+.section-border--space {
+  vertical-align: top;
+  background-color: #212E45;
 }
 
-.cbp_tmtimeline > li .cbp_tmlabel {
-  margin: 0 10% 40px 30%;
-  background: #ddeaa3;
-  color: #3D4E3D;
-  padding: 16px 24px;
-  font-size: 1.0rem;
-  line-height: 1.8rem;
-  position: relative;
-  border-radius: 5px;
-  /* The triangle */
-}
-
-.cbp_tmtimeline > li .cbp_tmlabel p {
-  padding: 10px 0;
-  font-size: 0.8rem;
-}
-
-.cbp_tmtimeline > li .cbp_tmlabel h3 {
-  margin-top: 0px;
-  padding: 0 0 10px 0;
-  border-bottom: 2px dotted #859f85;
-  font-weight: 100;
-  letter-spacing: 0.5rem;
-}
-
-.cbp_tmtimeline > li .cbp_tmlabel:after {
-  right: 100%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-right-color: #ddeaa3;
-  border-width: 10px;
-  top: 20px;
-}
-
-.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-  background: #3D4E3D;
-  color: #dbe2db;
-}
-
-.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-  border-right-color: #3D4E3D;
-}
-
-.cbp_tmtimeline > li:nth-child(odd) h3 {
-  margin-top: 0px;
-  padding: 0 0 10px 0;
-  border-bottom: 2px dotted #859f85;
-  font-weight: 100;
-}
-
-/* Mobile & Tablet */
-@media screen and (max-width: 960px) {
-  .cbp_tmtimeline {
-    margin-top: 0px;
-  }
-  .cbp_tmtimeline:before {
-    display: none;
-  }
-  .cbp_tmtimeline > li .cbp_tmtime {
-    width: 100%;
-    position: relative;
-    padding: 0 0 20px 60px;
-    text-align: left;
-  }
-  .cbp_tmtimeline > li .cbp_tmtime span {
-    display: inline-block;
-    text-align: left;
-    color: #ddeaa3;
-  }
-  .cbp_tmtimeline > li .cbp_tmtime span.num {
-    font-size: 1.5rem;
-  }
-  .cbp_tmtimeline > li .cbp_tmtime span.char {
-    font-size: 0.8rem;
-  }
-  .cbp_tmtimeline > li .cbp_tmlabel {
-    margin: 10px 0 30px 0;
-    padding: 1em;
-    font-weight: 400;
-    font-size: 95%;
-  }
-  .cbp_tmtimeline > li .cbp_tmlabel:after {
-    right: auto;
-    left: 20px;
-    border-right-color: transparent;
-    border-bottom-color: #ddeaa3;
-    top: -20px;
-  }
-  .cbp_tmtimeline > li .cbp_tmlabel h3 {
-    letter-spacing: 0.2rem;
-  }
-  .cbp_tmtimeline > li .cbp_tmicon {
-    width: 30px;
-    height: 30px;
-    font-size: 1.2rem;
-    line-height: 2.2rem;
-    -webkit-box-shadow: 0 0 0 4px #ddeaa3;
-    box-shadow: 0 0 0 4px #ddeaa3;
-    position: relative;
-    float: left;
-    left: auto;
-    margin: -55px 5px 0 15px;
-  }
-  .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-    border-right-color: transparent;
-    border-bottom-color: #3D4E3D;
-  }
+.section-border--space img {
+  vertical-align: top;
 }
 
 /***************************************************************
@@ -1550,8 +1458,14 @@
                        SECTION BASE AREA
 ***********************************************************/
 /***********************************************************
-                       SECTION TITLE
+                       SECTION TITLE　
 ***********************************************************/
+/***********************************************************
+                       SENTENCE STYLE　
+***********************************************************/
+/* large */
+/* basic */
+/* small */
 /***********************************************************
                            HEADER
 ***********************************************************/
@@ -1682,156 +1596,14 @@ header h1 {
                        SECTION BASE AREA
 ***********************************************************/
 /***********************************************************
-                       SECTION TITLE
+                       SECTION TITLE　
 ***********************************************************/
 /***********************************************************
-                            BODY / main
+                       SENTENCE STYLE　
 ***********************************************************/
-:root {
-  font-size: 14px;
-}
-
-body {
-  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
-  font-weight: 400;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/***********************************************************
-                         COMMON PARTS
-***********************************************************/
-.earth-top {
-  vertical-align: top;
-  background-color: #ACCC1E;
-}
-
-.earth-top img {
-  vertical-align: top;
-}
-
-.space-top {
-  vertical-align: top;
-  background-color: #212E45;
-}
-
-.space-top img {
-  vertical-align: top;
-}
-
-/***********************************************************
-                           WORKS
-***********************************************************/
-.works {
-  width: 100%;
-  background-color: #212E45;
-}
-
-.works h2 {
-  padding: 0;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  color: white;
-  text-align: center;
-  font-weight: 700;
-  font-size: 2.0rem;
-  letter-spacing: 0.2rem;
-}
-
-.works h2:first-letter {
-  font-size: 3.0rem;
-}
-
-@media (max-width: 960px) {
-  .works h2 {
-    padding: 0;
-    padding-top: 60px;
-    padding-bottom: 80px;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: 0.18rem;
-  }
-  .works h2:first-letter {
-    font-size: 2.7rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .works h2 {
-    padding: 0;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.6rem;
-    letter-spacing: 0.16rem;
-  }
-  .works h2:first-letter {
-    font-size: 2.4rem;
-  }
-}
-
-/***********************************************************
-                           SKILLS
-***********************************************************/
-.skills {
-  width: 100%;
-  background-color: #ACCC1E;
-}
-
-.skills h2 {
-  padding: 0;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  color: white;
-  text-align: center;
-  font-weight: 700;
-  font-size: 2.0rem;
-  letter-spacing: 0.2rem;
-}
-
-.skills h2:first-letter {
-  font-size: 3.0rem;
-}
-
-@media (max-width: 960px) {
-  .skills h2 {
-    padding: 0;
-    padding-top: 60px;
-    padding-bottom: 80px;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: 0.18rem;
-  }
-  .skills h2:first-letter {
-    font-size: 2.7rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .skills h2 {
-    padding: 0;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.6rem;
-    letter-spacing: 0.16rem;
-  }
-  .skills h2:first-letter {
-    font-size: 2.4rem;
-  }
-}
-
+/* large */
+/* basic */
+/* small */
 /***********************************************************
                            FOOTER
 ***********************************************************/
@@ -1859,7 +1631,7 @@ footer .snsicons li a:hover {
   color: #CFED47;
 }
 
-footer aside {
+footer .copyright {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1881,52 +1653,10 @@ footer aside {
   footer .snsicons {
     font-size: 2.4rem;
   }
-  footer aside {
+  footer .copyright {
     font-size: 0.6rem;
     padding: 25px 0;
   }
-}
-
-/***********************************************************
-                           TEXT
-***********************************************************/
-div#font section {
-  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
-}
-
-div#font #test01 {
-  font-weight: bold;
-}
-
-div#font #test02 {
-  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
-}
-
-div#font #test03 {
-  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
-  color: #fafa99;
-  font-size: 2.0em;
-  font-weight: 900;
-}
-
-div#font #test04 {
-  font-family: 'Palanquin Dark', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  font-stretch: ultra-expanded;
-}
-
-div#headertest {
-  height: 85vh;
-  width: 100%;
-  background-color: #212E45;
-  background-image: url("/images/svg/star1300-900.svg");
-  background-size: cover;
-}
-
-div#headertest h1 {
-  text-align: center;
-  line-height: 90vh;
 }
 
 /***************************************************************
@@ -1944,36 +1674,20 @@ div#headertest h1 {
                        SECTION BASE AREA
 ***********************************************************/
 /***********************************************************
-                       SECTION TITLE
+                       SECTION TITLE　
 ***********************************************************/
+/***********************************************************
+                       SENTENCE STYLE　
+***********************************************************/
+/* large */
+/* basic */
+/* small */
 /***********************************************************
                            ABOUT ME
 ***********************************************************/
 .aboutme {
   width: 100%;
   background-color: #ACCC1E;
-}
-
-.aboutme h2 {
-  padding: 0;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  color: white;
-  text-align: center;
-  font-weight: 700;
-  font-size: 2.0rem;
-  letter-spacing: 0.2rem;
-}
-
-.aboutme h2:first-letter {
-  font-size: 3.0rem;
-}
-
-.aboutme__content {
-  width: 76vw;
-  max-width: 1280px;
-  margin: auto;
-  padding-bottom: 150px;
 }
 
 .aboutme__content {
@@ -1990,9 +1704,29 @@ div#headertest h1 {
   max-width: 1280px;
   margin: auto;
   padding-bottom: 150px;
+  color: white;
+}
+
+.aboutme__title {
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.0rem;
+  letter-spacing: 0.2rem;
+}
+
+.aboutme__title:first-letter {
+  font-size: 3.0rem;
 }
 
 .aboutme__profile {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.4rem;
+  color: #edf1dc;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2002,14 +1736,10 @@ div#headertest h1 {
   -webkit-flex-flow: row;
   -ms-flex-flow: row;
   flex-flow: row;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  line-height: 2.4rem;
+  text-shadow: 0px 0px 1rem #87a017;
 }
 
 .aboutme__profile article {
-  text-shadow: 0px 0px 1rem #87a017;
-  color: #edf1dc;
   margin-bottom: 50px;
   margin-top: 20px;
 }
@@ -2021,12 +1751,8 @@ div#headertest h1 {
   margin-left: 5vw;
 }
 
-.aboutme__chronology {
-  z-index: 1;
-}
-
 @media (max-width: 960px) {
-  .aboutme h2 {
+  .aboutme__title {
     padding: 0;
     padding-top: 60px;
     padding-bottom: 80px;
@@ -2036,10 +1762,14 @@ div#headertest h1 {
     font-size: 1.8rem;
     letter-spacing: 0.18rem;
   }
-  .aboutme h2:first-letter {
+  .aboutme__title:first-letter {
     font-size: 2.7rem;
   }
   .aboutme__profile {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+    color: #edf1dc;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2049,7 +1779,6 @@ div#headertest h1 {
     -webkit-flex-flow: column-reverse;
     -ms-flex-flow: column-reverse;
     flex-flow: column-reverse;
-    font-size: 1.1rem;
   }
   .aboutme__profile article {
     margin: 80px 0;
@@ -2077,7 +1806,7 @@ div#headertest h1 {
     margin: auto;
     padding-bottom: 100px;
   }
-  .aboutme h2 {
+  .aboutme__title {
     padding: 0;
     padding-top: 50px;
     padding-bottom: 60px;
@@ -2087,12 +1816,14 @@ div#headertest h1 {
     font-size: 1.6rem;
     letter-spacing: 0.16rem;
   }
-  .aboutme h2:first-letter {
+  .aboutme__title:first-letter {
     font-size: 2.4rem;
   }
   .aboutme__profile {
     font-size: 1.0rem;
+    letter-spacing: 0.08rem;
     line-height: 2.0rem;
+    color: #edf1dc;
   }
   .aboutme__profile article {
     margin: 60px 0;
@@ -2109,3 +1840,339 @@ div#headertest h1 {
     margin: auto;
   }
 }
+
+/***********************************************************
+                           CHRONOLOGY
+***********************************************************/
+.aboutme__chronology {
+  margin: 120px 0 0 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  /* vartical line */
+  /* time icons */
+  /* time label */
+  /* Right content */
+}
+
+.aboutme__chronology li {
+  position: relative;
+}
+
+.aboutme__chronology:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  bottom: 0;
+  width: 8px;
+  background: #ddeaa3;
+  left: 24%;
+  margin-left: -10px;
+}
+
+.aboutme__chronology > li .chronology__icon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.4em;
+  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  color: #ddeaa3;
+  background: #ACCC1E;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 6px #ddeaa3;
+  box-shadow: 0 0 0 6px #ddeaa3;
+  text-align: center;
+  left: 24%;
+  top: 12px;
+  margin: 0 0 0 -25px;
+}
+
+.aboutme__chronology > li .chronology__timelabel {
+  display: block;
+  width: 18%;
+  padding-right: 80px;
+  margin-top: 15px;
+  text-align: right;
+  position: absolute;
+}
+
+.aboutme__chronology > li .chronology__timelabel span {
+  display: inline-block;
+  text-align: right;
+  color: #ddeaa3;
+}
+
+.aboutme__chronology > li .chronology__timelabel span.num {
+  font-size: 1.8rem;
+}
+
+.aboutme__chronology > li .chronology__timelabel span.char {
+  font-size: 1.0rem;
+}
+
+.aboutme__chronology > li .chronology__timecontent {
+  font-size: 1.0rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.0rem;
+  color: #3D4E3D;
+  margin: 0 10% 40px 30%;
+  background: #ddeaa3;
+  padding: 16px 24px;
+  position: relative;
+  border-radius: 5px;
+  /* The triangle */
+}
+
+.aboutme__chronology > li .chronology__timecontent h3 {
+  font-size: 1.0rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.0rem;
+  color: #3D4E3D;
+  margin-top: 0px;
+  padding: 0 0 10px 0;
+  border-bottom: 2px dotted #859f85;
+}
+
+.aboutme__chronology > li .chronology__timecontent p {
+  font-size: 0.8rem;
+  letter-spacing: 0.09rem;
+  line-height: 1.6rem;
+  color: #3D4E3D;
+  padding: 10px 0;
+}
+
+.aboutme__chronology > li .chronology__timecontent:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #ddeaa3;
+  border-width: 10px;
+  top: 20px;
+}
+
+.aboutme__chronology > li:nth-child(odd) .chronology__timecontent {
+  background: #3D4E3D;
+}
+
+.aboutme__chronology > li:nth-child(odd) .chronology__timecontent h3 {
+  color: #dbe2db;
+  margin-top: 0px;
+  padding: 0 0 10px 0;
+  border-bottom: 2px dotted #859f85;
+}
+
+.aboutme__chronology > li:nth-child(odd) .chronology__timecontent p {
+  color: #dbe2db;
+}
+
+.aboutme__chronology > li:nth-child(odd) .chronology__timecontent:after {
+  border-right-color: #3D4E3D;
+}
+
+@media screen and (max-width: 960px) {
+  .aboutme__chronology {
+    margin-top: 0px;
+  }
+  .aboutme__chronology:before {
+    display: none;
+  }
+  .aboutme__chronology > li .chronology__timelabel {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 60px;
+    text-align: left;
+  }
+  .aboutme__chronology > li .chronology__timelabel span {
+    display: inline-block;
+    text-align: left;
+    color: #ddeaa3;
+  }
+  .aboutme__chronology > li .chronology__timelabel span.num {
+    font-size: 1.5rem;
+  }
+  .aboutme__chronology > li .chronology__timelabel span.char {
+    font-size: 0.8rem;
+  }
+  .aboutme__chronology > li .chronology__timecontent {
+    margin: 10px 0 30px 0;
+    padding: 1em;
+  }
+  .aboutme__chronology > li .chronology__timecontent:after {
+    right: auto;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: #ddeaa3;
+    top: -20px;
+  }
+  .aboutme__chronology > li .chronology__timecontent h3 {
+    font-size: 0.9rem;
+    letter-spacing: 0.09rem;
+    line-height: 1.8rem;
+    color: #3D4E3D;
+  }
+  .aboutme__chronology > li .chronology__timecontent p {
+    font-size: 0.8rem;
+    letter-spacing: 0.09rem;
+    line-height: 1.4rem;
+    color: #3D4E3D;
+  }
+  .aboutme__chronology > li .chronology__icon {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    -webkit-box-shadow: 0 0 0 4px #ddeaa3;
+    box-shadow: 0 0 0 4px #ddeaa3;
+    position: relative;
+    float: left;
+    left: auto;
+    margin: -55px 5px 0 15px;
+  }
+  .aboutme__chronology > li:nth-child(odd) .chronology__timecontent:after {
+    border-right-color: transparent;
+    border-bottom-color: #3D4E3D;
+  }
+}
+
+/***************************************************************
+                          Color Settings
+****************************************************************/
+/*宇宙背景ver. カラーリング*/
+/*地球背景ver. カラーリング*/
+/***************************************************************
+                          Size Settings
+****************************************************************/
+/***********************************************************
+                         MIXIN
+***********************************************************/
+/***********************************************************
+                       SECTION BASE AREA
+***********************************************************/
+/***********************************************************
+                       SECTION TITLE　
+***********************************************************/
+/***********************************************************
+                       SENTENCE STYLE　
+***********************************************************/
+/* large */
+/* basic */
+/* small */
+/***********************************************************
+                           WORKS
+***********************************************************/
+.works {
+  width: 100%;
+  background-color: #212E45;
+}
+
+.works__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  width: 76vw;
+  max-width: 1280px;
+  margin: auto;
+  padding-bottom: 150px;
+  color: white;
+}
+
+.works__title {
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.0rem;
+  letter-spacing: 0.2rem;
+}
+
+.works__title:first-letter {
+  font-size: 3.0rem;
+}
+
+.works__description {
+  font-size: 1.0rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.0rem;
+  color: #d4d9e2;
+}
+
+@media (max-width: 960px) {
+  .works__title {
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.18rem;
+  }
+  .works__title:first-letter {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .works {
+    width: 100%;
+    background-color: #212E45;
+  }
+  .works__content {
+    width: 86vw;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+  .works__title {
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.16rem;
+  }
+  .works__title:first-letter {
+    font-size: 2.4rem;
+  }
+}
+
+/***************************************************************
+                          Color Settings
+****************************************************************/
+/*宇宙背景ver. カラーリング*/
+/*地球背景ver. カラーリング*/
+/***************************************************************
+                          Size Settings
+****************************************************************/
+/***********************************************************
+                         MIXIN
+***********************************************************/
+/***********************************************************
+                       SECTION BASE AREA
+***********************************************************/
+/***********************************************************
+                       SECTION TITLE　
+***********************************************************/
+/***********************************************************
+                       SENTENCE STYLE　
+***********************************************************/
+/* large */
+/* basic */
+/* small */
+/***********************************************************
+                           SKILLS
+***********************************************************/
