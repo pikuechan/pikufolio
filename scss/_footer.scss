@@ -19,8 +19,11 @@ footer {
         li {
             display: inline-block;
             padding: 0 5px;
-            a:hover {
-                color: $space-green;
+            a {
+                color: white;
+                &:hover {
+                    color: $space-green;
+                }
             }
         }
     }

@@ -30,6 +30,7 @@ header {
                 a {
                     display: inline-block;
                     padding: 6px 30px;
+                    color: white;
                     &:hover {
                         color: $space-green;
                         background-color: darken($space-background, 30%);
