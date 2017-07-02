@@ -6,6 +6,57 @@
 ***********************************************************/
 
 .skills {
-    @media (max-width: 960px) {}
-    @media (max-width: 480px) {}
+    @include base-area--pc($earth-background);
+    &__title {
+        @include section-title--pc;
+    }
+    .chart {
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: $earth-dark;
+        // text-shadow: $earth-text-shadow;
+        &__title {
+            @include sentence--pc--basic($earth-text);
+            font-weight: normal;
+            text-align: center;
+        }
+        &__area {
+            display: flex;
+        }
+        &__arrow {
+            display: block;
+            width: 30%;
+            padding-left: 20%;
+            font-size: 8rem;
+            color: $earth-text;
+            opacity: 0.8;
+            &:before {
+                display: block;
+                content: 'HIGH';
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 10px 3px;
+                ;
+            }
+            &:after {
+                display: block;
+                content: 'HIGH';
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 0 3px;
+            }
+        }
+    }
+    @media (max-width: 960px) {
+        &__title {
+            @include section-title--tablet;
+        }
+    }
+    //モバイル
+    @media (max-width: 480px) {
+        @include base-area--mobile($earth-background);
+        &__title {
+            @include section-title--mobile;
+        }
+    }
 }

@@ -18,12 +18,14 @@ $space-link: #C7D7F2; //宇宙背景用リンクカラー
 
 $earth-background: #ACCC1E; //地球背景カラー
 $earth-text: #edf1dc; //地球背景用テキストカラー
+$earth-dark: darken($earth-background, 10%); //テキストシャドウ、コンテンツ背景
+$earth-light: lighten($earth-background, 10%);
 $earth-light1: #ddeaa3; //地球背景用ライトカラー1
 $earth-light2: #BBD54C; //地球背景用ライトカラー2（サブコンテンツエリアカラー）
 $earth-blue1:#3D4E3D; //地球背景用アクセントカラー1
 $earth-blue2: #335788; //地球背景用アクセントカラー2 （サブタイトル、サブコンテンツ）
 $earth-red: #FF4B4B; //地球背景用アクセントカラー２（スキル用赤ハート）
-$earth-text-shadow: darken($earth-background, 10%); //地球背景用テキストカラー
+$earth-red2: #fd2b2b; //地球背景用アクセントカラー２（スキル用赤ハート）
 //$earth-link: #C7D7F2; //地球背景用リンクカラー ※未使用のためカラー未調整
 
 /***************************************************************

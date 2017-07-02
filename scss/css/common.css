@@ -1348,7 +1348,6 @@
 
 .icon-arrow:before {
   content: "\ea42";
-  color: #ff4b4b;
 }
 
 .icon-blog:before {
@@ -1361,7 +1360,6 @@
 
 .icon-skill-heart:before {
   content: "\ea45";
-  color: #b64b67;
 }
 
 /***************************************************************
@@ -1422,7 +1420,8 @@ a {
   color: #C7D7F2;
 }
 
-ul li {
+ul li,
+ol li {
   list-style: none;
 }
 
@@ -2612,6 +2611,132 @@ footer .copyright {
 /***********************************************************
                            SKILLS
 ***********************************************************/
+.skills {
+  width: 100%;
+  background-color: #ACCC1E;
+}
+
+.skills__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  width: 76vw;
+  max-width: 1280px;
+  margin: auto;
+  padding-bottom: 150px;
+  color: white;
+}
+
+.skills__title {
+  padding: 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.0rem;
+  letter-spacing: 0.2rem;
+}
+
+.skills__title:first-letter {
+  font-size: 3.0rem;
+}
+
+.skills .chart {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #87a017;
+}
+
+.skills .chart__title {
+  font-size: 0.95rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+  color: #edf1dc;
+  font-weight: normal;
+  text-align: center;
+}
+
+.skills .chart__area {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skills .chart__arrow {
+  display: block;
+  width: 30%;
+  padding-left: 20%;
+  font-size: 8rem;
+  color: #edf1dc;
+  opacity: 0.8;
+}
+
+.skills .chart__arrow:before {
+  display: block;
+  content: 'HIGH';
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 3px;
+}
+
+.skills .chart__arrow:after {
+  display: block;
+  content: 'HIGH';
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0 3px;
+}
+
+@media (max-width: 960px) {
+  .skills__title {
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.18rem;
+  }
+  .skills__title:first-letter {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    width: 100%;
+    background-color: #ACCC1E;
+  }
+  .skills__content {
+    width: 86vw;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+  .skills__title {
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.16rem;
+  }
+  .skills__title:first-letter {
+    font-size: 2.4rem;
+  }
+}
+
 /**
  * Lightcase - jQuery Plugin
  * The smart and flexible Lightbox Plugin.

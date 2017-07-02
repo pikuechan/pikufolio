@@ -14,7 +14,7 @@
         @include sentence--pc--large($earth-text);
         display: flex;
         flex-flow: row;
-        text-shadow: 0px 0px 1rem $earth-text-shadow;
+        text-shadow: 0px 0px 1rem $earth-dark;
         article {
             margin-bottom: 50px;
             margin-top: 20px;
