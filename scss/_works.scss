@@ -2,7 +2,7 @@
 @import "mixin";
 
 /***********************************************************
-                           WORKS
+                        WORKS
 ***********************************************************/
 
 .works {
@@ -12,16 +12,250 @@
     }
     &__description {
         @include sentence--pc--basic($space-text);
+        a {
+            letter-spacing: 0.2rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .joblist {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        &__items {
+            width: 25%;
+            .job__icon {
+                $icon-size: 6rem;
+                $icon-padding: 1.5rem;
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                margin: auto;
+                background-color: $space-gray;
+                box-sizing: border-box;
+                padding: 30px;
+                text-align: center;
+                &:before {
+                    font-family: 'pikufont';
+                    font-size: $icon-size;
+                    color: $space-green;
+                }
+                &:after {
+                    display: block;
+                    padding-top: $icon-padding;
+                    font-size: 1rem;
+                    letter-spacing: 0.1rem;
+                    color: lighten($space-green, 30%);
+                }
+                &--uiux {
+                    &:before {
+                        content: "\e9a3";
+                        font-size: $icon-size + 1rem;
+                    }
+                    &:after {
+                        content: "UI/UX DESIGN";
+                        padding-top: $icon-padding - 1rem;
+                    }
+                }
+                &--uxwriting {
+                    &:before {
+                        content: "\e9e8";
+                    }
+                    &:after {
+                        content: "UX WRITING";
+                    }
+                }
+                &--direction {
+                    &:before {
+                        content: "\e9cb";
+                    }
+                    &:after {
+                        content: "DIRECTION";
+                    }
+                }
+                &--planning {
+                    &:before {
+                        font-size: $icon-size - 0.5rem;
+                        // content: "\e9e7"; //紙飛行機
+                        // content: "\e9e6"; //パレット
+                        content: "\e9cc"; //地図
+                    }
+                    &:after {
+                        content: "PLANNING";
+                        padding-top: $icon-padding + 0.5rem;
+                    }
+                }
+            }
+            .job__description {
+                box-sizing: border-box;
+                padding: 30px 15px 60px 15px;
+                @include sentence--pc--small($space-text);
+            }
+        }
+    }
+    .job-rate {
+        h3 {
+            @include sentence--pc--basic(lighten($space-green, 30%));
+            text-align: center;
+            font-weight: normal;
+            line-height: 4rem;
+        }
+        .ratebar {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            height: 90px;
+            border: 1px solid darken($space-background, 5%);
+            .barparts {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                label {
+                    display: block;
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 1rem;
+                    text-align: center;
+                    font-size: 1.0rem;
+                    letter-spacing: 0.1rem;
+                    color: white;
+                    &.percnum {
+                        padding-top: 5px;
+                        font-size: 1.6rem;
+                        &:after {
+                            content: "%";
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                &--uiux {
+                    z-index: 4;
+                    background-color: lighten($space-green, 10%);
+                    width: 35%;
+                    label {
+                        color: darken($space-green, 40%);
+                        font-weight: bold;
+                    }
+                }
+                &--uxwriting {
+                    z-index: 3;
+                    background-color: darken($space-green, 20%);
+                    width: 65%;
+                    label {
+                        padding-left: (65% * 0.9);
+                    }
+                }
+                &--direction {
+                    z-index: 2;
+                    background-color: darken($space-green, 30%);
+                    width: 85%;
+                    label {
+                        font-size: 0.9rem;
+                        padding-left: (85% * 0.95);
+                        padding-bottom: 1.1rem;
+                    }
+                }
+                &--planning {
+                    z-index: 1;
+                    background-color: darken($space-green, 40%);
+                    width: 100%;
+                    label {
+                        font-size: 0.9rem;
+                        padding-left: (90% * 0.97);
+                        padding-bottom: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1150px) {
+        .joblist {
+            &__items {
+                width: 25%;
+                .job__icon {
+                    $icon-size: 4.5rem;
+                    $icon-padding: 1.2rem;
+                    width: 160px;
+                    height: 160px;
+                    padding: 25px;
+                    &:before {
+                        font-size: $icon-size;
+                    }
+                    &:after {
+                        padding-top: $icon-padding;
+                        font-size: 0.9rem;
+                        letter-spacing: 0.1rem;
+                    }
+                }
+                .job__description {
+                    box-sizing: border-box;
+                    padding: 20px 15px 40px 15px;
+                    @include sentence--pc--small($space-text);
+                    line-height: 1.2rem;
+                }
+            }
+        }
     }
     @media (max-width: 960px) {
         &__title {
             @include section-title--tablet;
+        }
+        &__description {
+            @include sentence--tablet--basic($space-text);
+        }
+        .joblist {
+            flex-wrap: wrap;
+            &__items {
+                width: 50%;
+                .job__description {
+                    padding: 20px 20px 60px 20px;
+                    @include sentence--tablet--small($space-text);
+                    line-height: 1.2rem;
+                }
+            }
+        }
+        .job-rate {
+            h3 {
+                @include sentence--tablet--basic(lighten($space-green, 30%));
+                line-height: 3.5rem;
+            }
+            .ratebar {
+                .barparts {
+                    label {
+                        font-size: 0.8rem;
+                        letter-spacing: 0.01rem;
+                    }
+                }
+            }
         }
     }
     @media (max-width: 480px) {
         @include base-area--mobile($space-background);
         &__title {
             @include section-title--mobile;
+        }
+        &__description {
+            @include sentence--mobile--basic($space-text);
+        }
+        .joblist {
+            flex-direction: column;
+            &__items {
+                width: 100%;
+                .job__description {
+                    padding: 20px 20px 60px 20px;
+                    @include sentence--mobile--small($space-text);
+                    line-height: 1.2rem;
+                }
+            }
+        }
+        .job-rate {
+            display: none;
         }
     }
 }

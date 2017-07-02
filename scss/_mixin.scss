@@ -145,16 +145,17 @@
 @mixin sentence--pc--small($text-color) {
     font-size: 0.8rem;
     letter-spacing: 0.09rem;
-    line-height: 1.6rem;
+    line-height: 1.4rem;
     color: $text-color;
 }
 
-// @mixin sentence--tablet--small($text-color) {
-//     font-size: 1.1rem;
-//     letter-spacing: 0.1rem;
-//     line-height: 2.2rem;
-//     color: $text-color;
-// }
+@mixin sentence--tablet--small($text-color) {
+    font-size: 0.8rem;
+    letter-spacing: 0.09rem;
+    line-height: 1.4rem;
+    color: $text-color;
+}
+
 @mixin sentence--mobile--small($text-color) {
     font-size: 0.8rem;
     letter-spacing: 0.09rem;

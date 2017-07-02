@@ -37,7 +37,11 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: $space-link;
+}
+
+ul li {
+    list-style: none;
 }
 
 
