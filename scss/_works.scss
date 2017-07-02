@@ -48,7 +48,7 @@
                     padding-top: $icon-padding;
                     font-size: 1rem;
                     letter-spacing: 0.1rem;
-                    color: lighten($space-green, 30%);
+                    color: $space-lightgreen;
                 }
                 &--uiux {
                     &:before {
@@ -98,7 +98,7 @@
     }
     .job-rate {
         h3 {
-            @include sentence--pc--basic(lighten($space-green, 30%));
+            @include sentence--pc--basic($space-lightgreen);
             text-align: center;
             font-weight: normal;
             line-height: 4rem;
@@ -174,6 +174,40 @@
             }
         }
     }
+    .jobcase {
+        margin-top: 100px;
+        &__title {
+            border-bottom: 2px solid $space-gray;
+            border-top: 2px solid $space-gray;
+            padding: 1rem;
+            text-align: center;
+            h3 {
+                @include sentence--pc--basic($space-lightgreen);
+                font-weight: normal;
+            }
+            aside {
+                @include sentence--pc--small($space-text);
+            }
+        }
+        &__description {
+            @include sentence--pc--basic($space-text);
+            margin: 20px 0;
+        }
+        &__images {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 40px;
+            a {
+                width: 45%;
+                img {
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
     @media (max-width: 1150px) {
         .joblist {
             &__items {
@@ -234,8 +268,27 @@
                 }
             }
         }
+        .jobcase {
+            &__title {
+                padding: 0.8rem;
+                h3 {
+                    @include sentence--tablet--basic($space-lightgreen);
+                }
+                aside {
+                    @include sentence--tablet--small($space-text);
+                }
+            }
+            &__description {
+                @include sentence--tablet--basic($space-text);
+                margin: 20px 0;
+            }
+            &__images {
+                padding-top: 20px;
+            }
+        }
     }
-    @media (max-width: 480px) {
+    //通常は480だけどworksだけ580にする
+    @media (max-width: 580px) {
         @include base-area--mobile($space-background);
         &__title {
             @include section-title--mobile;
@@ -248,7 +301,7 @@
             &__items {
                 width: 100%;
                 .job__description {
-                    padding: 20px 20px 60px 20px;
+                    padding: 20px 10% 60px 10%;
                     @include sentence--mobile--small($space-text);
                     line-height: 1.2rem;
                 }
@@ -256,6 +309,37 @@
         }
         .job-rate {
             display: none;
+        }
+        .jobcase {
+            &__title {
+                padding: 0.8rem;
+                h3 {
+                    @include sentence--mobile--basic($space-lightgreen);
+                }
+                aside {
+                    @include sentence--mobile--small($space-text);
+                }
+            }
+            &__description {
+                @include sentence--mobile--basic($space-text);
+                margin: 20px 0;
+            }
+            &__images {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-top: 10px;
+                a {
+                    width: 90%;
+                    height: 100%;
+                    img {
+                        box-sizing: border-box;
+                        margin-bottom: 10px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
         }
     }
 }

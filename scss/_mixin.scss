@@ -119,23 +119,23 @@
 /* basic */
 
 @mixin sentence--pc--basic($text-color) {
-    font-size: 1.0rem;
+    font-size: 0.95rem;
     letter-spacing: 0.1rem;
-    line-height: 2.0rem;
+    line-height: 1.8rem;
     color: $text-color;
 }
 
 @mixin sentence--tablet--basic($text-color) {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     letter-spacing: 0.1rem;
-    line-height: 1.9rem;
+    line-height: 1.7rem;
     color: $text-color;
 }
 
 @mixin sentence--mobile--basic($text-color) {
     font-size: 0.9rem;
     letter-spacing: 0.09rem;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     color: $text-color;
 }
 

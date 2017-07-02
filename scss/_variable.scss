@@ -8,7 +8,8 @@
 /*宇宙背景ver. カラーリング*/
 
 $space-background:#212E45; //宇宙背景カラー
-$space-green: #CFED47; //宇宙背景用アクセントカラー （サイトタイトル、サブタイトル、アイコン）
+$space-green: #CFED47; //宇宙背景用アクセントカラー （アイコン）
+$space-lightgreen:lighten($space-green, 30%); //宇宙背景用アクセントカラー（サブタイトル
 $space-gray: #4E586A; //宇宙背景用サブカラー　（白20%透過色　アイコンの丸背景、タイトルのボーダー、サブテキスト）
 $space-text: #d4d9e2; //宇宙背景用テキストカラー
 $space-link: #C7D7F2; //宇宙背景用リンクカラー
