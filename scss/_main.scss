@@ -26,8 +26,12 @@ body {
     font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
     .bold-text {
         //和英どちらもboldになる
-        font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Black', sans-serif;
+        font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Bold', sans-serif;
         font-weight: bold;
+    }
+    .semibold-text {
+        //和文のみ細字になるが、英文はfont-weightを指定しても細くならない
+        font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Medium', sans-serif;
     }
     .thin-text {
         //和文のみ細字になるが、英文はfont-weightを指定しても細くならない
@@ -43,6 +47,14 @@ a {
 ul li,
 ol li {
     list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
 }
 
 

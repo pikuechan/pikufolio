@@ -13,37 +13,131 @@
     .chart {
         box-sizing: border-box;
         padding: 20px;
-        background-color: $earth-dark;
-        // text-shadow: $earth-text-shadow;
+        background-color: darken($earth-light1, 20%);
         &__title {
-            @include sentence--pc--basic($earth-text);
+            @include sentence--pc--xlarge(white);
             font-weight: normal;
             text-align: center;
+            text-shadow: 0 0 0.5rem $earth-text-shadow;
         }
         &__area {
             display: flex;
-        }
-        &__arrow {
-            display: block;
-            width: 30%;
-            padding-left: 20%;
-            font-size: 8rem;
-            color: $earth-text;
-            opacity: 0.8;
-            &:before {
+            box-sizing: border-box;
+            width: 500px;
+            padding: 20px 0;
+            margin: auto;
+            &__arrow {
                 display: block;
-                content: 'HIGH';
-                font-size: 1rem;
-                font-weight: bold;
-                padding: 10px 3px;
-                ;
+                width: 50px;
+                text-align: right;
+                font-size: 8rem;
+                color: $earth-red;
+                &:before {
+                    display: block;
+                    content: 'HIGH';
+                    font-size: 1rem;
+                    font-weight: bold;
+                    padding: 10px 3px;
+                    ;
+                }
+                &:after {
+                    display: block;
+                    content: 'LOW';
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    padding: 3px 6px 10px 3px;
+                }
             }
-            &:after {
-                display: block;
-                content: 'HIGH';
-                font-size: 1rem;
-                font-weight: bold;
-                padding: 0 3px;
+            &__description {
+                width: 450px;
+                padding: 0px 0px 0 30px;
+                dl {
+                    display: flex;
+                }
+                dt {
+                    line-height: 2.5rem;
+                }
+                dd {
+                    @include sentence--pc--basic(white/*$earth-blue1*/
+                    );
+                    $bottomline: 0.2rem;
+                    box-sizing: border-box;
+                    padding-bottom: $bottomline;
+                    line-height: 2.5rem-$bottomline;
+                    margin-left: 10px;
+                    text-shadow: 0 0 0.5rem $earth-text-shadow;
+                }
+            }
+        }
+    }
+    /***********************************************************
+                CHARTINDEX用のブレイクポイント
+***********************************************************/
+    //chartindex用のブレイクポイント
+    @media (max-width: 800px) {
+        .chart {
+            padding: 20px;
+            &__title {
+                @include sentence--tablet--xlarge(white);
+            }
+            &__area {
+                width: 450px;
+                padding: 20px 0;
+                margin: auto;
+                &__arrow {
+                    display: none;
+                }
+                &__description {
+                    width: 430px;
+                    padding: 0px;
+                    margin: auto;
+                    // dl {
+                    //     display: flex;
+                    // }
+                    // dt {
+                    //     line-height: 2.5rem;
+                    // }
+                    dd {
+                        @include sentence--tablet--basic(white);
+                        $bottomline: 0.12rem;
+                        box-sizing: border-box;
+                        padding-bottom: $bottomline;
+                        line-height: 2.5rem-$bottomline;
+                        margin-left: 10px;
+                        text-shadow: 0 0 0.5rem $earth-text-shadow;
+                    }
+                }
+            }
+        }
+    }
+    //chartindex用のブレイクポイント
+    @media (max-width: 600px) {
+        .chart {
+            &__title {
+                @include sentence--mobile--xlarge(white);
+            }
+            &__area {
+                width: 100%;
+                padding-bottom: 0;
+                &__description {
+                    width: 100%;
+                    // padding: 0px;
+                    dl {
+                        flex-direction: column;
+                        padding-bottom: 30px;
+                    }
+                    dt {
+                        text-align: center;
+                    }
+                    dd {
+                        text-align: center;
+                        // $bottomline: 0.2rem;
+                        // padding-bottom: $bottomline;
+                        // line-height: 2.5rem-$bottomline;
+                        margin-left: 0px;
+                        @include sentence--mobile--basic(white);
+                    }
+                }
             }
         }
     }
@@ -57,6 +151,63 @@
         @include base-area--mobile($earth-background);
         &__title {
             @include section-title--mobile;
+        }
+    }
+}
+
+
+/***********************************************************
+                           SKILLS
+***********************************************************/
+
+.skillheart {
+    font-family: 'pikufont';
+    font-size: 1.0rem;
+    letter-spacing: 0.8rem;
+    &--1 {
+        &:before {
+            color: $earth-red;
+            content: "\ea45";
+        }
+        &:after {
+            color: white;
+            content: "\ea45\ea45\ea45\ea45";
+        }
+    }
+    &--2 {
+        &:before {
+            color: $earth-red;
+            content: "\ea45\ea45";
+        }
+        &:after {
+            color: white;
+            content: "\ea45\ea45\ea45";
+        }
+    }
+    &--3 {
+        &:before {
+            color: $earth-red;
+            content: "\ea45\ea45\ea45";
+        }
+        &:after {
+            color: white;
+            content: "\ea45\ea45";
+        }
+    }
+    &--4 {
+        &:before {
+            color: $earth-red;
+            content: "\ea45\ea45\ea45\ea45";
+        }
+        &:after {
+            color: white;
+            content: "\ea45";
+        }
+    }
+    &--5 {
+        &:before {
+            color: $earth-red;
+            content: "\ea45\ea45\ea45\ea45\ea45";
         }
     }
 }

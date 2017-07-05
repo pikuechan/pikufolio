@@ -92,6 +92,30 @@
 ***********************************************************/
 
 
+/* xlarge */
+
+@mixin sentence--pc--xlarge($text-color) {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+    line-height: 2.4rem;
+    color: $text-color;
+}
+
+@mixin sentence--tablet--xlarge($text-color) {
+    font-size: 1.15rem;
+    letter-spacing: 0.12rem;
+    line-height: 2.2rem;
+    color: $text-color;
+}
+
+@mixin sentence--mobile--xlarge($text-color) {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.0rem;
+    color: $text-color;
+}
+
+
 /* large */
 
 @mixin sentence--pc--large($text-color) {

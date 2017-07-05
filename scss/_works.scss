@@ -98,7 +98,7 @@
     }
     .job-rate {
         h3 {
-            @include sentence--pc--basic($space-lightgreen);
+            @include sentence--pc--large($space-lightgreen);
             text-align: center;
             font-weight: normal;
             line-height: 4rem;
@@ -182,7 +182,7 @@
             padding: 1rem;
             text-align: center;
             h3 {
-                @include sentence--pc--basic($space-lightgreen);
+                @include sentence--pc--large($space-lightgreen);
                 font-weight: normal;
             }
             aside {
@@ -241,7 +241,7 @@
             @include section-title--tablet;
         }
         &__description {
-            @include sentence--tablet--basic($space-text);
+            @include sentence--tablet--large($space-text);
         }
         .joblist {
             flex-wrap: wrap;
@@ -256,7 +256,7 @@
         }
         .job-rate {
             h3 {
-                @include sentence--tablet--basic(lighten($space-green, 30%));
+                @include sentence--tablet--large(lighten($space-green, 30%));
                 line-height: 3.5rem;
             }
             .ratebar {
@@ -272,7 +272,7 @@
             &__title {
                 padding: 0.8rem;
                 h3 {
-                    @include sentence--tablet--basic($space-lightgreen);
+                    @include sentence--tablet--large($space-lightgreen);
                 }
                 aside {
                     @include sentence--tablet--small($space-text);
@@ -294,7 +294,7 @@
             @include section-title--mobile;
         }
         &__description {
-            @include sentence--mobile--basic($space-text);
+            @include sentence--mobile--large($space-text);
         }
         .joblist {
             flex-direction: column;
@@ -314,7 +314,7 @@
             &__title {
                 padding: 0.8rem;
                 h3 {
-                    @include sentence--mobile--basic($space-lightgreen);
+                    @include sentence--mobile--large($space-lightgreen);
                 }
                 aside {
                     @include sentence--mobile--small($space-text);
