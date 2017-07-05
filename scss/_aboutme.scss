@@ -141,20 +141,20 @@
     }
     /* Right content */
     >li .chronology__timecontent {
-        @include sentence--pc--basic(darken($earth-blue1, 10%));
+        @include sentence--pc--basic($earth-blue1);
         margin: 0 10% 40px 30%;
         background: $earth-light1;
         padding: 16px 24px;
         position: relative;
         border-radius: 5px;
         h3 {
-            @include sentence--pc--basic(darken($earth-blue1, 10%));
+            @include sentence--pc--basic(lighten($earth-blue1, 5%));
             margin-top: 0px;
             padding: 0 0 10px 0;
-            border-bottom: 2px dotted lighten($earth-blue1, 5%);
+            border-bottom: 2px dotted lighten($earth-blue1, 20%);
         }
         p {
-            @include sentence--pc--small(darken($earth-blue1, 10%));
+            @include sentence--pc--small(lighten($earth-blue1, 5%));
             padding: 10px 0;
         }
         /* The triangle */

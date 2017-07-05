@@ -1940,7 +1940,7 @@ footer .copyright {
   font-size: 0.95rem;
   letter-spacing: 0.1rem;
   line-height: 1.8rem;
-  color: #273127;
+  color: #3D4E3D;
   margin: 0 10% 40px 30%;
   background: #ddeaa3;
   padding: 16px 24px;
@@ -1953,17 +1953,17 @@ footer .copyright {
   font-size: 0.95rem;
   letter-spacing: 0.1rem;
   line-height: 1.8rem;
-  color: #273127;
+  color: #485c48;
   margin-top: 0px;
   padding: 0 0 10px 0;
-  border-bottom: 2px dotted #485c48;
+  border-bottom: 2px dotted #6a876a;
 }
 
 .aboutme__chronology > li .chronology__timecontent p {
   font-size: 0.8rem;
   letter-spacing: 0.09rem;
   line-height: 1.4rem;
-  color: #273127;
+  color: #485c48;
   padding: 10px 0;
 }
 
