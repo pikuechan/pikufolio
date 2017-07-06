@@ -137,7 +137,7 @@
                 &--uiux {
                     z-index: 4;
                     background-color: lighten($space-green, 10%);
-                    width: 35%;
+                    width: 30%;
                     label {
                         color: darken($space-green, 40%);
                         font-weight: bold;
@@ -146,18 +146,18 @@
                 &--uxwriting {
                     z-index: 3;
                     background-color: darken($space-green, 20%);
-                    width: 65%;
+                    width: 60%;
                     label {
-                        padding-left: (65% * 0.9);
+                        padding-left: (60% * 0.9);
                     }
                 }
                 &--direction {
                     z-index: 2;
                     background-color: darken($space-green, 30%);
-                    width: 85%;
+                    width: 83%;
                     label {
                         font-size: 0.9rem;
-                        padding-left: (85% * 0.95);
+                        padding-left: (83% * 0.9);
                         padding-bottom: 1.1rem;
                     }
                 }
@@ -167,7 +167,7 @@
                     width: 100%;
                     label {
                         font-size: 0.9rem;
-                        padding-left: (90% * 0.97);
+                        padding-left: (90% * 0.95);
                         padding-bottom: 1.1rem;
                     }
                 }

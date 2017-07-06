@@ -2292,7 +2292,7 @@ footer .copyright {
 .works .job-rate .ratebar .barparts--uiux {
   z-index: 4;
   background-color: #dbf275;
-  width: 35%;
+  width: 30%;
 }
 
 .works .job-rate .ratebar .barparts--uiux label {
@@ -2303,22 +2303,22 @@ footer .copyright {
 .works .job-rate .ratebar .barparts--uxwriting {
   z-index: 3;
   background-color: #9dbc12;
-  width: 65%;
+  width: 60%;
 }
 
 .works .job-rate .ratebar .barparts--uxwriting label {
-  padding-left: 58.5%;
+  padding-left: 54%;
 }
 
 .works .job-rate .ratebar .barparts--direction {
   z-index: 2;
   background-color: #768d0e;
-  width: 85%;
+  width: 83%;
 }
 
 .works .job-rate .ratebar .barparts--direction label {
   font-size: 0.9rem;
-  padding-left: 80.75%;
+  padding-left: 74.7%;
   padding-bottom: 1.1rem;
 }
 
@@ -2330,7 +2330,7 @@ footer .copyright {
 
 .works .job-rate .ratebar .barparts--planning label {
   font-size: 0.9rem;
-  padding-left: 87.3%;
+  padding-left: 85.5%;
   padding-bottom: 1.1rem;
 }
 
