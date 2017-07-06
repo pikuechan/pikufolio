@@ -237,12 +237,12 @@
         }
     }
     @media (max-width: 960px) {
-        &__title {
-            @include section-title--tablet;
-        }
-        &__description {
-            @include sentence--tablet--large($space-text);
-        }
+        // &__title {
+        //     @include section-title--tablet;
+        // }
+        // &__description {
+        //     @include sentence--tablet--basic($space-text);
+        // }
         .joblist {
             flex-wrap: wrap;
             &__items {
@@ -287,15 +287,14 @@
             }
         }
     }
-    //通常は480だけどworksだけ580にする
     @media (max-width: 580px) {
-        @include base-area--mobile($space-background);
-        &__title {
-            @include section-title--mobile;
-        }
-        &__description {
-            @include sentence--mobile--large($space-text);
-        }
+        // @include base-area--mobile($space-background);
+        // &__title {
+        //     @include section-title--mobile;
+        // }
+        // &__description {
+        //     @include sentence--mobile--basic($space-text);
+        // }
         .joblist {
             flex-direction: column;
             &__items {
@@ -340,6 +339,26 @@
                     }
                 }
             }
+        }
+    }
+    /***********************************************************
+                       共通パーツ用ブレイクポイント
+    ***********************************************************/
+    @media (max-width: 960px) {
+        &__title {
+            @include section-title--tablet;
+        }
+        &__description {
+            @include sentence--tablet--basic($space-text);
+        }
+    }
+    @media (max-width: 480px) {
+        @include base-area--mobile($space-background);
+        &__title {
+            @include section-title--mobile;
+        }
+        &__description {
+            @include sentence--mobile--basic($space-text);
         }
     }
 }
