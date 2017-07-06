@@ -2091,6 +2091,9 @@ footer .copyright {
 .works {
   width: 100%;
   background-color: #212E45;
+  /***********************************************************
+                       共通パーツ用ブレイクポイント
+    ***********************************************************/
 }
 
 .works__content {
@@ -2423,25 +2426,6 @@ footer .copyright {
 }
 
 @media (max-width: 960px) {
-  .works__title {
-    padding: 0;
-    padding-top: 60px;
-    padding-bottom: 80px;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.8rem;
-    letter-spacing: 0.18rem;
-  }
-  .works__title:first-letter {
-    font-size: 2.7rem;
-  }
-  .works__description {
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-    line-height: 2.2rem;
-    color: #d4d9e2;
-  }
   .works .joblist {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -2497,34 +2481,6 @@ footer .copyright {
 }
 
 @media (max-width: 580px) {
-  .works {
-    width: 100%;
-    background-color: #212E45;
-  }
-  .works__content {
-    width: 86vw;
-    margin: auto;
-    padding-bottom: 100px;
-  }
-  .works__title {
-    padding: 0;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.6rem;
-    letter-spacing: 0.16rem;
-  }
-  .works__title:first-letter {
-    font-size: 2.4rem;
-  }
-  .works__description {
-    font-size: 1.0rem;
-    letter-spacing: 0.08rem;
-    line-height: 2.0rem;
-    color: #d4d9e2;
-  }
   .works .joblist {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2600,6 +2556,59 @@ footer .copyright {
   }
 }
 
+@media (max-width: 960px) {
+  .works__title {
+    padding: 0;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.18rem;
+  }
+  .works__title:first-letter {
+    font-size: 2.7rem;
+  }
+  .works__description {
+    font-size: 0.92rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
+    color: #d4d9e2;
+  }
+}
+
+@media (max-width: 480px) {
+  .works {
+    width: 100%;
+    background-color: #212E45;
+  }
+  .works__content {
+    width: 86vw;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+  .works__title {
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 0.16rem;
+  }
+  .works__title:first-letter {
+    font-size: 2.4rem;
+  }
+  .works__description {
+    font-size: 0.9rem;
+    letter-spacing: 0.09rem;
+    line-height: 1.6rem;
+    color: #d4d9e2;
+  }
+}
+
 /***************************************************************
                           Color Settings
 ****************************************************************/
@@ -2634,7 +2643,10 @@ footer .copyright {
                      CHARTINDEX用のブレイクポイント
     ***********************************************************/
   /***********************************************************
-                         その他のブレイクポイント
+                    CHARTLIST用のブレイクポイント
+    ***********************************************************/
+  /***********************************************************
+                　    共通パーツ用ブレイクポイント
     ***********************************************************/
 }
 
@@ -2681,10 +2693,8 @@ footer .copyright {
   font-size: 1.2rem;
   letter-spacing: 0.15rem;
   line-height: 2.4rem;
-  color: white;
-  font-weight: normal;
+  color: #3D4E3D;
   text-align: center;
-  text-shadow: 0 0 0.5rem #87a017;
 }
 
 .skills .chart__area {
@@ -2801,7 +2811,7 @@ footer .copyright {
   text-shadow: 0 0 1rem #87a017;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   .skills .chart {
     padding: 20px;
   }
@@ -2809,7 +2819,7 @@ footer .copyright {
     font-size: 1.15rem;
     letter-spacing: 0.12rem;
     line-height: 2.2rem;
-    color: white;
+    color: #3D4E3D;
   }
   .skills .chart__area {
     width: 450px;
@@ -2838,12 +2848,12 @@ footer .copyright {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .skills .chart__title {
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     line-height: 2.0rem;
-    color: white;
+    color: #3D4E3D;
   }
   .skills .chart__area {
     width: 100%;
@@ -2866,6 +2876,73 @@ footer .copyright {
   .skills .chart__area__description dd {
     text-align: center;
     margin-left: 0px;
+    font-size: 0.8rem;
+    letter-spacing: 0.09rem;
+    line-height: 1.4rem;
+    color: white;
+  }
+}
+
+@media (max-width: 960px) {
+  .skills__list .skill__item {
+    width: 45%;
+  }
+  .skills__list .skill__title {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+    color: #3D4E3D;
+  }
+  .skills__list .skill__comment {
+    font-size: 0.92rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
+    color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .skills__list .skill__item {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  .skills__list .skill__title {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+    color: #3D4E3D;
+  }
+  .skills__list .skill__comment {
+    font-size: 0.92rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
+    color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills__list .skill__item {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .skills__list .skill__title {
+    font-size: 1.0rem;
+    letter-spacing: 0.08rem;
+    line-height: 2.0rem;
+    color: #3D4E3D;
+  }
+  .skills__list .skill__comment {
     font-size: 0.9rem;
     letter-spacing: 0.09rem;
     line-height: 1.6rem;

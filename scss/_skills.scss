@@ -15,10 +15,8 @@
         padding: 20px;
         background-color: darken($earth-light1, 20%);
         &__title {
-            @include sentence--pc--xlarge(white);
-            font-weight: normal;
+            @include sentence--pc--xlarge($earth-blue1);
             text-align: center;
-            text-shadow: 0 0 0.5rem $earth-text-shadow;
         }
         &__area {
             display: flex;
@@ -71,7 +69,6 @@
         }
     }
     &__list {
-        // background-color: red;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -94,19 +91,18 @@
         }
         .skill__comment {
             @include sentence--pc--basic(white);
-            // @include sentence--pc--basic($earth-text);
             text-shadow: 0 0 1rem $earth-text-shadow;
         }
     }
     /***********************************************************
                      CHARTINDEX用のブレイクポイント
     ***********************************************************/
-    //chartindex用のブレイクポイント
-    @media (max-width: 800px) {
+    //tablet
+    @media (max-width: 960px) {
         .chart {
             padding: 20px;
             &__title {
-                @include sentence--tablet--xlarge(white);
+                @include sentence--tablet--xlarge($earth-blue1);
             }
             &__area {
                 width: 450px;
@@ -137,12 +133,67 @@
                 }
             }
         }
+        // .chart {
+        //     &__title {
+        //         @include sentence--tablet--xlarge($earth-blue1);
+        //         // font-weight: normal;
+        //         // text-align: center;
+        //     }
+        //     &__area {
+        //         // display: flex;
+        //         // box-sizing: border-box;
+        //         // width: 500px;
+        //         // padding: 20px 0;
+        //         // margin: auto;
+        //         &__arrow {
+        //             display: block;
+        //             width: 50px;
+        //             text-align: right;
+        //             font-size: 8rem;
+        //             color: $earth-red;
+        //             &:before {
+        //                 display: block;
+        //                 content: 'HIGH';
+        //                 font-size: 1rem;
+        //                 font-weight: bold;
+        //                 padding: 10px 3px;
+        //                 ;
+        //             }
+        //             &:after {
+        //                 display: block;
+        //                 content: 'LOW';
+        //                 font-size: 0.85rem;
+        //                 font-weight: bold;
+        //                 padding: 3px 6px 10px 3px;
+        //             }
+        //         }
+        //         &__description {
+        //             // width: 450px;
+        //             // padding: 0px 0px 0 30px;
+        //             // dl {
+        //             //     display: flex;
+        //             // }
+        //             // dt {
+        //             //     line-height: 2.5rem;
+        //             // }
+        //             dd {
+        //                 @include sentence--tablet--basic(white);
+        //                 $bottomline: 0.1rem;
+        //                 box-sizing: border-box;
+        //                 padding-bottom: $bottomline;
+        //                 line-height: 2.5rem-$bottomline;
+        //                 margin-left: 10px;
+        //                 text-shadow: 0 0 0.5rem $earth-text-shadow;
+        //             }
+        //         }
+        //     }
+        // }
     }
-    //chartindex用のブレイクポイント
-    @media (max-width: 600px) {
+    //mobile
+    @media (max-width: 750px) {
         .chart {
             &__title {
-                @include sentence--mobile--xlarge(white);
+                @include sentence--mobile--xlarge($earth-blue1);
             }
             &__area {
                 width: 100%;
@@ -163,14 +214,97 @@
                         // padding-bottom: $bottomline;
                         // line-height: 2.5rem-$bottomline;
                         margin-left: 0px;
-                        @include sentence--mobile--basic(white);
+                        @include sentence--mobile--small(white);
                     }
                 }
             }
         }
     }
     /***********************************************************
-                         その他のブレイクポイント
+                    CHARTLIST用のブレイクポイント
+    ***********************************************************/
+    //tablet
+    @media (max-width: 960px) {
+        &__list {
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            // justify-content: space-between;
+            // margin: 50px 0;
+            .skill__item {
+                width: 45%;
+                // margin-bottom: 30px;
+            }
+            .skill__title {
+                @include sentence--tablet--large($earth-blue1);
+                // text-align: center;
+                // margin: 10px 0;
+                // .skillheart {
+                //     display: block;
+                //     margin-top: 5px;
+                //     font-size: 1.3rem;
+                //     letter-spacing: 1.0rem;
+                // }
+            }
+            .skill__comment {
+                @include sentence--tablet--basic(white);
+                // text-shadow: 0 0 1rem $earth-text-shadow;
+            }
+        }
+    }
+    //mobile&tablet
+    @media (max-width: 600px) {
+        &__list {
+            flex-direction: column;
+            align-items: center;
+            .skill__item {
+                width: 80%;
+                margin-bottom: 40px;
+            }
+            .skill__title {
+                @include sentence--tablet--large($earth-blue1);
+                // text-align: center;
+                // margin: 10px 0;
+                // .skillheart {
+                //     display: block;
+                //     margin-top: 5px;
+                //     font-size: 1.3rem;
+                //     letter-spacing: 1.0rem;
+                // }
+            }
+            .skill__comment {
+                @include sentence--tablet--basic(white);
+                // text-shadow: 0 0 1rem $earth-text-shadow;
+            }
+        }
+    }
+    //mobile
+    @media (max-width: 480px) {
+        &__list {
+            // flex-direction: column;
+            // align-items: center;
+            .skill__item {
+                width: 90%;
+                margin-bottom: 40px;
+            }
+            .skill__title {
+                @include sentence--mobile--large($earth-blue1);
+                // text-align: center;
+                // margin: 10px 0;
+                // .skillheart {
+                //     display: block;
+                //     margin-top: 5px;
+                //     font-size: 1.3rem;
+                //     letter-spacing: 1.0rem;
+                // }
+            }
+            .skill__comment {
+                @include sentence--mobile--basic(white);
+                // text-shadow: 0 0 1rem $earth-text-shadow;
+            }
+        }
+    }
+    /***********************************************************
+                　    共通パーツ用ブレイクポイント
     ***********************************************************/
     @media (max-width: 960px) {
         &__title {
@@ -243,7 +377,7 @@
     }
 }
 
-//空白飾り用
+//空白飾り用（結局使ってないからあとで消してもOK）
 .skill--decoration {
     display: block;
     font-size: 8rem;
