@@ -17,7 +17,7 @@ section-border--earth：section borderのearthパターン
                             BODY / main
 ***********************************************************/
 
-@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:400,700");
+@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600,700");
 :root {
     font-size: 14px;
 }
@@ -27,16 +27,18 @@ body {
     .bold-text {
         //和英どちらもboldになる
         font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Bold', sans-serif;
-        font-weight: bold;
+        font-weight: 700;
     }
     .semibold-text {
         //和文のみ細字になるが、英文はfont-weightを指定しても細くならない
         font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Medium', sans-serif;
+        font-weight: 600;
     }
-    .thin-text {
-        //和文のみ細字になるが、英文はfont-weightを指定しても細くならない
-        font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
-    }
+    //細字は結局使わなかったので
+    // .thin-text {
+    //     //和文のみ細字になるが、英文はfont-weightを指定しても細くならない
+    //     font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
+    // }
 }
 
 a {

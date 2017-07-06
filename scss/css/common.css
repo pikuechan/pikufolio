@@ -35,7 +35,7 @@
                          EXTEMD
 @media内で使えないから使い回しのサイズ指定には使えなそう.....
 ***********************************************************/
-@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:400,700");
+@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600,700");
 @font-face {
   font-family: 'pikufont';
   src: url("/fonts/pikufont.eot?nmrhon");
@@ -1410,15 +1410,12 @@ body {
 
 body .bold-text {
   font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Bold', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 body .semibold-text {
   font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Medium', sans-serif;
-}
-
-body .thin-text {
-  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
+  font-weight: 600;
 }
 
 a {
@@ -2634,8 +2631,11 @@ footer .copyright {
   width: 100%;
   background-color: #ACCC1E;
   /***********************************************************
-                CHARTINDEX用のブレイクポイント
-***********************************************************/
+                     CHARTINDEX用のブレイクポイント
+    ***********************************************************/
+  /***********************************************************
+                         その他のブレイクポイント
+    ***********************************************************/
 }
 
 .skills__content {
@@ -2752,6 +2752,55 @@ footer .copyright {
   text-shadow: 0 0 0.5rem #87a017;
 }
 
+.skills__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+.skills__list .skill__item {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.skills__list .skill__title {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.4rem;
+  color: #3D4E3D;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.skills__list .skill__title .skillheart {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.3rem;
+  letter-spacing: 1.0rem;
+}
+
+.skills__list .skill__comment {
+  font-size: 0.95rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+  color: white;
+  text-shadow: 0 0 1rem #87a017;
+}
+
 @media (max-width: 800px) {
   .skills .chart {
     padding: 20px;
@@ -2866,7 +2915,7 @@ footer .copyright {
 }
 
 /***********************************************************
-                           SKILLS
+                           SKILLheart
 ***********************************************************/
 .skillheart {
   font-family: 'pikufont';
@@ -2917,6 +2966,15 @@ footer .copyright {
 .skillheart--5:before {
   color: #FF192D;
   content: "\ea45\ea45\ea45\ea45\ea45";
+}
+
+.skill--decoration {
+  display: block;
+  font-size: 8rem;
+  text-align: center;
+  margin-top: 100px;
+  color: #edf1dc;
+  opacity: 0.25;
 }
 
 /**

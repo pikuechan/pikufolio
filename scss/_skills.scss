@@ -70,9 +70,37 @@
             }
         }
     }
+    &__list {
+        // background-color: red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px 0;
+        .skill__item {
+            width: 30%;
+            margin-bottom: 30px;
+        }
+        .skill__title {
+            @include sentence--pc--large($earth-blue1);
+            text-align: center;
+            margin: 10px 0;
+            .skillheart {
+                display: block;
+                margin-top: 5px;
+                font-size: 1.3rem;
+                letter-spacing: 1.0rem;
+            }
+        }
+        .skill__comment {
+            @include sentence--pc--basic(white);
+            // @include sentence--pc--basic($earth-text);
+            text-shadow: 0 0 1rem $earth-text-shadow;
+        }
+    }
     /***********************************************************
-                CHARTINDEX用のブレイクポイント
-***********************************************************/
+                     CHARTINDEX用のブレイクポイント
+    ***********************************************************/
     //chartindex用のブレイクポイント
     @media (max-width: 800px) {
         .chart {
@@ -141,6 +169,9 @@
             }
         }
     }
+    /***********************************************************
+                         その他のブレイクポイント
+    ***********************************************************/
     @media (max-width: 960px) {
         &__title {
             @include section-title--tablet;
@@ -157,7 +188,7 @@
 
 
 /***********************************************************
-                           SKILLS
+                           SKILLheart
 ***********************************************************/
 
 .skillheart {
@@ -210,4 +241,14 @@
             content: "\ea45\ea45\ea45\ea45\ea45";
         }
     }
+}
+
+//空白飾り用
+.skill--decoration {
+    display: block;
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 100px;
+    color: $earth-text;
+    opacity: 0.25;
 }
