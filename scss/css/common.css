@@ -1436,6 +1436,13 @@ h5 {
   font-weight: normal;
 }
 
+mark {
+  background-color: inherit;
+  color: inherit;
+  font-style: normal;
+  font-weight: normal;
+}
+
 /***********************************************************
                       SECTION BORDER
 ***********************************************************/
@@ -2267,7 +2274,7 @@ footer .copyright {
   height: 100%;
 }
 
-.works .job-rate .ratebar .barparts label {
+.works .job-rate .ratebar .barparts mark {
   display: block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2279,58 +2286,68 @@ footer .copyright {
   color: white;
 }
 
-.works .job-rate .ratebar .barparts label.percnum {
+.works .job-rate .ratebar .barparts mark.percnum {
   padding-top: 5px;
   font-size: 1.6rem;
 }
 
-.works .job-rate .ratebar .barparts label.percnum:after {
+.works .job-rate .ratebar .barparts mark.percnum:after {
   content: "%";
   font-size: 0.8rem;
 }
 
 .works .job-rate .ratebar .barparts--uiux {
-  z-index: 4;
+  z-index: 5;
   background-color: #dbf275;
   width: 30%;
 }
 
-.works .job-rate .ratebar .barparts--uiux label {
+.works .job-rate .ratebar .barparts--uiux mark {
   color: #4f5f09;
   font-weight: bold;
 }
 
 .works .job-rate .ratebar .barparts--uxwriting {
-  z-index: 3;
+  z-index: 4;
   background-color: #9dbc12;
-  width: 60%;
+  width: 55%;
 }
 
-.works .job-rate .ratebar .barparts--uxwriting label {
-  padding-left: 54%;
+.works .job-rate .ratebar .barparts--uxwriting mark {
+  padding-left: 57.75%;
 }
 
 .works .job-rate .ratebar .barparts--direction {
-  z-index: 2;
+  z-index: 3;
   background-color: #768d0e;
-  width: 83%;
+  width: 80%;
 }
 
 .works .job-rate .ratebar .barparts--direction label {
-  font-size: 0.9rem;
-  padding-left: 74.7%;
+  padding-left: 72%;
   padding-bottom: 1.1rem;
 }
 
 .works .job-rate .ratebar .barparts--planning {
-  z-index: 1;
+  z-index: 2;
   background-color: #4f5f09;
-  width: 100%;
+  width: 90%;
 }
 
 .works .job-rate .ratebar .barparts--planning label {
-  font-size: 0.9rem;
-  padding-left: 85.5%;
+  padding-left: 90%;
+  padding-bottom: 1.1rem;
+}
+
+.works .job-rate .ratebar .barparts--others {
+  z-index: 1;
+  background-color: #283005;
+  width: 100%;
+}
+
+.works .job-rate .ratebar .barparts--others label {
+  font-size: 1.2rem;
+  padding-left: 92.15%;
   padding-bottom: 1.1rem;
 }
 
