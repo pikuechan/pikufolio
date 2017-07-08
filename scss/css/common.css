@@ -2451,9 +2451,11 @@ footer .copyright {
   .works .job-rate .ratebar .barparts .barnum {
     background-color: white;
     display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     width: 1.4rem;
     height: 1.4rem;
-    border-radius: 1.15rem;
+    border-radius: 1rem;
     font-size: 1.15rem;
   }
   .works .job-rate .ratebar .barparts--uiux .barnum {
@@ -2461,14 +2463,19 @@ footer .copyright {
     background-color: #4f5f09;
     color: #dbf275;
     font-weight: normal;
+    padding-left: 1px;
   }
   .works .job-rate .ratebar .barparts--uxwriting .barnum {
     display: inline-block;
     color: #9dbc12;
+    padding-top: 1px;
+    padding-left: 1px;
   }
   .works .job-rate .ratebar .barparts--direction .barnum {
     display: inline-block;
     color: #768d0e;
+    padding-top: 1px;
+    padding-left: 1px;
   }
   .works .job-rate .ratebar .barparts--planning .barblock {
     padding-left: 90.9%;
@@ -2507,8 +2514,7 @@ footer .copyright {
     margin-top: 15px;
   }
   .works .job-rate .ratedfn--item {
-    width: 20%;
-    font-size: 0.5rem;
+    width: 30%;
     letter-spacing: 0.15rem;
     color: #f3fbd2;
     margin-bottom: 15px;
@@ -2516,28 +2522,31 @@ footer .copyright {
   }
   .works .job-rate .ratedfn--num {
     display: inline-block;
+    color: #212E45;
+    background: #f3fbd2;
+    border-radius: 1rem;
     width: 1.4rem;
     height: 1.4rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 5px;
     border-radius: 1.15rem;
-    font-size: 1rem;
-    padding-left: 11px;
-    padding-top: 3px;
-    color: #212E45;
-    border: 1px solid white;
-    border-radius: 1rem;
-    background: #f3fbd2;
+    font-size: 1.15rem;
   }
   .works .job-rate .ratedfn--title {
     display: inline-block;
     margin-left: 5px;
+    font-size: 0.8rem;
   }
   .works .job-rate .ratedfn--perc {
     display: none;
     padding-left: 5px;
     font-size: 1.2rem;
+    color: #CFED47;
   }
   .works .job-rate .ratedfn--perc u {
     font-size: 0.5rem;
+    color: #f3fbd2;
   }
   .works .job-rate .ratedfn__uiux {
     display: none;
@@ -2558,17 +2567,11 @@ footer .copyright {
     color: #f3fbd2;
     line-height: 3.5rem;
   }
-  .works .job-rate .ratedfn--item {
-    width: 30%;
-  }
-  .works .job-rate .ratedfn--perc {
-    display: inline-block;
-  }
 }
 
 @media (max-width: 780px) {
   .works .job-rate .ratebar {
-    height: 80px;
+    height: 50px;
   }
   .works .job-rate .ratebar .barparts .barblock {
     padding-bottom: 0.4rem;
@@ -2577,12 +2580,25 @@ footer .copyright {
     display: none;
   }
   .works .job-rate .ratebar .barparts .percnum {
-    padding-top: 5px;
-    font-size: 1.4rem;
+    display: none;
   }
-  .works .job-rate .ratebar .barparts .percnum:after {
-    content: "%";
-    font-size: 0.6rem;
+  .works .job-rate .ratedfn {
+    margin-top: 20px;
+  }
+  .works .job-rate .ratedfn--item {
+    width: 50%;
+  }
+  .works .job-rate .ratedfn--perc {
+    display: inline-block;
+  }
+  .works .job-rate .ratedfn__uiux {
+    display: block;
+  }
+  .works .job-rate .ratedfn__uxwriting {
+    display: block;
+  }
+  .works .job-rate .ratedfn__direction {
+    display: block;
   }
 }
 
@@ -2594,25 +2610,8 @@ footer .copyright {
     color: #f3fbd2;
     line-height: 3rem;
   }
-  .works .job-rate .ratebar {
-    height: 70px;
-  }
-  .works .job-rate .ratebar .barparts .barblock {
-    padding-bottom: 0.2rem;
-  }
-  .works .job-rate .ratebar .barparts .barnum {
-    width: 1.2rem;
-    height: 1.2rem;
-    border-radius: 1rem;
-    font-size: 1rem;
-  }
-  .works .job-rate .ratebar .barparts .percnum {
-    padding-top: 5px;
-    font-size: 1.2rem;
-  }
-  .works .job-rate .ratebar .barparts .percnum:after {
-    content: "%";
-    font-size: 0.2rem;
+  .works .job-rate .ratedfn__uiux {
+    width: 80%;
   }
 }
 
