@@ -127,7 +127,7 @@
                     color: white;
                 }
                 .barnum {
-                    display: inline;
+                    display: none;
                 }
                 .bartitle {
                     display: inline;
@@ -148,9 +148,6 @@
                         color: darken($space-green, 40%);
                         font-weight: bold;
                     }
-                    .barnum {
-                        display: none;
-                    }
                 }
                 &--uxwriting {
                     z-index: 4;
@@ -158,9 +155,6 @@
                     width: 55%;
                     .barblock {
                         padding-left: (55% * 1.05);
-                    }
-                    .barnum {
-                        display: none;
                     }
                 }
                 &--direction {
@@ -170,9 +164,6 @@
                     .barblock {
                         padding-left: (80% * 0.9);
                     }
-                    .barnum {
-                        display: none;
-                    }
                 }
                 &--planning {
                     z-index: 2;
@@ -180,9 +171,6 @@
                     width: 90%;
                     .barblock {
                         padding-left: (90% * 1);
-                    }
-                    .barnum {
-                        display: none;
                     }
                     .bartitle {
                         font-size: 0.9rem;
@@ -196,15 +184,15 @@
                     .barblock {
                         padding-left: (95% * 0.96);
                     }
-                    .barnum {
-                        display: none;
-                    }
                     .bartitle {
                         font-size: 0.9rem;
                         padding-bottom: 0.1rem;
                     }
                 }
             }
+        }
+        .ratedfn {
+            display: none;
         }
     }
     .jobcase {
@@ -248,42 +236,77 @@
         .job-rate {
             .ratebar {
                 .barparts {
+                    .barblock {
+                        padding-bottom: 0.5rem;
+                    }
+                    .barnum {
+                        background-color: white;
+                        display: inline-block;
+                        width: 1.4rem;
+                        height: 1.4rem;
+                        border-radius: 1.15rem;
+                        font-size: 1.15rem;
+                    }
+                    &--uiux {
+                        .barnum {
+                            display: inline-block;
+                            background-color: darken($space-green, 40%);
+                            color: lighten($space-green, 10%);
+                            font-weight: normal;
+                        }
+                    }
+                    &--uxwriting {
+                        .barnum {
+                            display: inline-block;
+                            color: darken($space-green, 20%);
+                        }
+                    }
+                    &--direction {
+                        .barnum {
+                            display: inline-block;
+                            color: darken($space-green, 30%);
+                        }
+                    }
                     &--planning {
                         .barblock {
                             padding-left: (90% * 1.01);
-                            padding-bottom: 0.5rem;
                         }
                         .barnum {
-                            background-color: white;
-                            color: darken($space-green, 40%);
                             display: inline-block;
-                            width: 1.5rem;
-                            height: 1.5rem;
-                            border-radius: 1.2rem;
-                            font-size: 1.2rem;
+                            color: darken($space-green, 40%);
                         }
                         .bartitle {
                             display: none;
+                        }
+                        .percnum {
+                            letter-spacing: 0.01rem;
                         }
                     }
                     &--others {
                         .barblock {
                             padding-left: (95% * 0.97);
-                            padding-bottom: 0.5rem;
                         }
                         .barnum {
-                            background-color: white;
-                            color: darken($space-green, 50%);
                             display: inline-block;
-                            width: 1.5rem;
-                            height: 1.5rem;
-                            border-radius: 1.2rem;
-                            font-size: 1.2rem;
+                            color: darken($space-green, 50%);
                         }
                         .bartitle {
                             display: none;
                         }
+                        .percnum {
+                            letter-spacing: 0.01rem;
+                        }
                     }
+                }
+            }
+            .ratedfn {
+                display: flex;
+                margin-top: 10px;
+                &--item {
+                    width: 25%;
+                    font-size: 0.8rem;
+                    letter-spacing: 0.15rem;
+                    color: $space-lightgreen;
                 }
             }
         }
@@ -304,14 +327,6 @@
                     .barblock {
                         padding-bottom: 0.4rem;
                     }
-                    .barnum {
-                        background-color: white;
-                        display: inline-block;
-                        width: 1.4rem;
-                        height: 1.4rem;
-                        border-radius: 1.15rem;
-                        font-size: 1.15rem;
-                    }
                     .bartitle {
                         display: none;
                     }
@@ -321,39 +336,6 @@
                         &:after {
                             content: "%";
                             font-size: 0.6rem;
-                        }
-                    }
-                    &--uiux {
-                        .barnum {
-                            background-color: darken($space-green, 40%);
-                            color: lighten($space-green, 10%);
-                            font-weight: normal;
-                        }
-                    }
-                    &--uxwriting {
-                        .barnum {
-                            color: darken($space-green, 20%);
-                        }
-                    }
-                    &--direction {
-                        .barnum {
-                            color: darken($space-green, 30%);
-                        }
-                    }
-                    &--planning {
-                        .barblock {
-                            padding-bottom: 0.4rem;
-                        }
-                        .percnum {
-                            letter-spacing: 0.01rem;
-                        }
-                    }
-                    &--others {
-                        .barblock {
-                            padding-bottom: 0.4rem;
-                        }
-                        .percnum {
-                            letter-spacing: 0.01rem;
                         }
                     }
                 }
@@ -384,33 +366,6 @@
                         &:after {
                             content: "%";
                             font-size: 0.2rem;
-                        }
-                    }
-                    // &--uiux {
-                    //     .barnum {
-                    //         background-color: darken($space-green, 40%);
-                    //         color: lighten($space-green, 10%);
-                    //         font-weight: normal;
-                    //     }
-                    // }
-                    // &--uxwriting {
-                    //     .barnum {
-                    //         color: darken($space-green, 20%);
-                    //     }
-                    // }
-                    // &--direction {
-                    //     .barnum {
-                    //         color: darken($space-green, 30%);
-                    //     }
-                    // }
-                    &--planning {
-                        .barblock {
-                            padding-bottom: 0.2rem;
-                        }
-                    }
-                    &--others {
-                        .barblock {
-                            padding-bottom: 0.2rem;
                         }
                     }
                 }

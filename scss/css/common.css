@@ -2300,7 +2300,7 @@ footer .copyright {
 }
 
 .works .job-rate .ratebar .barparts .barnum {
-  display: inline;
+  display: none;
 }
 
 .works .job-rate .ratebar .barparts .bartitle {
@@ -2328,10 +2328,6 @@ footer .copyright {
   font-weight: bold;
 }
 
-.works .job-rate .ratebar .barparts--uiux .barnum {
-  display: none;
-}
-
 .works .job-rate .ratebar .barparts--uxwriting {
   z-index: 4;
   background-color: #9dbc12;
@@ -2340,10 +2336,6 @@ footer .copyright {
 
 .works .job-rate .ratebar .barparts--uxwriting .barblock {
   padding-left: 57.75%;
-}
-
-.works .job-rate .ratebar .barparts--uxwriting .barnum {
-  display: none;
 }
 
 .works .job-rate .ratebar .barparts--direction {
@@ -2356,10 +2348,6 @@ footer .copyright {
   padding-left: 72%;
 }
 
-.works .job-rate .ratebar .barparts--direction .barnum {
-  display: none;
-}
-
 .works .job-rate .ratebar .barparts--planning {
   z-index: 2;
   background-color: #4f5f09;
@@ -2368,10 +2356,6 @@ footer .copyright {
 
 .works .job-rate .ratebar .barparts--planning .barblock {
   padding-left: 90%;
-}
-
-.works .job-rate .ratebar .barparts--planning .barnum {
-  display: none;
 }
 
 .works .job-rate .ratebar .barparts--planning .bartitle {
@@ -2389,13 +2373,13 @@ footer .copyright {
   padding-left: 91.2%;
 }
 
-.works .job-rate .ratebar .barparts--others .barnum {
-  display: none;
-}
-
 .works .job-rate .ratebar .barparts--others .bartitle {
   font-size: 0.9rem;
   padding-bottom: 0.1rem;
+}
+
+.works .job-rate .ratedfn {
+  display: none;
 }
 
 .works .jobcase {
@@ -2461,37 +2445,69 @@ footer .copyright {
 }
 
 @media (max-width: 1150px) {
-  .works .job-rate .ratebar .barparts--planning .barblock {
-    padding-left: 90.9%;
+  .works .job-rate .ratebar .barparts .barblock {
     padding-bottom: 0.5rem;
   }
-  .works .job-rate .ratebar .barparts--planning .barnum {
+  .works .job-rate .ratebar .barparts .barnum {
     background-color: white;
-    color: #4f5f09;
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 1.2rem;
-    font-size: 1.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 1.15rem;
+    font-size: 1.15rem;
+  }
+  .works .job-rate .ratebar .barparts--uiux .barnum {
+    display: inline-block;
+    background-color: #4f5f09;
+    color: #dbf275;
+    font-weight: normal;
+  }
+  .works .job-rate .ratebar .barparts--uxwriting .barnum {
+    display: inline-block;
+    color: #9dbc12;
+  }
+  .works .job-rate .ratebar .barparts--direction .barnum {
+    display: inline-block;
+    color: #768d0e;
+  }
+  .works .job-rate .ratebar .barparts--planning .barblock {
+    padding-left: 90.9%;
+  }
+  .works .job-rate .ratebar .barparts--planning .barnum {
+    display: inline-block;
+    color: #4f5f09;
   }
   .works .job-rate .ratebar .barparts--planning .bartitle {
     display: none;
   }
+  .works .job-rate .ratebar .barparts--planning .percnum {
+    letter-spacing: 0.01rem;
+  }
   .works .job-rate .ratebar .barparts--others .barblock {
     padding-left: 92.15%;
-    padding-bottom: 0.5rem;
   }
   .works .job-rate .ratebar .barparts--others .barnum {
-    background-color: white;
-    color: #283005;
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 1.2rem;
-    font-size: 1.2rem;
+    color: #283005;
   }
   .works .job-rate .ratebar .barparts--others .bartitle {
     display: none;
+  }
+  .works .job-rate .ratebar .barparts--others .percnum {
+    letter-spacing: 0.01rem;
+  }
+  .works .job-rate .ratedfn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+  }
+  .works .job-rate .ratedfn--item {
+    width: 25%;
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+    color: #f3fbd2;
   }
 }
 
@@ -2512,14 +2528,6 @@ footer .copyright {
   .works .job-rate .ratebar .barparts .barblock {
     padding-bottom: 0.4rem;
   }
-  .works .job-rate .ratebar .barparts .barnum {
-    background-color: white;
-    display: inline-block;
-    width: 1.4rem;
-    height: 1.4rem;
-    border-radius: 1.15rem;
-    font-size: 1.15rem;
-  }
   .works .job-rate .ratebar .barparts .bartitle {
     display: none;
   }
@@ -2530,29 +2538,6 @@ footer .copyright {
   .works .job-rate .ratebar .barparts .percnum:after {
     content: "%";
     font-size: 0.6rem;
-  }
-  .works .job-rate .ratebar .barparts--uiux .barnum {
-    background-color: #4f5f09;
-    color: #dbf275;
-    font-weight: normal;
-  }
-  .works .job-rate .ratebar .barparts--uxwriting .barnum {
-    color: #9dbc12;
-  }
-  .works .job-rate .ratebar .barparts--direction .barnum {
-    color: #768d0e;
-  }
-  .works .job-rate .ratebar .barparts--planning .barblock {
-    padding-bottom: 0.4rem;
-  }
-  .works .job-rate .ratebar .barparts--planning .percnum {
-    letter-spacing: 0.01rem;
-  }
-  .works .job-rate .ratebar .barparts--others .barblock {
-    padding-bottom: 0.4rem;
-  }
-  .works .job-rate .ratebar .barparts--others .percnum {
-    letter-spacing: 0.01rem;
   }
 }
 
@@ -2583,12 +2568,6 @@ footer .copyright {
   .works .job-rate .ratebar .barparts .percnum:after {
     content: "%";
     font-size: 0.2rem;
-  }
-  .works .job-rate .ratebar .barparts--planning .barblock {
-    padding-bottom: 0.2rem;
-  }
-  .works .job-rate .ratebar .barparts--others .barblock {
-    padding-bottom: 0.2rem;
   }
 }
 
