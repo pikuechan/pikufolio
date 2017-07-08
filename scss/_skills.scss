@@ -220,6 +220,25 @@
             }
         }
     }
+    //mobile
+    @media (max-width: 480px) {
+        .chart {
+            &__title {
+                @include sentence--mobile--large($earth-blue1);
+            }
+            &__area {
+                width: 100%;
+                padding-bottom: 0;
+                &__description {
+                    width: 100%;
+                    dl {
+                        flex-direction: column;
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
     /***********************************************************
                     CHARTLIST用のブレイクポイント
     ***********************************************************/

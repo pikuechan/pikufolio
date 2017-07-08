@@ -1443,6 +1443,10 @@ mark {
   font-weight: normal;
 }
 
+u {
+  text-decoration: none;
+}
+
 /***********************************************************
                       SECTION BORDER
 ***********************************************************/
@@ -2099,6 +2103,15 @@ footer .copyright {
   width: 100%;
   background-color: #212E45;
   /***********************************************************
+                       JOBRATE用ブレイクポイント
+    ***********************************************************/
+  /***********************************************************
+                       JOBLIST用ブレイクポイント
+    ***********************************************************/
+  /***********************************************************
+                       JOBCASE用ブレイクポイント
+    ***********************************************************/
+  /***********************************************************
                        共通パーツ用ブレイクポイント
     ***********************************************************/
 }
@@ -2274,7 +2287,7 @@ footer .copyright {
   height: 100%;
 }
 
-.works .job-rate .ratebar .barparts mark {
+.works .job-rate .ratebar .barparts .barblock {
   display: block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2286,12 +2299,20 @@ footer .copyright {
   color: white;
 }
 
-.works .job-rate .ratebar .barparts mark.percnum {
+.works .job-rate .ratebar .barparts .barnum {
+  display: inline;
+}
+
+.works .job-rate .ratebar .barparts .bartitle {
+  display: inline;
+}
+
+.works .job-rate .ratebar .barparts .percnum {
   padding-top: 5px;
   font-size: 1.6rem;
 }
 
-.works .job-rate .ratebar .barparts mark.percnum:after {
+.works .job-rate .ratebar .barparts .percnum:after {
   content: "%";
   font-size: 0.8rem;
 }
@@ -2302,9 +2323,13 @@ footer .copyright {
   width: 30%;
 }
 
-.works .job-rate .ratebar .barparts--uiux mark {
+.works .job-rate .ratebar .barparts--uiux .barblock {
   color: #4f5f09;
   font-weight: bold;
+}
+
+.works .job-rate .ratebar .barparts--uiux .barnum {
+  display: none;
 }
 
 .works .job-rate .ratebar .barparts--uxwriting {
@@ -2313,8 +2338,12 @@ footer .copyright {
   width: 55%;
 }
 
-.works .job-rate .ratebar .barparts--uxwriting mark {
+.works .job-rate .ratebar .barparts--uxwriting .barblock {
   padding-left: 57.75%;
+}
+
+.works .job-rate .ratebar .barparts--uxwriting .barnum {
+  display: none;
 }
 
 .works .job-rate .ratebar .barparts--direction {
@@ -2323,9 +2352,12 @@ footer .copyright {
   width: 80%;
 }
 
-.works .job-rate .ratebar .barparts--direction label {
+.works .job-rate .ratebar .barparts--direction .barblock {
   padding-left: 72%;
-  padding-bottom: 1.1rem;
+}
+
+.works .job-rate .ratebar .barparts--direction .barnum {
+  display: none;
 }
 
 .works .job-rate .ratebar .barparts--planning {
@@ -2334,9 +2366,17 @@ footer .copyright {
   width: 90%;
 }
 
-.works .job-rate .ratebar .barparts--planning label {
+.works .job-rate .ratebar .barparts--planning .barblock {
   padding-left: 90%;
-  padding-bottom: 1.1rem;
+}
+
+.works .job-rate .ratebar .barparts--planning .barnum {
+  display: none;
+}
+
+.works .job-rate .ratebar .barparts--planning .bartitle {
+  font-size: 0.9rem;
+  padding-bottom: 0.1rem;
 }
 
 .works .job-rate .ratebar .barparts--others {
@@ -2345,10 +2385,17 @@ footer .copyright {
   width: 100%;
 }
 
-.works .job-rate .ratebar .barparts--others label {
-  font-size: 1.2rem;
-  padding-left: 92.15%;
-  padding-bottom: 1.1rem;
+.works .job-rate .ratebar .barparts--others .barblock {
+  padding-left: 91.2%;
+}
+
+.works .job-rate .ratebar .barparts--others .barnum {
+  display: none;
+}
+
+.works .job-rate .ratebar .barparts--others .bartitle {
+  font-size: 0.9rem;
+  padding-bottom: 0.1rem;
 }
 
 .works .jobcase {
@@ -2414,35 +2461,138 @@ footer .copyright {
 }
 
 @media (max-width: 1150px) {
-  .works .joblist__items {
-    width: 25%;
+  .works .job-rate .ratebar .barparts--planning .barblock {
+    padding-left: 90.9%;
+    padding-bottom: 0.5rem;
   }
-  .works .joblist__items .job__icon {
-    width: 160px;
-    height: 160px;
-    padding: 25px;
+  .works .job-rate .ratebar .barparts--planning .barnum {
+    background-color: white;
+    color: #4f5f09;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
   }
-  .works .joblist__items .job__icon:before {
-    font-size: 4.5rem;
+  .works .job-rate .ratebar .barparts--planning .bartitle {
+    display: none;
   }
-  .works .joblist__items .job__icon:after {
-    padding-top: 1.2rem;
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
+  .works .job-rate .ratebar .barparts--others .barblock {
+    padding-left: 92.15%;
+    padding-bottom: 0.5rem;
   }
-  .works .joblist__items .job__description {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 20px 15px 40px 15px;
-    font-size: 0.8rem;
-    letter-spacing: 0.09rem;
-    line-height: 1.4rem;
-    color: #d4d9e2;
-    line-height: 1.2rem;
+  .works .job-rate .ratebar .barparts--others .barnum {
+    background-color: white;
+    color: #283005;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+  }
+  .works .job-rate .ratebar .barparts--others .bartitle {
+    display: none;
   }
 }
 
 @media (max-width: 960px) {
+  .works .job-rate h3 {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+    color: #f3fbd2;
+    line-height: 3.5rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .works .job-rate .ratebar {
+    height: 80px;
+  }
+  .works .job-rate .ratebar .barparts .barblock {
+    padding-bottom: 0.4rem;
+  }
+  .works .job-rate .ratebar .barparts .barnum {
+    background-color: white;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 1.15rem;
+    font-size: 1.15rem;
+  }
+  .works .job-rate .ratebar .barparts .bartitle {
+    display: none;
+  }
+  .works .job-rate .ratebar .barparts .percnum {
+    padding-top: 5px;
+    font-size: 1.4rem;
+  }
+  .works .job-rate .ratebar .barparts .percnum:after {
+    content: "%";
+    font-size: 0.6rem;
+  }
+  .works .job-rate .ratebar .barparts--uiux .barnum {
+    background-color: #4f5f09;
+    color: #dbf275;
+    font-weight: normal;
+  }
+  .works .job-rate .ratebar .barparts--uxwriting .barnum {
+    color: #9dbc12;
+  }
+  .works .job-rate .ratebar .barparts--direction .barnum {
+    color: #768d0e;
+  }
+  .works .job-rate .ratebar .barparts--planning .barblock {
+    padding-bottom: 0.4rem;
+  }
+  .works .job-rate .ratebar .barparts--planning .percnum {
+    letter-spacing: 0.01rem;
+  }
+  .works .job-rate .ratebar .barparts--others .barblock {
+    padding-bottom: 0.4rem;
+  }
+  .works .job-rate .ratebar .barparts--others .percnum {
+    letter-spacing: 0.01rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .works .job-rate h3 {
+    font-size: 1.0rem;
+    letter-spacing: 0.08rem;
+    line-height: 2.0rem;
+    color: #f3fbd2;
+    line-height: 3rem;
+  }
+  .works .job-rate .ratebar {
+    height: 70px;
+  }
+  .works .job-rate .ratebar .barparts .barblock {
+    padding-bottom: 0.2rem;
+  }
+  .works .job-rate .ratebar .barparts .barnum {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+  }
+  .works .job-rate .ratebar .barparts .percnum {
+    padding-top: 5px;
+    font-size: 1.2rem;
+  }
+  .works .job-rate .ratebar .barparts .percnum:after {
+    content: "%";
+    font-size: 0.2rem;
+  }
+  .works .job-rate .ratebar .barparts--planning .barblock {
+    padding-bottom: 0.2rem;
+  }
+  .works .job-rate .ratebar .barparts--others .barblock {
+    padding-bottom: 0.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
   .works .joblist {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -2459,17 +2609,30 @@ footer .copyright {
     color: #d4d9e2;
     line-height: 1.2rem;
   }
-  .works .job-rate h3 {
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-    line-height: 2.2rem;
-    color: #f3fbd2;
-    line-height: 3.5rem;
+}
+
+@media (max-width: 580px) {
+  .works .joblist {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
-  .works .job-rate .ratebar .barparts label {
+  .works .joblist__items {
+    width: 100%;
+  }
+  .works .joblist__items .job__description {
+    padding: 20px 10% 60px 10%;
     font-size: 0.8rem;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0.09rem;
+    line-height: 1.4rem;
+    color: #d4d9e2;
+    line-height: 1.2rem;
   }
+}
+
+@media (max-width: 960px) {
   .works .jobcase__title {
     padding: 0.8rem;
   }
@@ -2497,28 +2660,62 @@ footer .copyright {
   }
 }
 
-@media (max-width: 580px) {
-  .works .joblist {
+@media (max-width: 750px) {
+  .works .jobcase__title {
+    padding: 0.8rem;
+  }
+  .works .jobcase__title h3 {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+    color: #f3fbd2;
+  }
+  .works .jobcase__title aside {
+    font-size: 0.8rem;
+    letter-spacing: 0.09rem;
+    line-height: 1.4rem;
+    color: #d4d9e2;
+  }
+  .works .jobcase__description {
+    font-size: 0.92rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7rem;
+    color: #d4d9e2;
+    margin: 20px 0;
+  }
+  .works .jobcase__images {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 30px;
   }
-  .works .joblist__items {
-    width: 100%;
+  .works .jobcase__images a {
+    width: 90%;
+    height: 100%;
   }
-  .works .joblist__items .job__description {
-    padding: 20px 10% 60px 10%;
-    font-size: 0.8rem;
-    letter-spacing: 0.09rem;
-    line-height: 1.4rem;
-    color: #d4d9e2;
-    line-height: 1.2rem;
+  .works .jobcase__images a img {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
-  .works .job-rate {
-    display: none;
-  }
+}
+
+@media (max-width: 580px) {
   .works .jobcase__title {
     padding: 0.8rem;
   }
@@ -2897,6 +3094,30 @@ footer .copyright {
     letter-spacing: 0.09rem;
     line-height: 1.4rem;
     color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills .chart__title {
+    font-size: 1.0rem;
+    letter-spacing: 0.08rem;
+    line-height: 2.0rem;
+    color: #3D4E3D;
+  }
+  .skills .chart__area {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .skills .chart__area__description {
+    width: 100%;
+  }
+  .skills .chart__area__description dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 15px;
   }
 }
 

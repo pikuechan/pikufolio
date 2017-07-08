@@ -116,7 +116,7 @@
                 top: 0;
                 left: 0;
                 height: 100%;
-                mark {
+                .barblock {
                     display: block;
                     box-sizing: border-box;
                     width: 100%;
@@ -125,60 +125,83 @@
                     font-size: 1.0rem;
                     letter-spacing: 0.1rem;
                     color: white;
-                    &.percnum {
-                        padding-top: 5px;
-                        font-size: 1.6rem;
-                        &:after {
-                            content: "%";
-                            font-size: 0.8rem;
-                        }
+                }
+                .barnum {
+                    display: inline;
+                }
+                .bartitle {
+                    display: inline;
+                }
+                .percnum {
+                    padding-top: 5px;
+                    font-size: 1.6rem;
+                    &:after {
+                        content: "%";
+                        font-size: 0.8rem;
                     }
                 }
                 &--uiux {
                     z-index: 5;
                     background-color: lighten($space-green, 10%);
                     width: 30%;
-                    mark {
+                    .barblock {
                         color: darken($space-green, 40%);
                         font-weight: bold;
+                    }
+                    .barnum {
+                        display: none;
                     }
                 }
                 &--uxwriting {
                     z-index: 4;
                     background-color: darken($space-green, 20%);
                     width: 55%;
-                    mark {
+                    .barblock {
                         padding-left: (55% * 1.05);
+                    }
+                    .barnum {
+                        display: none;
                     }
                 }
                 &--direction {
                     z-index: 3;
                     background-color: darken($space-green, 30%);
                     width: 80%;
-                    label {
-                        // font-size: 0.9rem;
+                    .barblock {
                         padding-left: (80% * 0.9);
-                        padding-bottom: 1.1rem;
+                    }
+                    .barnum {
+                        display: none;
                     }
                 }
                 &--planning {
                     z-index: 2;
                     background-color: darken($space-green, 40%);
                     width: 90%;
-                    label {
-                        // font-size: 0.9rem;
+                    .barblock {
                         padding-left: (90% * 1);
-                        padding-bottom: 1.1rem;
+                    }
+                    .barnum {
+                        display: none;
+                    }
+                    .bartitle {
+                        font-size: 0.9rem;
+                        padding-bottom: 0.1rem;
                     }
                 }
                 &--others {
                     z-index: 1;
                     background-color: darken($space-green, 50%);
                     width: 100%;
-                    label {
-                        font-size: 1.2rem;
-                        padding-left: (95% * 0.97);
-                        padding-bottom: 1.1rem;
+                    .barblock {
+                        padding-left: (95% * 0.96);
+                    }
+                    .barnum {
+                        display: none;
+                    }
+                    .bartitle {
+                        font-size: 0.9rem;
+                        padding-bottom: 0.1rem;
                     }
                 }
             }
@@ -218,41 +241,186 @@
             }
         }
     }
+    /***********************************************************
+                       JOBRATE用ブレイクポイント
+    ***********************************************************/
     @media (max-width: 1150px) {
-        .joblist {
-            &__items {
-                width: 25%;
-                .job__icon {
-                    $icon-size: 4.5rem;
-                    $icon-padding: 1.2rem;
-                    width: 160px;
-                    height: 160px;
-                    padding: 25px;
-                    &:before {
-                        font-size: $icon-size;
+        .job-rate {
+            .ratebar {
+                .barparts {
+                    &--planning {
+                        .barblock {
+                            padding-left: (90% * 1.01);
+                            padding-bottom: 0.5rem;
+                        }
+                        .barnum {
+                            background-color: white;
+                            color: darken($space-green, 40%);
+                            display: inline-block;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            border-radius: 1.2rem;
+                            font-size: 1.2rem;
+                        }
+                        .bartitle {
+                            display: none;
+                        }
                     }
-                    &:after {
-                        padding-top: $icon-padding;
-                        font-size: 0.9rem;
-                        letter-spacing: 0.1rem;
+                    &--others {
+                        .barblock {
+                            padding-left: (95% * 0.97);
+                            padding-bottom: 0.5rem;
+                        }
+                        .barnum {
+                            background-color: white;
+                            color: darken($space-green, 50%);
+                            display: inline-block;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            border-radius: 1.2rem;
+                            font-size: 1.2rem;
+                        }
+                        .bartitle {
+                            display: none;
+                        }
                     }
-                }
-                .job__description {
-                    box-sizing: border-box;
-                    padding: 20px 15px 40px 15px;
-                    @include sentence--pc--small($space-text);
-                    line-height: 1.2rem;
                 }
             }
         }
     }
-    @media (max-width: 960px) {
-        // &__title {
-        //     @include section-title--tablet;
-        // }
-        // &__description {
-        //     @include sentence--tablet--basic($space-text);
-        // }
+    @media(max-width: 960px) {
+        .job-rate {
+            h3 {
+                @include sentence--tablet--large($space-lightgreen);
+                line-height: 3.5rem;
+            }
+        }
+    }
+    @media (max-width: 780px) {
+        .job-rate {
+            .ratebar {
+                height: 80px;
+                .barparts {
+                    .barblock {
+                        padding-bottom: 0.4rem;
+                    }
+                    .barnum {
+                        background-color: white;
+                        display: inline-block;
+                        width: 1.4rem;
+                        height: 1.4rem;
+                        border-radius: 1.15rem;
+                        font-size: 1.15rem;
+                    }
+                    .bartitle {
+                        display: none;
+                    }
+                    .percnum {
+                        padding-top: 5px;
+                        font-size: 1.4rem;
+                        &:after {
+                            content: "%";
+                            font-size: 0.6rem;
+                        }
+                    }
+                    &--uiux {
+                        .barnum {
+                            background-color: darken($space-green, 40%);
+                            color: lighten($space-green, 10%);
+                            font-weight: normal;
+                        }
+                    }
+                    &--uxwriting {
+                        .barnum {
+                            color: darken($space-green, 20%);
+                        }
+                    }
+                    &--direction {
+                        .barnum {
+                            color: darken($space-green, 30%);
+                        }
+                    }
+                    &--planning {
+                        .barblock {
+                            padding-bottom: 0.4rem;
+                        }
+                        .percnum {
+                            letter-spacing: 0.01rem;
+                        }
+                    }
+                    &--others {
+                        .barblock {
+                            padding-bottom: 0.4rem;
+                        }
+                        .percnum {
+                            letter-spacing: 0.01rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 580px) {
+        .job-rate {
+            h3 {
+                @include sentence--mobile--large($space-lightgreen);
+                line-height: 3rem;
+            }
+            .ratebar {
+                height: 70px;
+                .barparts {
+                    .barblock {
+                        padding-bottom: 0.2rem;
+                    }
+                    .barnum {
+                        width: 1.2rem;
+                        height: 1.2rem;
+                        border-radius: 1rem;
+                        font-size: 1rem;
+                    }
+                    .percnum {
+                        padding-top: 5px;
+                        font-size: 1.2rem;
+                        &:after {
+                            content: "%";
+                            font-size: 0.2rem;
+                        }
+                    }
+                    // &--uiux {
+                    //     .barnum {
+                    //         background-color: darken($space-green, 40%);
+                    //         color: lighten($space-green, 10%);
+                    //         font-weight: normal;
+                    //     }
+                    // }
+                    // &--uxwriting {
+                    //     .barnum {
+                    //         color: darken($space-green, 20%);
+                    //     }
+                    // }
+                    // &--direction {
+                    //     .barnum {
+                    //         color: darken($space-green, 30%);
+                    //     }
+                    // }
+                    &--planning {
+                        .barblock {
+                            padding-bottom: 0.2rem;
+                        }
+                    }
+                    &--others {
+                        .barblock {
+                            padding-bottom: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /***********************************************************
+                       JOBLIST用ブレイクポイント
+    ***********************************************************/
+    @media (max-width: 1000px) {
         .joblist {
             flex-wrap: wrap;
             &__items {
@@ -264,20 +432,24 @@
                 }
             }
         }
-        .job-rate {
-            h3 {
-                @include sentence--tablet--large(lighten($space-green, 30%));
-                line-height: 3.5rem;
-            }
-            .ratebar {
-                .barparts {
-                    label {
-                        font-size: 0.8rem;
-                        letter-spacing: 0.01rem;
-                    }
+    }
+    @media (max-width: 580px) {
+        .joblist {
+            flex-direction: column;
+            &__items {
+                width: 100%;
+                .job__description {
+                    padding: 20px 10% 60px 10%;
+                    @include sentence--mobile--small($space-text);
+                    line-height: 1.2rem;
                 }
             }
         }
+    }
+    /***********************************************************
+                       JOBCASE用ブレイクポイント
+    ***********************************************************/
+    @media (max-width: 960px) {
         .jobcase {
             &__title {
                 padding: 0.8rem;
@@ -297,28 +469,40 @@
             }
         }
     }
-    @media (max-width: 580px) {
-        // @include base-area--mobile($space-background);
-        // &__title {
-        //     @include section-title--mobile;
-        // }
-        // &__description {
-        //     @include sentence--mobile--basic($space-text);
-        // }
-        .joblist {
-            flex-direction: column;
-            &__items {
-                width: 100%;
-                .job__description {
-                    padding: 20px 10% 60px 10%;
-                    @include sentence--mobile--small($space-text);
-                    line-height: 1.2rem;
+    @media (max-width: 750px) {
+        .jobcase {
+            &__title {
+                padding: 0.8rem;
+                h3 {
+                    @include sentence--tablet--large($space-lightgreen);
+                }
+                aside {
+                    @include sentence--tablet--small($space-text);
+                }
+            }
+            &__description {
+                @include sentence--tablet--basic($space-text);
+                margin: 20px 0;
+            }
+            &__images {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding-top: 30px;
+                a {
+                    width: 90%;
+                    height: 100%;
+                    img {
+                        box-sizing: border-box;
+                        margin-bottom: 10px;
+                        margin-bottom: 50px;
+                    }
                 }
             }
         }
-        .job-rate {
-            display: none;
-        }
+    }
+    @media (max-width: 580px) {
         .jobcase {
             &__title {
                 padding: 0.8rem;
