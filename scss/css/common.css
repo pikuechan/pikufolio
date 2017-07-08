@@ -2501,13 +2501,52 @@ footer .copyright {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 10px;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 15px;
   }
   .works .job-rate .ratedfn--item {
-    width: 25%;
-    font-size: 0.8rem;
+    width: 20%;
+    font-size: 0.5rem;
     letter-spacing: 0.15rem;
     color: #f3fbd2;
+    margin-bottom: 15px;
+    opacity: 0.7;
+  }
+  .works .job-rate .ratedfn--num {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 1.15rem;
+    font-size: 1rem;
+    padding-left: 11px;
+    padding-top: 3px;
+    color: #212E45;
+    border: 1px solid white;
+    border-radius: 1rem;
+    background: #f3fbd2;
+  }
+  .works .job-rate .ratedfn--title {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  .works .job-rate .ratedfn--perc {
+    display: none;
+    padding-left: 5px;
+    font-size: 1.2rem;
+  }
+  .works .job-rate .ratedfn--perc u {
+    font-size: 0.5rem;
+  }
+  .works .job-rate .ratedfn__uiux {
+    display: none;
+  }
+  .works .job-rate .ratedfn__uxwriting {
+    display: none;
+  }
+  .works .job-rate .ratedfn__direction {
+    display: none;
   }
 }
 
@@ -2518,6 +2557,12 @@ footer .copyright {
     line-height: 2.2rem;
     color: #f3fbd2;
     line-height: 3.5rem;
+  }
+  .works .job-rate .ratedfn--item {
+    width: 30%;
+  }
+  .works .job-rate .ratedfn--perc {
+    display: inline-block;
   }
 }
 
@@ -2571,7 +2616,7 @@ footer .copyright {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .works .joblist {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;

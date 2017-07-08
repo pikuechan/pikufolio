@@ -301,12 +301,78 @@
             }
             .ratedfn {
                 display: flex;
-                margin-top: 10px;
+                flex-wrap: wrap;
+                // justify-content: flex-end;
+                margin-top: 15px;
                 &--item {
-                    width: 25%;
-                    font-size: 0.8rem;
+                    width: 20%;
+                    font-size: 0.5rem;
                     letter-spacing: 0.15rem;
                     color: $space-lightgreen;
+                    margin-bottom: 15px;
+                    opacity: 0.7;
+                }
+                &--num {
+                    display: inline-block;
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    border-radius: 1.15rem;
+                    font-size: 1rem;
+                    padding-left: 11px;
+                    padding-top: 3px;
+                    // color: white;
+                    // border: 1px solid white;
+                    color: $space-background;
+                    border: 1px solid white;
+                    border-radius: 1rem;
+                    background: $space-lightgreen;
+                }
+                &--title {
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+                &--perc {
+                    display: none;
+                    padding-left: 5px;
+                    font-size: 1.2rem;
+                    u {
+                        font-size: 0.5rem;
+                    }
+                }
+                // &__uiux {
+                //     .ratedfn--num {
+                //         color: darken($space-green, 40%);
+                //         background-color: lighten($space-green, 10%);
+                //     }
+                // }
+                // &__uxwriting {
+                //     .ratedfn--num {
+                //         background-color: darken($space-green, 20%);
+                //     }
+                // }
+                // &__direction {
+                //     .ratedfn--num {
+                //         background-color: darken($space-green, 30%);
+                //     }
+                // }
+                // &__planning {
+                //     .ratedfn--num {
+                //         background-color: darken($space-green, 40%);
+                //     }
+                // }
+                // &__others {
+                //     .ratedfn--num {
+                //         background-color: darken($space-green, 50%);
+                //     }
+                // }
+                &__uiux {
+                    display: none;
+                }
+                &__uxwriting {
+                    display: none;
+                }
+                &__direction {
+                    display: none;
                 }
             }
         }
@@ -316,6 +382,14 @@
             h3 {
                 @include sentence--tablet--large($space-lightgreen);
                 line-height: 3.5rem;
+            }
+            .ratedfn {
+                &--item {
+                    width: 30%;
+                }
+                &--perc {
+                    display: inline-block;
+                }
             }
         }
     }
@@ -375,7 +449,7 @@
     /***********************************************************
                        JOBLIST用ブレイクポイント
     ***********************************************************/
-    @media (max-width: 1000px) {
+    @media (max-width: 1100px) {
         .joblist {
             flex-wrap: wrap;
             &__items {
