@@ -234,12 +234,12 @@
         &__title {
             @include sentence--pc--basic($space-lightgreen);
             text-align: center;
-            margin-top: 20px;
+            margin: 20px;
         }
         &__description {
             @include sentence--pc--small(white);
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         &__area {
             @include sentence--pc--small(white);

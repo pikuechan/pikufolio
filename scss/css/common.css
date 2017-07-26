@@ -2454,7 +2454,7 @@ footer .copyright {
   line-height: 1.8rem;
   color: #f3fbd2;
   text-align: center;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .works .jobdetails__description {
@@ -2463,7 +2463,7 @@ footer .copyright {
   line-height: 1.4rem;
   color: white;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .works .jobdetails__area {
