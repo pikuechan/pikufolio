@@ -36,6 +36,10 @@ footer {
         color: rgba(#fff, 0.7);
         letter-spacing: 0.15rem;
         font-size: 0.8rem;
+        a {
+            color: $space-green;
+            opacity: 0.6;
+        }
     }
     //タブレット版
     @media (max-width:960px) {
