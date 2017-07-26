@@ -92,7 +92,7 @@
             .job__description {
                 box-sizing: border-box;
                 padding: 30px 15px 60px 15px;
-                @include sentence--pc--small($space-text);
+                @include sentence--pc--basic($space-text);
             }
         }
     }
@@ -454,15 +454,15 @@
     /***********************************************************
                        JOBLIST用ブレイクポイント
     ***********************************************************/
-    @media (max-width: 1100px) {
+    @media (max-width: 1200px) {
         .joblist {
             flex-wrap: wrap;
             &__items {
                 width: 50%;
                 .job__description {
                     padding: 20px 20px 60px 20px;
-                    @include sentence--tablet--small($space-text);
-                    line-height: 1.2rem;
+                    @include sentence--tablet--basic($space-text);
+                    // line-height: 1.4rem;
                 }
             }
         }
@@ -474,8 +474,8 @@
                 width: 100%;
                 .job__description {
                     padding: 20px 10% 60px 10%;
-                    @include sentence--mobile--small($space-text);
-                    line-height: 1.2rem;
+                    @include sentence--mobile--basic($space-text);
+                    // line-height: 1.4rem;
                 }
             }
         }
