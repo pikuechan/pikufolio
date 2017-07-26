@@ -2444,6 +2444,44 @@ footer .copyright {
   height: 100%;
 }
 
+.works .jobdetails {
+  margin-top: 80px;
+}
+
+.works .jobdetails__title {
+  font-size: 0.95rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.8rem;
+  color: #f3fbd2;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.works .jobdetails__description {
+  font-size: 0.8rem;
+  letter-spacing: 0.09rem;
+  line-height: 1.4rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.works .jobdetails__area {
+  font-size: 0.8rem;
+  letter-spacing: 0.09rem;
+  line-height: 1.4rem;
+  color: white;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px 50px;
+  background-color: #4E586A;
+}
+
+.works .jobdetails__area__exam {
+  color: white;
+  opacity: 0.4;
+}
+
 @media (max-width: 1150px) {
   .works .job-rate .ratebar .barparts .barblock {
     padding-bottom: 0.5rem;

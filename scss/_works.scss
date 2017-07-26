@@ -229,6 +229,30 @@
             }
         }
     }
+    .jobdetails {
+        margin-top: 80px;
+        &__title {
+            @include sentence--pc--basic($space-lightgreen);
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__description {
+            @include sentence--pc--small(white);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        &__area {
+            @include sentence--pc--small(white);
+            box-sizing: border-box;
+            padding: 20px 50px;
+            background-color: $space-gray;
+            &__exam {
+                // color: darken(white, 40%);
+                color: white;
+                opacity: 0.4;
+            }
+        }
+    }
     /***********************************************************
                        JOBRATE用ブレイクポイント
     ***********************************************************/
