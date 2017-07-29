@@ -24,21 +24,6 @@ section-border--earth：section borderのearthパターン
 
 body {
     font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
-    .bold-text {
-        //和英どちらもboldになる
-        font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Bold', sans-serif;
-        font-weight: 700;
-    }
-    .semibold-text {
-        //和文のみ細字になるが、英文はfont-weightを指定しても細くならない
-        font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Medium', sans-serif;
-        font-weight: 600;
-    }
-    //細字は結局使わなかったので
-    // .thin-text {
-    //     //和文のみ細字になるが、英文はfont-weightを指定しても細くならない
-    //     font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
-    // }
 }
 
 a {
@@ -83,3 +68,26 @@ u {
         @include border-waves($space-background);
     }
 }
+
+
+/***********************************************************
+                      General class
+***********************************************************/
+
+.bold-text {
+    //和英どちらもboldになる
+    font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Bold', sans-serif;
+    font-weight: 700;
+}
+
+.semibold-text {
+    //和文のみ細字になるが、英文はfont-weightを指定しても細くならない
+    font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Medium', sans-serif;
+    font-weight: 600;
+}
+
+//細字は結局使わなかったので
+// .thin-text {
+//     //和文のみ細字になるが、英文はfont-weightを指定しても細くならない
+//     font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) thin', sans-serif;
+// }

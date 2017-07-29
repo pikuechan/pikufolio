@@ -1408,16 +1408,6 @@ body {
   font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
 }
 
-body .bold-text {
-  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Bold', sans-serif;
-  font-weight: 700;
-}
-
-body .semibold-text {
-  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Medium', sans-serif;
-  font-weight: 600;
-}
-
 a {
   text-decoration: none;
   color: #C7D7F2;
@@ -1466,6 +1456,19 @@ u {
 
 .section-border--space img {
   vertical-align: top;
+}
+
+/***********************************************************
+                      General class
+***********************************************************/
+.bold-text {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Bold', sans-serif;
+  font-weight: 700;
+}
+
+.semibold-text {
+  font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Medium', sans-serif;
+  font-weight: 600;
 }
 
 /***************************************************************
@@ -1787,6 +1790,12 @@ footer .copyright a {
   height: 300px;
   border-radius: 300px;
   margin-left: 5vw;
+}
+
+.aboutme__profile .emphasis {
+  color: #587058;
+  text-shadow: none;
+  padding: 0 10px;
 }
 
 @media (max-width: 960px) {

@@ -25,6 +25,11 @@
             border-radius: 300px;
             margin-left: 5vw;
         }
+        .emphasis {
+            color: lighten($earth-blue1, 12%);
+            text-shadow: none;
+            padding: 0 10px;
+        }
     }
     // &__chronology {}
     //タブレット
