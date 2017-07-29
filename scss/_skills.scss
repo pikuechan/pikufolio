@@ -56,14 +56,14 @@
                     line-height: 2.5rem;
                 }
                 dd {
-                    @include sentence--pc--basic(white/*$earth-blue1*/
-                    );
+                    // @include sentence--pc--basic(lighten($earth-blue1, 10%));
+                    @include sentence--pc--basic(white);
                     $bottomline: 0.2rem;
                     box-sizing: border-box;
                     padding-bottom: $bottomline;
                     line-height: 2.5rem-$bottomline;
                     margin-left: 10px;
-                    text-shadow: 0 0 0.5rem $earth-text-shadow;
+                    text-shadow: 0 0 0.5rem darken($earth-text-shadow, 8%);
                 }
             }
         }
