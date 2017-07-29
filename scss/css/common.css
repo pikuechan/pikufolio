@@ -2923,6 +2923,18 @@ footer .copyright a {
   padding: 0 5px;
 }
 
+.works .workslink {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.works .workslink :before {
+  font-family: 'pikufont';
+  padding-right: 5px;
+  content: "\e9bf";
+  color: #d4d9e2;
+}
+
 /***************************************************************
                           Color Settings
 ****************************************************************/

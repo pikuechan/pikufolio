@@ -601,4 +601,14 @@
         color: $space-lightgreen;
         padding: 0 5px;
     }
+    .workslink {
+        display: block;
+        font-size: 0.8rem;
+         :before {
+            font-family: 'pikufont';
+            padding-right: 5px;
+            content: "\e9bf";
+            color: $space-text;
+        }
+    }
 }
