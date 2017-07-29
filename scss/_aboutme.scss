@@ -162,6 +162,10 @@
             @include sentence--pc--small(lighten($earth-blue1, 5%));
             padding: 10px 0;
         }
+        a {
+            @include sentence--pc--small(lighten($earth-blue1, 20%));
+            display: inline-block;
+        }
         /* The triangle */
         &:after {
             right: 100%;
@@ -188,6 +192,10 @@
             }
             p {
                 color: lighten($earth-blue1, 60%);
+            }
+            a {
+                color: lighten($earth-blue1, 40%);
+                display: inline-block;
             }
         }
         .chronology__timecontent:after {

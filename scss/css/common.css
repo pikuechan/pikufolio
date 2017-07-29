@@ -1989,6 +1989,14 @@ footer .copyright a {
   padding: 10px 0;
 }
 
+.aboutme__chronology > li .chronology__timecontent a {
+  font-size: 0.8rem;
+  letter-spacing: 0.09rem;
+  line-height: 1.4rem;
+  color: #6a876a;
+  display: inline-block;
+}
+
 .aboutme__chronology > li .chronology__timecontent:after {
   right: 100%;
   border: solid transparent;
@@ -2015,6 +2023,11 @@ footer .copyright a {
 
 .aboutme__chronology > li:nth-child(odd) .chronology__timecontent p {
   color: #dbe2db;
+}
+
+.aboutme__chronology > li:nth-child(odd) .chronology__timecontent a {
+  color: #a1b6a1;
+  display: inline-block;
 }
 
 .aboutme__chronology > li:nth-child(odd) .chronology__timecontent:after {
