@@ -128,66 +128,11 @@
                         padding-bottom: $bottomline;
                         line-height: 2.5rem-$bottomline;
                         margin-left: 10px;
-                        text-shadow: 0 0 0.5rem $earth-text-shadow;
+                        // text-shadow: 0 0 0.5rem $earth-text-shadow;
                     }
                 }
             }
         }
-        // .chart {
-        //     &__title {
-        //         @include sentence--tablet--xlarge($earth-blue1);
-        //         // font-weight: normal;
-        //         // text-align: center;
-        //     }
-        //     &__area {
-        //         // display: flex;
-        //         // box-sizing: border-box;
-        //         // width: 500px;
-        //         // padding: 20px 0;
-        //         // margin: auto;
-        //         &__arrow {
-        //             display: block;
-        //             width: 50px;
-        //             text-align: right;
-        //             font-size: 8rem;
-        //             color: $earth-red;
-        //             &:before {
-        //                 display: block;
-        //                 content: 'HIGH';
-        //                 font-size: 1rem;
-        //                 font-weight: bold;
-        //                 padding: 10px 3px;
-        //                 ;
-        //             }
-        //             &:after {
-        //                 display: block;
-        //                 content: 'LOW';
-        //                 font-size: 0.85rem;
-        //                 font-weight: bold;
-        //                 padding: 3px 6px 10px 3px;
-        //             }
-        //         }
-        //         &__description {
-        //             // width: 450px;
-        //             // padding: 0px 0px 0 30px;
-        //             // dl {
-        //             //     display: flex;
-        //             // }
-        //             // dt {
-        //             //     line-height: 2.5rem;
-        //             // }
-        //             dd {
-        //                 @include sentence--tablet--basic(white);
-        //                 $bottomline: 0.1rem;
-        //                 box-sizing: border-box;
-        //                 padding-bottom: $bottomline;
-        //                 line-height: 2.5rem-$bottomline;
-        //                 margin-left: 10px;
-        //                 text-shadow: 0 0 0.5rem $earth-text-shadow;
-        //             }
-        //         }
-        //     }
-        // }
     }
     //mobile
     @media (max-width: 750px) {
