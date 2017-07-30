@@ -52,7 +52,7 @@
                 }
                 &--uiux {
                     &:before {
-                        content: "\e9a3";
+                        content: "\e9fd";
                         font-size: $icon-size + 1rem;
                     }
                     &:after {
@@ -62,7 +62,7 @@
                 }
                 &--uxwriting {
                     &:before {
-                        content: "\e9e8";
+                        content: "\ea42";
                     }
                     &:after {
                         content: "UX WRITING";
@@ -70,7 +70,7 @@
                 }
                 &--direction {
                     &:before {
-                        content: "\e9cb";
+                        content: "\ea25";
                     }
                     &:after {
                         content: "DIRECTION";
@@ -79,9 +79,7 @@
                 &--planning {
                     &:before {
                         font-size: $icon-size - 0.5rem;
-                        // content: "\e9e7"; //紙飛行機
-                        // content: "\e9e6"; //パレット
-                        content: "\e9cc"; //地図
+                        content: "\ea26"; //地図
                     }
                     &:after {
                         content: "PLANNING";
@@ -608,7 +606,7 @@
          :before {
             font-family: 'pikufont';
             padding-right: 5px;
-            content: "\e9bf";
+            content: "\ea19";
             color: $space-text;
         }
     }
