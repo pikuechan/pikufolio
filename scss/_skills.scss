@@ -85,8 +85,8 @@
             .skillheart {
                 display: block;
                 margin-top: 5px;
-                font-size: 1.3rem;
-                letter-spacing: 1.0rem;
+                font-size: 1.6rem;
+                letter-spacing: 0.6rem;
             }
         }
         .skill__comment {
@@ -291,52 +291,52 @@
 
 .skillheart {
     font-family: 'pikufont';
-    font-size: 1.0rem;
-    letter-spacing: 0.8rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.6rem;
     &--1 {
         &:before {
             color: $earth-red;
-            content: "\e903";
+            content: "\ea9d";
         }
         &:after {
             color: white;
-            content: "\e903\e903\e903\e903";
+            content: "\ea9d\ea9d\ea9d\ea9d";
         }
     }
     &--2 {
         &:before {
             color: $earth-red;
-            content: "\e903\e903";
+            content: "\ea9d\ea9d";
         }
         &:after {
             color: white;
-            content: "\e903\e903\e903";
+            content: "\ea9d\ea9d\ea9d";
         }
     }
     &--3 {
         &:before {
             color: $earth-red;
-            content: "\e903\e903\e903";
+            content: "\ea9d\ea9d\ea9d";
         }
         &:after {
             color: white;
-            content: "\e903\e903";
+            content: "\ea9d\ea9d";
         }
     }
     &--4 {
         &:before {
             color: $earth-red;
-            content: "\e903\e903\e903\e903";
+            content: "\ea9d\ea9d\ea9d\ea9d";
         }
         &:after {
             color: white;
-            content: "\e903";
+            content: "\ea9d";
         }
     }
     &--5 {
         &:before {
             color: $earth-red;
-            content: "\e903\e903\e903\e903\e903";
+            content: "\ea9d\ea9d\ea9d\ea9d\ea9d";
         }
     }
 }

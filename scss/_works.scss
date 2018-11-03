@@ -52,7 +52,7 @@
                 }
                 &--uiux {
                     &:before {
-                        content: "\e9fd";
+                        content: "\e9c0";
                         font-size: $icon-size + 1rem;
                     }
                     &:after {
@@ -62,7 +62,7 @@
                 }
                 &--uxwriting {
                     &:before {
-                        content: "\ea42";
+                        content: "\ea13";
                     }
                     &:after {
                         content: "UX WRITING";
@@ -70,7 +70,7 @@
                 }
                 &--direction {
                     &:before {
-                        content: "\ea25";
+                        content: "\e9f1";
                     }
                     &:after {
                         content: "DIRECTION";
@@ -79,7 +79,7 @@
                 &--planning {
                     &:before {
                         font-size: $icon-size - 0.5rem;
-                        content: "\ea26"; //地図
+                        content: "\e9f2"; //地図
                     }
                     &:after {
                         content: "PLANNING";
