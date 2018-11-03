@@ -65,7 +65,7 @@
                         content: "\ea13";
                     }
                     &:after {
-                        content: "UX WRITING";
+                        content: "UI/UX WRITING";
                     }
                 }
                 &--direction {
@@ -138,44 +138,44 @@
                         font-size: 0.8rem;
                     }
                 }
-                &--uiux {
+                &--1 {
                     z-index: 5;
                     background-color: lighten($space-green, 10%);
-                    width: 30%;
+                    width: 45%;
                     .barblock {
                         color: darken($space-green, 40%);
                         font-weight: bold;
                     }
                 }
-                &--uxwriting {
-                    z-index: 4;
-                    background-color: darken($space-green, 20%);
-                    width: 50%;
-                    .barblock {
-                        padding-left: (50% * 1.25);
-                    }
-                }
-                &--direction {
+                // &--2 {
+                //     z-index: 4;
+                //     background-color: darken($space-green, 20%);
+                //     width: 40%;
+                //     .barblock {
+                //         padding-left: (65% * 1.25);
+                //     }
+                // }
+                &--3 {
                     z-index: 3;
                     background-color: darken($space-green, 30%);
-                    width: 80%;
+                    width: 75%;
                     .barblock {
                         padding-left: (80% * 0.8);
                     }
                 }
-                &--planning {
+                &--4 {
                     z-index: 2;
                     background-color: darken($space-green, 40%);
                     width: 90%;
                     .barblock {
-                        padding-left: (90% * 1);
+                        padding-left: (85% * 1);
                     }
                     .bartitle {
                         font-size: 0.9rem;
                         padding-bottom: 0.1rem;
                     }
                 }
-                &--others {
+                &--5 {
                     z-index: 1;
                     background-color: darken($space-green, 50%);
                     width: 100%;
@@ -270,7 +270,7 @@
                         border-radius: 1rem;
                         font-size: 1.15rem;
                     }
-                    &--uiux {
+                    &--1 {
                         .barnum {
                             display: inline-block;
                             background-color: darken($space-green, 40%);
@@ -279,7 +279,7 @@
                             padding-left: 1px;
                         }
                     }
-                    &--uxwriting {
+                    &--2 {
                         .barnum {
                             display: inline-block;
                             color: darken($space-green, 20%);
@@ -287,7 +287,7 @@
                             padding-left: 1px;
                         }
                     }
-                    &--direction {
+                    &--3 {
                         .barnum {
                             display: inline-block;
                             color: darken($space-green, 30%);
@@ -295,9 +295,9 @@
                             padding-left: 1px;
                         }
                     }
-                    &--planning {
+                    &--4 {
                         .barblock {
-                            padding-left: (90% * 1.01);
+                            padding-left: (85% * 1.01);
                         }
                         .barnum {
                             display: inline-block;
@@ -310,7 +310,7 @@
                             letter-spacing: 0.01rem;
                         }
                     }
-                    &--others {
+                    &--5 {
                         .barblock {
                             padding-left: (95% * 0.97);
                         }
@@ -365,19 +365,41 @@
                         color: $space-lightgreen;
                     }
                 }
-                &__uiux {
+                &__1 {
                     display: none;
                 }
-                &__uxwriting {
+                &__2 {
                     display: none;
                 }
-                &__direction {
+                &__3 {
                     display: none;
                 }
             }
         }
     }
-    @media(max-width: 960px) {
+    // @media(max-width: 960px) {
+    //     .job-rate {
+    //         h3 {
+    //             @include sentence--tablet--large($space-lightgreen);
+    //             line-height: 3.5rem;
+    //         }
+    //         .ratebar {
+    //             .barparts {
+    //                 &--2 {
+    //                     .bartitle {
+    //                         display: none;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         .ratedfn {
+    //             &__2 {
+    //                 display: block;
+    //             }
+    //         }
+    //     }
+    // }
+    @media(max-width: 880px) {
         .job-rate {
             h3 {
                 @include sentence--tablet--large($space-lightgreen);
@@ -385,7 +407,7 @@
             }
             .ratebar {
                 .barparts {
-                    &--uxwriting {
+                    &--1 {
                         .bartitle {
                             display: none;
                         }
@@ -393,8 +415,9 @@
                 }
             }
             .ratedfn {
-                &__uxwriting {
+                &__1 {
                     display: block;
+                    width: 50%;
                 }
             }
         }
@@ -424,13 +447,14 @@
                 &--perc {
                     display: inline-block;
                 }
-                &__uiux {
+                &__1 {
+                    display: block;
+                    width: 60%;
+                }
+                &__2 {
                     display: block;
                 }
-                &__uxwriting {
-                    display: block;
-                }
-                &__direction {
+                &__3 {
                     display: block;
                 }
             }
@@ -443,7 +467,7 @@
                 line-height: 3rem;
             }
             .ratedfn {
-                &__uiux {
+                &__1 {
                     width: 80%;
                 }
             }

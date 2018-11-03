@@ -1055,7 +1055,7 @@ footer .copyright a {
 }
 
 .works .joblist__items .job__icon--uxwriting:after {
-  content: "UX WRITING";
+  content: "UI/UX WRITING";
 }
 
 .works .joblist__items .job__icon--direction:before {
@@ -1144,63 +1144,53 @@ footer .copyright a {
   font-size: 0.8rem;
 }
 
-.works .job-rate .ratebar .barparts--uiux {
+.works .job-rate .ratebar .barparts--1 {
   z-index: 5;
   background-color: #dbf275;
-  width: 30%;
+  width: 45%;
 }
 
-.works .job-rate .ratebar .barparts--uiux .barblock {
+.works .job-rate .ratebar .barparts--1 .barblock {
   color: #4f5f09;
   font-weight: bold;
 }
 
-.works .job-rate .ratebar .barparts--uxwriting {
-  z-index: 4;
-  background-color: #9dbc12;
-  width: 50%;
-}
-
-.works .job-rate .ratebar .barparts--uxwriting .barblock {
-  padding-left: 62.5%;
-}
-
-.works .job-rate .ratebar .barparts--direction {
+.works .job-rate .ratebar .barparts--3 {
   z-index: 3;
   background-color: #768d0e;
-  width: 80%;
+  width: 75%;
 }
 
-.works .job-rate .ratebar .barparts--direction .barblock {
+.works .job-rate .ratebar .barparts--3 .barblock {
   padding-left: 64%;
 }
 
-.works .job-rate .ratebar .barparts--planning {
+.works .job-rate .ratebar .barparts--4 {
   z-index: 2;
   background-color: #4f5f09;
   width: 90%;
 }
 
-.works .job-rate .ratebar .barparts--planning .barblock {
-  padding-left: 90%;
+.works .job-rate .ratebar .barparts--4 .barblock {
+  padding-left: 85%;
 }
 
-.works .job-rate .ratebar .barparts--planning .bartitle {
+.works .job-rate .ratebar .barparts--4 .bartitle {
   font-size: 0.9rem;
   padding-bottom: 0.1rem;
 }
 
-.works .job-rate .ratebar .barparts--others {
+.works .job-rate .ratebar .barparts--5 {
   z-index: 1;
   background-color: #283005;
   width: 100%;
 }
 
-.works .job-rate .ratebar .barparts--others .barblock {
+.works .job-rate .ratebar .barparts--5 .barblock {
   padding-left: 91.2%;
 }
 
-.works .job-rate .ratebar .barparts--others .bartitle {
+.works .job-rate .ratebar .barparts--5 .bartitle {
   font-size: 0.9rem;
   padding-bottom: 0.1rem;
 }
@@ -1323,49 +1313,49 @@ footer .copyright a {
     border-radius: 1rem;
     font-size: 1.15rem;
   }
-  .works .job-rate .ratebar .barparts--uiux .barnum {
+  .works .job-rate .ratebar .barparts--1 .barnum {
     display: inline-block;
     background-color: #4f5f09;
     color: #dbf275;
     font-weight: normal;
     padding-left: 1px;
   }
-  .works .job-rate .ratebar .barparts--uxwriting .barnum {
+  .works .job-rate .ratebar .barparts--2 .barnum {
     display: inline-block;
     color: #9dbc12;
     padding-top: 1px;
     padding-left: 1px;
   }
-  .works .job-rate .ratebar .barparts--direction .barnum {
+  .works .job-rate .ratebar .barparts--3 .barnum {
     display: inline-block;
     color: #768d0e;
     padding-top: 1px;
     padding-left: 1px;
   }
-  .works .job-rate .ratebar .barparts--planning .barblock {
-    padding-left: 90.9%;
+  .works .job-rate .ratebar .barparts--4 .barblock {
+    padding-left: 85.85%;
   }
-  .works .job-rate .ratebar .barparts--planning .barnum {
+  .works .job-rate .ratebar .barparts--4 .barnum {
     display: inline-block;
     color: #4f5f09;
   }
-  .works .job-rate .ratebar .barparts--planning .bartitle {
+  .works .job-rate .ratebar .barparts--4 .bartitle {
     display: none;
   }
-  .works .job-rate .ratebar .barparts--planning .percnum {
+  .works .job-rate .ratebar .barparts--4 .percnum {
     letter-spacing: 0.01rem;
   }
-  .works .job-rate .ratebar .barparts--others .barblock {
+  .works .job-rate .ratebar .barparts--5 .barblock {
     padding-left: 92.15%;
   }
-  .works .job-rate .ratebar .barparts--others .barnum {
+  .works .job-rate .ratebar .barparts--5 .barnum {
     display: inline-block;
     color: #283005;
   }
-  .works .job-rate .ratebar .barparts--others .bartitle {
+  .works .job-rate .ratebar .barparts--5 .bartitle {
     display: none;
   }
-  .works .job-rate .ratebar .barparts--others .percnum {
+  .works .job-rate .ratebar .barparts--5 .percnum {
     letter-spacing: 0.01rem;
   }
   .works .job-rate .ratedfn {
@@ -1413,18 +1403,18 @@ footer .copyright a {
     font-size: 0.5rem;
     color: #f3fbd2;
   }
-  .works .job-rate .ratedfn__uiux {
+  .works .job-rate .ratedfn__1 {
     display: none;
   }
-  .works .job-rate .ratedfn__uxwriting {
+  .works .job-rate .ratedfn__2 {
     display: none;
   }
-  .works .job-rate .ratedfn__direction {
+  .works .job-rate .ratedfn__3 {
     display: none;
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 880px) {
   .works .job-rate h3 {
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
@@ -1432,11 +1422,12 @@ footer .copyright a {
     color: #f3fbd2;
     line-height: 3.5rem;
   }
-  .works .job-rate .ratebar .barparts--uxwriting .bartitle {
+  .works .job-rate .ratebar .barparts--1 .bartitle {
     display: none;
   }
-  .works .job-rate .ratedfn__uxwriting {
+  .works .job-rate .ratedfn__1 {
     display: block;
+    width: 50%;
   }
 }
 
@@ -1462,13 +1453,14 @@ footer .copyright a {
   .works .job-rate .ratedfn--perc {
     display: inline-block;
   }
-  .works .job-rate .ratedfn__uiux {
+  .works .job-rate .ratedfn__1 {
+    display: block;
+    width: 60%;
+  }
+  .works .job-rate .ratedfn__2 {
     display: block;
   }
-  .works .job-rate .ratedfn__uxwriting {
-    display: block;
-  }
-  .works .job-rate .ratedfn__direction {
+  .works .job-rate .ratedfn__3 {
     display: block;
   }
 }
@@ -1481,7 +1473,7 @@ footer .copyright a {
     color: #f3fbd2;
     line-height: 3rem;
   }
-  .works .job-rate .ratedfn__uiux {
+  .works .job-rate .ratedfn__1 {
     width: 80%;
   }
 }
