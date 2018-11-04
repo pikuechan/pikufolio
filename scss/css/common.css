@@ -533,12 +533,10 @@ footer .copyright a {
 
 .aboutme__content {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
   width: 76vw;
@@ -569,12 +567,10 @@ footer .copyright a {
   line-height: 2.4rem;
   color: #edf1dc;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row;
   -ms-flex-flow: row;
   flex-flow: row;
   text-shadow: 0px 0px 1rem #748914;
@@ -618,12 +614,10 @@ footer .copyright a {
     line-height: 2.2rem;
     color: #edf1dc;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -webkit-flex-flow: column-reverse;
     -ms-flex-flow: column-reverse;
     flex-flow: column-reverse;
   }
@@ -945,12 +939,10 @@ footer .copyright a {
 
 .works__content {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
   width: 76vw;
@@ -993,19 +985,15 @@ footer .copyright a {
 .works .joblist {
   margin-top: 50px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
@@ -1235,30 +1223,45 @@ footer .copyright a {
 
 .works .jobcase__images {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 40px;
 }
 
-.works .jobcase__images a {
-  width: 45%;
+.works .jobcase__images div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 48%;
 }
 
-.works .jobcase__images a img {
+.works .jobcase__images div a img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+}
+
+.works .jobcase__images div .pc {
+  width: 100%;
+}
+
+.works .jobcase__images div .mobile {
+  width: 46%;
 }
 
 .works .jobdetails {
@@ -1283,6 +1286,10 @@ footer .copyright a {
   margin-bottom: 15px;
 }
 
+.works .jobdetails__list {
+  margin-bottom: 30px;
+}
+
 .works .jobdetails__area {
   font-size: 0.8rem;
   letter-spacing: 0.09rem;
@@ -1290,7 +1297,7 @@ footer .copyright a {
   color: white;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 20px 50px 40px;
+  padding: 20px 50px 5px;
   background-color: #4E586A;
 }
 
@@ -1360,10 +1367,8 @@ footer .copyright a {
   }
   .works .job-rate .ratedfn {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 15px;
@@ -1480,7 +1485,6 @@ footer .copyright a {
 
 @media (max-width: 1200px) {
   .works .joblist {
-    -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -1500,7 +1504,6 @@ footer .copyright a {
   .works .joblist {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
   }
@@ -1568,17 +1571,23 @@ footer .copyright a {
     margin: 20px 0;
   }
   .works .jobcase__images {
-    display: block;
-    padding-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
-  .works .jobcase__images a {
+  .works .jobcase__images div {
     width: 90%;
-    height: 100%;
-  }
-  .works .jobcase__images a img {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-bottom: 50px;
+    padding-top: 30px;
   }
 }
 
@@ -1607,16 +1616,6 @@ footer .copyright a {
   }
   .works .jobcase__images {
     padding-top: 10px;
-  }
-  .works .jobcase__images a {
-    width: 90%;
-    height: 100%;
-  }
-  .works .jobcase__images a img {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    margin-bottom: 30px;
   }
 }
 
@@ -1684,12 +1683,13 @@ footer .copyright a {
 .works .workslink {
   display: block;
   font-size: 0.8rem;
+  margin-top: 10px;
 }
 
 .works .workslink :before {
   font-family: 'pikufont';
   padding-right: 5px;
-  content: "\ea19";
+  content: "\e9e2";
   color: #d4d9e2;
 }
 
@@ -1736,12 +1736,10 @@ footer .copyright a {
 
 .skills__content {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
   width: 76vw;
@@ -1783,7 +1781,6 @@ footer .copyright a {
 
 .skills .chart__area {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-sizing: border-box;
@@ -1824,7 +1821,6 @@ footer .copyright a {
 
 .skills .chart__area__description dl {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -1848,19 +1844,15 @@ footer .copyright a {
 
 .skills__list {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 50px 0;
@@ -1948,7 +1940,6 @@ footer .copyright a {
   .skills .chart__area__description dl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     padding-bottom: 30px;
@@ -1983,7 +1974,6 @@ footer .copyright a {
   .skills .chart__area__description dl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     padding-bottom: 15px;
@@ -2012,11 +2002,9 @@ footer .copyright a {
   .skills__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-align: center;
-    -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
   }
@@ -2606,7 +2594,7 @@ html[data-lc-type=image] #lightcase-content .lightcase-contentInner {
 #lightcase-loading, #lightcase-loading:focus {
   text-decoration: none;
   color: #fff;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transition: color, opacity, ease-in-out 0.25s;
   -moz-transition: color, opacity, ease-in-out 0.25s;
   -o-transition: color, opacity, ease-in-out 0.25s;
@@ -2634,7 +2622,7 @@ a[class*='lightcase-icon-'] {
 a[class*='lightcase-icon-'], a[class*='lightcase-icon-']:focus {
   text-decoration: none;
   color: #d4d9e2;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transition: color, opacity, ease-in-out 0.25s;
   -moz-transition: color, opacity, ease-in-out 0.25s;
   -o-transition: color, opacity, ease-in-out 0.25s;
