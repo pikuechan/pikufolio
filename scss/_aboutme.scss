@@ -19,11 +19,13 @@
             margin-bottom: 50px;
             margin-top: 20px;
         }
-        img {
-            width: 300px;
-            height: 300px;
-            border-radius: 300px;
+        figcaption {
             margin-left: 5vw;
+            img {
+                width: 300px;
+                height: 300px;
+                border-radius: 300px;
+            }
         }
         .emphasis {
             color: lighten($earth-blue1, 12%);
@@ -44,16 +46,18 @@
             article {
                 margin: 80px 0;
             }
-            img {
-                width: 50vw;
-                height: auto;
-                min-width: 240px;
-                min-height: 240px;
-                max-width: 340px;
-                max-height: 340px;
-                border-radius: 300px;
+            figcaption {
                 margin-left: 0vw;
                 margin: auto;
+                img {
+                    width: 50vw;
+                    height: auto;
+                    min-width: 240px;
+                    min-height: 240px;
+                    max-width: 340px;
+                    max-height: 340px;
+                    border-radius: 300px;
+                }
             }
         }
     }

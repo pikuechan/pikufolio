@@ -581,11 +581,14 @@ footer .copyright a {
   margin-top: 20px;
 }
 
-.aboutme__profile img {
+.aboutme__profile figcaption {
+  margin-left: 5vw;
+}
+
+.aboutme__profile figcaption img {
   width: 300px;
   height: 300px;
   border-radius: 300px;
-  margin-left: 5vw;
 }
 
 .aboutme__profile .emphasis {
@@ -624,7 +627,11 @@ footer .copyright a {
   .aboutme__profile article {
     margin: 80px 0;
   }
-  .aboutme__profile img {
+  .aboutme__profile figcaption {
+    margin-left: 0vw;
+    margin: auto;
+  }
+  .aboutme__profile figcaption img {
     width: 50vw;
     height: auto;
     min-width: 240px;
@@ -632,8 +639,6 @@ footer .copyright a {
     max-width: 340px;
     max-height: 340px;
     border-radius: 300px;
-    margin-left: 0vw;
-    margin: auto;
   }
 }
 
