@@ -102,14 +102,14 @@
 }
 
 @mixin sentence--tablet--xlarge($text-color) {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     letter-spacing: 0.12rem;
     line-height: 2.2rem;
     color: $text-color;
 }
 
 @mixin sentence--mobile--xlarge($text-color) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
     line-height: 2.0rem;
     color: $text-color;
@@ -133,7 +133,7 @@
 }
 
 @mixin sentence--mobile--large($text-color) {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     letter-spacing: 0.08rem;
     line-height: 2.0rem;
     color: $text-color;
@@ -143,23 +143,23 @@
 /* basic */
 
 @mixin sentence--pc--basic($text-color) {
-    font-size: 0.95rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
-    line-height: 1.8rem;
+    line-height: 1.9rem;
     color: $text-color;
 }
 
 @mixin sentence--tablet--basic($text-color) {
-    font-size: 0.92rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
     color: $text-color;
 }
 
 @mixin sentence--mobile--basic($text-color) {
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.09rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     color: $text-color;
 }
 
@@ -167,22 +167,22 @@
 /* small */
 
 @mixin sentence--pc--small($text-color) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: 0.09rem;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     color: $text-color;
 }
 
 @mixin sentence--tablet--small($text-color) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: 0.09rem;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     color: $text-color;
 }
 
 @mixin sentence--mobile--small($text-color) {
     font-size: 0.8rem;
     letter-spacing: 0.09rem;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     color: $text-color;
 }

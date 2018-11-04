@@ -565,7 +565,7 @@ footer .copyright a {
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
   line-height: 2.4rem;
-  color: #edf1dc;
+  color: #f7f7f7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,7 +592,7 @@ footer .copyright a {
 }
 
 .aboutme__profile .emphasis {
-  color: #587058;
+  color: #39433b;
   text-shadow: none;
   padding: 0 10px;
 }
@@ -615,7 +615,7 @@ footer .copyright a {
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     line-height: 2.2rem;
-    color: #edf1dc;
+    color: #f7f7f7;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -666,10 +666,10 @@ footer .copyright a {
     font-size: 2.4rem;
   }
   .aboutme__profile {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     letter-spacing: 0.08rem;
     line-height: 2.0rem;
-    color: #edf1dc;
+    color: #f7f7f7;
   }
   .aboutme__profile article {
     margin: 60px 0;
@@ -758,41 +758,41 @@ footer .copyright a {
 }
 
 .aboutme__chronology > li .chronology__timecontent {
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  line-height: 1.8rem;
-  color: #3D4E3D;
+  line-height: 1.9rem;
+  color: #39433b;
   margin: 0 10% 40px 30%;
   background: #ddeaa3;
   padding: 16px 24px;
   position: relative;
-  border-radius: 5px;
+  border-radius: 10px;
   /* The triangle */
 }
 
 .aboutme__chronology > li .chronology__timecontent h3 {
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  line-height: 1.8rem;
-  color: #485c48;
+  line-height: 1.9rem;
+  color: #455147;
   margin-top: 0px;
   padding: 0 0 10px 0;
-  border-bottom: 2px dotted #6a876a;
+  border-bottom: 2px dotted #687a6c;
 }
 
 .aboutme__chronology > li .chronology__timecontent p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 0.09rem;
-  line-height: 1.4rem;
-  color: #485c48;
+  line-height: 1.6rem;
+  color: #455147;
   padding: 10px 0;
 }
 
 .aboutme__chronology > li .chronology__timecontent a {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 0.09rem;
-  line-height: 1.4rem;
-  color: #6a876a;
+  line-height: 1.6rem;
+  color: #687a6c;
   display: inline-block;
 }
 
@@ -810,27 +810,27 @@ footer .copyright a {
 }
 
 .aboutme__chronology > li:nth-child(odd) .chronology__timecontent {
-  background: #3D4E3D;
+  background: #39433b;
 }
 
 .aboutme__chronology > li:nth-child(odd) .chronology__timecontent h3 {
-  color: #dbe2db;
+  color: #d4dad5;
   margin-top: 0px;
   padding: 0 0 10px 0;
-  border-bottom: 2px dotted #859f85;
+  border-bottom: 2px dotted #819485;
 }
 
 .aboutme__chronology > li:nth-child(odd) .chronology__timecontent p {
-  color: #dbe2db;
+  color: #d4dad5;
 }
 
 .aboutme__chronology > li:nth-child(odd) .chronology__timecontent a {
-  color: #a1b6a1;
+  color: #9daba0;
   display: inline-block;
 }
 
 .aboutme__chronology > li:nth-child(odd) .chronology__timecontent:after {
-  border-right-color: #3D4E3D;
+  border-right-color: #39433b;
 }
 
 @media screen and (max-width: 960px) {
@@ -869,16 +869,16 @@ footer .copyright a {
     top: -20px;
   }
   .aboutme__chronology > li .chronology__timecontent h3 {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.9rem;
+    color: #39433b;
+  }
+  .aboutme__chronology > li .chronology__timecontent p {
     font-size: 0.9rem;
     letter-spacing: 0.09rem;
     line-height: 1.6rem;
-    color: #3D4E3D;
-  }
-  .aboutme__chronology > li .chronology__timecontent p {
-    font-size: 0.8rem;
-    letter-spacing: 0.09rem;
-    line-height: 1.4rem;
-    color: #3D4E3D;
+    color: #39433b;
   }
   .aboutme__chronology > li .chronology__icon {
     width: 30px;
@@ -894,7 +894,7 @@ footer .copyright a {
   }
   .aboutme__chronology > li:nth-child(odd) .chronology__timecontent:after {
     border-right-color: transparent;
-    border-bottom-color: #3D4E3D;
+    border-bottom-color: #39433b;
   }
 }
 
@@ -973,9 +973,9 @@ footer .copyright a {
 }
 
 .works__description {
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   color: #d4d9e2;
 }
 
@@ -1073,9 +1073,9 @@ footer .copyright a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 30px 15px 60px 15px;
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   color: #d4d9e2;
 }
 
@@ -1212,16 +1212,16 @@ footer .copyright a {
 }
 
 .works .jobcase__title aside {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 0.09rem;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   color: #d4d9e2;
 }
 
 .works .jobcase__description {
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   color: #d4d9e2;
   margin: 20px 0;
 }
@@ -1259,6 +1259,7 @@ footer .copyright a {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
 .works .jobcase__images div .pc {
@@ -1274,18 +1275,18 @@ footer .copyright a {
 }
 
 .works .jobdetails__title {
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   color: #f3fbd2;
   text-align: center;
   margin: 20px;
 }
 
 .works .jobdetails__description {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 0.09rem;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   color: white;
   text-align: center;
   margin-bottom: 15px;
@@ -1296,12 +1297,13 @@ footer .copyright a {
 }
 
 .works .jobdetails__area {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   letter-spacing: 0.09rem;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   color: white;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border-radius: 10px;
   padding: 20px 50px 5px;
   background-color: #4E586A;
 }
@@ -1477,7 +1479,7 @@ footer .copyright a {
 
 @media (max-width: 580px) {
   .works .job-rate h3 {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     letter-spacing: 0.08rem;
     line-height: 2.0rem;
     color: #f3fbd2;
@@ -1498,9 +1500,9 @@ footer .copyright a {
   }
   .works .joblist__items .job__description {
     padding: 20px 20px 60px 20px;
-    font-size: 0.92rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
     color: #d4d9e2;
   }
 }
@@ -1517,9 +1519,9 @@ footer .copyright a {
   }
   .works .joblist__items .job__description {
     padding: 20px 10% 60px 10%;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.09rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     color: #d4d9e2;
   }
 }
@@ -1535,15 +1537,15 @@ footer .copyright a {
     color: #f3fbd2;
   }
   .works .jobcase__title aside {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: 0.09rem;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     color: #d4d9e2;
   }
   .works .jobcase__description {
-    font-size: 0.92rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
     color: #d4d9e2;
     margin: 20px 0;
   }
@@ -1563,15 +1565,15 @@ footer .copyright a {
     color: #f3fbd2;
   }
   .works .jobcase__title aside {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     letter-spacing: 0.09rem;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     color: #d4d9e2;
   }
   .works .jobcase__description {
-    font-size: 0.92rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
     color: #d4d9e2;
     margin: 20px 0;
   }
@@ -1601,7 +1603,7 @@ footer .copyright a {
     padding: 0.8rem;
   }
   .works .jobcase__title h3 {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     letter-spacing: 0.08rem;
     line-height: 2.0rem;
     color: #f3fbd2;
@@ -1609,13 +1611,13 @@ footer .copyright a {
   .works .jobcase__title aside {
     font-size: 0.8rem;
     letter-spacing: 0.09rem;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
     color: #d4d9e2;
   }
   .works .jobcase__description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.09rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     color: #d4d9e2;
     margin: 20px 0;
   }
@@ -1639,9 +1641,9 @@ footer .copyright a {
     font-size: 2.7rem;
   }
   .works__description {
-    font-size: 0.92rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
     color: #d4d9e2;
   }
 }
@@ -1670,9 +1672,9 @@ footer .copyright a {
     font-size: 2.4rem;
   }
   .works__description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.09rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     color: #d4d9e2;
   }
 }
@@ -1773,14 +1775,15 @@ footer .copyright a {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
-  background-color: #bed750;
+  background-color: #39433b;
+  border-radius: 10px;
 }
 
 .skills .chart__title {
   font-size: 1.2rem;
   letter-spacing: 0.15rem;
   line-height: 2.4rem;
-  color: #3D4E3D;
+  color: #f7f7f7;
   text-align: center;
 }
 
@@ -1800,14 +1803,14 @@ footer .copyright a {
   width: 50px;
   text-align: right;
   font-size: 8rem;
-  color: #FF192D;
+  color: #f7f7f7;
 }
 
 .skills .chart__area__arrow:before {
   display: block;
   content: 'HIGH';
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: normal;
   padding: 10px 3px;
 }
 
@@ -1815,7 +1818,7 @@ footer .copyright a {
   display: block;
   content: 'LOW';
   font-size: 0.85rem;
-  font-weight: bold;
+  font-weight: normal;
   padding: 3px 6px 10px 3px;
 }
 
@@ -1835,16 +1838,16 @@ footer .copyright a {
 }
 
 .skills .chart__area__description dd {
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   color: white;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-bottom: 0.2rem;
   line-height: 2.3rem;
   margin-left: 10px;
-  text-shadow: 0 0 0.5rem #56660f;
+  text-shadow: 0 0 0.5rem #3c470a;
 }
 
 .skills__list {
@@ -1872,7 +1875,7 @@ footer .copyright a {
   font-size: 1.1rem;
   letter-spacing: 0.1rem;
   line-height: 2.4rem;
-  color: #3D4E3D;
+  color: #39433b;
   text-align: center;
   margin: 10px 0;
 }
@@ -1885,9 +1888,9 @@ footer .copyright a {
 }
 
 .skills__list .skill__comment {
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
   color: white;
   text-shadow: 0 0 1rem #748914;
 }
@@ -1897,10 +1900,10 @@ footer .copyright a {
     padding: 20px;
   }
   .skills .chart__title {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     letter-spacing: 0.12rem;
     line-height: 2.2rem;
-    color: #3D4E3D;
+    color: #f7f7f7;
   }
   .skills .chart__area {
     width: 450px;
@@ -1916,9 +1919,9 @@ footer .copyright a {
     margin: auto;
   }
   .skills .chart__area__description dd {
-    font-size: 0.92rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
     color: white;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1930,10 +1933,10 @@ footer .copyright a {
 
 @media (max-width: 750px) {
   .skills .chart__title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.1rem;
     line-height: 2.0rem;
-    color: #3D4E3D;
+    color: #f7f7f7;
   }
   .skills .chart__area {
     width: 100%;
@@ -1951,23 +1954,25 @@ footer .copyright a {
   }
   .skills .chart__area__description dt {
     text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.8rem;
   }
   .skills .chart__area__description dd {
     text-align: center;
     margin-left: 0px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 0.09rem;
-    line-height: 1.4rem;
+    line-height: 1.8rem;
     color: white;
   }
 }
 
 @media (max-width: 480px) {
   .skills .chart__title {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     letter-spacing: 0.08rem;
     line-height: 2.0rem;
-    color: #3D4E3D;
+    color: #f7f7f7;
   }
   .skills .chart__area {
     width: 100%;
@@ -1983,6 +1988,12 @@ footer .copyright a {
     flex-direction: column;
     padding-bottom: 15px;
   }
+  .skills .chart__area__description dd {
+    font-size: 0.8rem;
+    letter-spacing: 0.09rem;
+    line-height: 1.5rem;
+    color: white;
+  }
 }
 
 @media (max-width: 960px) {
@@ -1993,12 +2004,12 @@ footer .copyright a {
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     line-height: 2.2rem;
-    color: #3D4E3D;
+    color: #39433b;
   }
   .skills__list .skill__comment {
-    font-size: 0.92rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
     color: white;
   }
 }
@@ -2021,12 +2032,12 @@ footer .copyright a {
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     line-height: 2.2rem;
-    color: #3D4E3D;
+    color: #39433b;
   }
   .skills__list .skill__comment {
-    font-size: 0.92rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
-    line-height: 1.7rem;
+    line-height: 1.9rem;
     color: white;
   }
 }
@@ -2037,15 +2048,15 @@ footer .copyright a {
     margin-bottom: 40px;
   }
   .skills__list .skill__title {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     letter-spacing: 0.08rem;
     line-height: 2.0rem;
-    color: #3D4E3D;
+    color: #39433b;
   }
   .skills__list .skill__comment {
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.09rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     color: white;
   }
 }
@@ -2092,7 +2103,7 @@ footer .copyright a {
 }
 
 /***********************************************************
-                           SKILLheart
+                    SKILLheart　共通スタイル
 ***********************************************************/
 .skillheart {
   font-family: 'pikufont';
@@ -2107,6 +2118,7 @@ footer .copyright a {
 
 .skillheart--1:after {
   color: white;
+  opacity: 0.8;
   content: "\ea9d\ea9d\ea9d\ea9d";
 }
 
@@ -2117,6 +2129,7 @@ footer .copyright a {
 
 .skillheart--2:after {
   color: white;
+  opacity: 0.8;
   content: "\ea9d\ea9d\ea9d";
 }
 
@@ -2127,6 +2140,7 @@ footer .copyright a {
 
 .skillheart--3:after {
   color: white;
+  opacity: 0.8;
   content: "\ea9d\ea9d";
 }
 
@@ -2137,6 +2151,7 @@ footer .copyright a {
 
 .skillheart--4:after {
   color: white;
+  opacity: 0.8;
   content: "\ea9d";
 }
 
@@ -2150,7 +2165,7 @@ footer .copyright a {
   font-size: 8rem;
   text-align: center;
   margin-top: 100px;
-  color: #edf1dc;
+  color: #f7f7f7;
   opacity: 0.25;
 }
 

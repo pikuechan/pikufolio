@@ -28,7 +28,8 @@
             }
         }
         .emphasis {
-            color: lighten($earth-blue1, 12%);
+            // color: lighten($earth-blue1, 12%);
+            color: $earth-blue1;
             text-shadow: none;
             padding: 0 10px;
         }
@@ -155,7 +156,7 @@
         background: $earth-light1;
         padding: 16px 24px;
         position: relative;
-        border-radius: 5px;
+        border-radius: 10px;
         h3 {
             @include sentence--pc--basic(lighten($earth-blue1, 5%));
             margin-top: 0px;
@@ -246,10 +247,10 @@
                     top: -20px;
                 }
                 h3 {
-                    @include sentence--mobile--basic($earth-blue1);
+                    @include sentence--tablet--basic($earth-blue1);
                 }
                 p {
-                    @include sentence--mobile--small($earth-blue1);
+                    @include sentence--tablet--small($earth-blue1);
                 }
             }
             .chronology__icon {

@@ -13,9 +13,10 @@
     .chart {
         box-sizing: border-box;
         padding: 20px;
-        background-color: darken($earth-light1, 20%);
+        background-color: $earth-blue1;
+        border-radius: 10px;
         &__title {
-            @include sentence--pc--xlarge($earth-blue1);
+            @include sentence--pc--xlarge($earth-text);
             text-align: center;
         }
         &__area {
@@ -29,12 +30,12 @@
                 width: 50px;
                 text-align: right;
                 font-size: 8rem;
-                color: $earth-red;
+                color: $earth-text;
                 &:before {
                     display: block;
                     content: 'HIGH';
                     font-size: 1rem;
-                    font-weight: bold;
+                    font-weight: normal;
                     padding: 10px 3px;
                     ;
                 }
@@ -42,7 +43,7 @@
                     display: block;
                     content: 'LOW';
                     font-size: 0.85rem;
-                    font-weight: bold;
+                    font-weight: normal;
                     padding: 3px 6px 10px 3px;
                 }
             }
@@ -56,14 +57,13 @@
                     line-height: 2.5rem;
                 }
                 dd {
-                    // @include sentence--pc--basic(lighten($earth-blue1, 10%));
                     @include sentence--pc--basic(white);
                     $bottomline: 0.2rem;
                     box-sizing: border-box;
                     padding-bottom: $bottomline;
                     line-height: 2.5rem-$bottomline;
                     margin-left: 10px;
-                    text-shadow: 0 0 0.5rem darken($earth-text-shadow, 8%);
+                    text-shadow: 0 0 0.5rem darken($earth-text-shadow, 15%);
                 }
             }
         }
@@ -102,7 +102,7 @@
         .chart {
             padding: 20px;
             &__title {
-                @include sentence--tablet--xlarge($earth-blue1);
+                @include sentence--tablet--xlarge($earth-text);
             }
             &__area {
                 width: 450px;
@@ -138,7 +138,7 @@
     @media (max-width: 750px) {
         .chart {
             &__title {
-                @include sentence--mobile--xlarge($earth-blue1);
+                @include sentence--mobile--xlarge($earth-text);
             }
             &__area {
                 width: 100%;
@@ -152,6 +152,8 @@
                     }
                     dt {
                         text-align: center;
+                        font-size: 1.5rem;
+                        letter-spacing: 0.8rem;
                     }
                     dd {
                         text-align: center;
@@ -159,7 +161,7 @@
                         // padding-bottom: $bottomline;
                         // line-height: 2.5rem-$bottomline;
                         margin-left: 0px;
-                        @include sentence--mobile--small(white);
+                        @include sentence--mobile--basic(white);
                     }
                 }
             }
@@ -169,7 +171,7 @@
     @media (max-width: 480px) {
         .chart {
             &__title {
-                @include sentence--mobile--large($earth-blue1);
+                @include sentence--mobile--large($earth-text);
             }
             &__area {
                 width: 100%;
@@ -179,6 +181,9 @@
                     dl {
                         flex-direction: column;
                         padding-bottom: 15px;
+                    }
+                    dd {
+                        @include sentence--mobile--small(white);
                     }
                 }
             }
@@ -286,7 +291,7 @@
 
 
 /***********************************************************
-                           SKILLheart
+                    SKILLheart　共通スタイル
 ***********************************************************/
 
 .skillheart {
@@ -300,6 +305,7 @@
         }
         &:after {
             color: white;
+            opacity: 0.8;
             content: "\ea9d\ea9d\ea9d\ea9d";
         }
     }
@@ -310,6 +316,7 @@
         }
         &:after {
             color: white;
+            opacity: 0.8;
             content: "\ea9d\ea9d\ea9d";
         }
     }
@@ -320,6 +327,7 @@
         }
         &:after {
             color: white;
+            opacity: 0.8;
             content: "\ea9d\ea9d";
         }
     }
@@ -330,6 +338,7 @@
         }
         &:after {
             color: white;
+            opacity: 0.8;
             content: "\ea9d";
         }
     }
