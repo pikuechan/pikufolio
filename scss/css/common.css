@@ -581,6 +581,29 @@ footer .copyright a {
   margin-top: 20px;
 }
 
+.aboutme__profile article p {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #87a017;
+  border-radius: 10px;
+}
+
+.aboutme__profile article p span {
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.aboutme__profile article p .keyword {
+  display: inline-block;
+}
+
+.aboutme__profile article p .keyword:after {
+  content: " , ";
+  color: #39433b;
+  padding-right: 5px;
+}
+
 .aboutme__profile figcaption {
   margin-left: 5vw;
 }
