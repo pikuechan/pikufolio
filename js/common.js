@@ -44,6 +44,6 @@ $(function() {
 
 $(function() {
     jQuery(document).ready(function($) {
-        $('a[data-rel^=lightcase]').lightcase();
+        $('a[data-rel^="lightcase"]').lightcase();
     });
 });

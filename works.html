@@ -279,4 +279,16 @@
             </section>
         </section>
     </section>
+    <script>
+        /*画像表示用プラグイン
+                load.jsでhtml読み込みを分離している影響で、なぜか最初の一回だけが動作しないという謎現象が起きてる。（２回目のクリック以降は効く）
+                loadするファイル内にそのまま埋め込むと正常動作するっぽいので、ひとまず暫定対応としてここにおいておく（commonにもいれたままにしてる）
+                スマートな方法があれば変えたいけど....（多分、load.jsでのhtml分離をやめれば解決するけど）
+                */
+        $(function() {
+            jQuery(document).ready(function($) {
+                $('a[data-rel^="lightcase"]').lightcase();
+            });
+        });
+    </script>
 </section>
