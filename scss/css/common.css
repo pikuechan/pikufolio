@@ -206,6 +206,8 @@ section-border--earth：section borderのearthパターン
 
 body {
   font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
+  overflow-x: hidden;
+  background-color: #212E45;
 }
 
 a {
@@ -865,7 +867,7 @@ footer .copyright a {
     display: none;
   }
   .aboutme__chronology > li .chronology__timelabel {
-    width: 100%;
+    width: 60%;
     position: relative;
     padding: 0 0 20px 60px;
     text-align: left;
