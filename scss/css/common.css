@@ -867,7 +867,7 @@ footer .copyright a {
     display: none;
   }
   .aboutme__chronology > li .chronology__timelabel {
-    width: 100%;
+    width: 60%;
     position: relative;
     padding: 0 0 20px 60px;
     text-align: left;
