@@ -24,6 +24,8 @@ section-border--earth：section borderのearthパターン
 
 body {
     font-family: 'Palanquin Dark', 'M+ Type-1 (general-j) Regular', sans-serif;
+    overflow-x: hidden;
+    background-color: $space-background;
 }
 
 a {
